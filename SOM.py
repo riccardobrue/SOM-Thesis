@@ -54,6 +54,7 @@ class SOM(object):
 
             # Randomly initialized weightage vectors for all neurons,
             # stored together as a matrix Variable of size [m*n, dim]
+            tf.set_random_seed(1)
             self._weightage_vects = tf.Variable(tf.random_normal([m * n, dim]))
 
             # Matrix of size [m*n, 2] for SOM grid locations
