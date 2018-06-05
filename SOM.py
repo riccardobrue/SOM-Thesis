@@ -173,16 +173,17 @@ class SOM(object):
                 self._trained = True
 
             ##PRINTING INTERIM CHARTS
-            if iter_no % 20 == 0 and training_graph and labels is not None:
-                print("Temp centroids stored (iteration: ", iter_no, ")")
-                self._temp_centroids = self._compute_centroids()
-                # Plot
-                plt.imshow(self._temp_centroids)
-                plt.title('Temp Color SOM')
-                for i, m in enumerate(self.map_vects(input_vects)):
-                    plt.text(m[1], m[0], labels[i], ha='center', va='center',
-                             bbox=dict(facecolor='white', alpha=0.5, lw=0))
-                plt.show()
+            if iter_no % 20 == 0:
+                print("Iteration ", iter_no)
+                if training_graph and labels is not None:
+                    self._temp_centroids = self._compute_centroids()
+                    # Plot
+                    plt.imshow(self._temp_centroids)
+                    plt.title('Temp Color SOM')
+                    for i, m in enumerate(self.map_vects(input_vects)):
+                        plt.text(m[1], m[0], labels[i], ha='center', va='center',
+                                 bbox=dict(facecolor='white', alpha=0.5, lw=0))
+                    plt.show()
 
         # Store a centroid grid for easy retrieval later on
         self._centroid_grid = self._compute_centroids()
