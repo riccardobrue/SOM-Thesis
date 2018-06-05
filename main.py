@@ -32,8 +32,8 @@ color_names = ['black', 'blue', 'darkblue', 'skyblue',
 # 30: SOM's grid width
 # 3: input dimensionality (RGB values)
 # 400: iterations
-som = SOM(20, 30, 3, 2000)
-som.train(colors)  # training the SOM with the input data
+som = SOM(20, 30, 3, 100)
+som.train(colors, training_graph=False, color_names=color_names)  # training the SOM with the input data
 
 # Get output grid
 image_grid = som.get_centroids()
@@ -41,6 +41,7 @@ image_grid = som.get_centroids()
 # Map colours to their closest neurons
 mapped = som.map_vects(colors)
 
+print("Plotting final chart")
 # Plot
 plt.imshow(image_grid)
 plt.title('Color SOM')

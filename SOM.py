@@ -4,6 +4,7 @@ https://codesachin.wordpress.com/2015/11/28/self-organizing-maps-with-googles-te
 
 import tensorflow as tf
 import numpy as np
+from matplotlib import pyplot as plt
 
 
 class SOM(object):
@@ -142,7 +143,17 @@ class SOM(object):
             for j in range(n):
                 yield np.array([i, j])
 
-    def train(self, input_vects):
+    def _compute_centroids(self):
+        # Store a centroid grid for easy retrieval later on
+        centroid_grid = [[] for i in range(self._m)]
+        self._weightages = list(self._sess.run(self._weightage_vects))
+        self._locations = list(self._sess.run(self._location_vects))
+
+        for i, loc in enumerate(self._locations):
+            centroid_grid[loc[0]].append(self._weightages[i])
+        return centroid_grid
+
+    def train(self, input_vects, training_graph=False, color_names=None):
         """
         Trains the SOM.
         'input_vects' should be an iterable of 1-D NumPy arrays with
@@ -158,17 +169,25 @@ class SOM(object):
                 self._sess.run(self._training_op,
                                feed_dict={self._vect_input: input_vect,
                                           self._iter_input: iter_no})
+            if iter_no == 0:
+                self._trained = True
+
+            if iter_no % 20 == 0 and training_graph and color_names is not None:
+                print("Temp centroids stored (iteration: ", iter_no, ")")
+                self._temp_centroids = self._compute_centroids()
+                # Plot
+                # plt.ion()
+
+                plt.imshow(self._temp_centroids)
+                plt.title('Temp Color SOM')
+                for i, m in enumerate(self.map_vects(input_vects)):
+                    plt.text(m[1], m[0], color_names[i], ha='center', va='center',
+                             bbox=dict(facecolor='white', alpha=0.5, lw=0))
+                # plt.show(block=False)
+                plt.show()
 
         # Store a centroid grid for easy retrieval later on
-        centroid_grid = [[] for i in range(self._m)]
-        self._weightages = list(self._sess.run(self._weightage_vects))
-        self._locations = list(self._sess.run(self._location_vects))
-
-        for i, loc in enumerate(self._locations):
-            centroid_grid[loc[0]].append(self._weightages[i])
-        self._centroid_grid = centroid_grid
-
-        self._trained = True
+        self._centroid_grid = self._compute_centroids()
 
     def get_centroids(self):
         """
@@ -196,8 +215,7 @@ class SOM(object):
         to_return = []
         for vect in input_vects:
             min_index = min([i for i in range(len(self._weightages))],
-                            key=lambda x: np.linalg.norm(vect -
-                                                         self._weightages[x]))
+                            key=lambda x: np.linalg.norm(vect - self._weightages[x]))
             to_return.append(self._locations[min_index])
 
         return to_return
