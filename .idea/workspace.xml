@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_fake_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_fake_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +16,8 @@
       <file leaf-file-name="main_fake_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_fake_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="178" column="26" lean-forward="true" selection-start-line="178" selection-start-column="26" selection-end-line="178" selection-end-column="26" />
+            <state relative-caret-position="212">
+              <caret line="180" column="54" lean-forward="true" selection-start-line="180" selection-start-column="54" selection-end-line="180" selection-end-column="54" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -247,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528213198062</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Created new clustering system according with the different radius data">
+      <created>1528232273646</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1528232273646</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -283,7 +289,8 @@
     <MESSAGE value="Added interim plotting charts" />
     <MESSAGE value="Loaded data from the Excel file" />
     <MESSAGE value="Loaded data from the Excel file and tried to create clusters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Loaded data from the Excel file and tried to create clusters" />
+    <MESSAGE value="Created new clustering system according with the different radius data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created new clustering system according with the different radius data" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main_fake_data.py">
@@ -395,8 +402,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_fake_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="178" column="26" lean-forward="true" selection-start-line="178" selection-start-column="26" selection-end-line="178" selection-end-column="26" />
+        <state relative-caret-position="212">
+          <caret line="180" column="54" lean-forward="true" selection-start-line="180" selection-start-column="54" selection-end-line="180" selection-end-column="54" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
