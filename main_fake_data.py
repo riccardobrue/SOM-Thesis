@@ -56,8 +56,8 @@ print("Heuristically computed appropriate no. of map units: " + str(int(map_unit
 
 input_dimensions = 5
 
-map_width = 40
-map_height = 40
+map_width = 20
+map_height = 20
 MAP = np.random.uniform(size=(map_height, map_width, input_dimensions))
 prev_MAP = np.zeros((map_height, map_width, input_dimensions))
 
@@ -79,7 +79,7 @@ def Eucli_dists(MAP, x):
     return Eucli_MAP
 
 
-epochs = 50
+epochs = 10
 radius = radius0
 learning_rate = learning_rate0
 max_iterations = epochs * len(patterns)
@@ -149,6 +149,8 @@ for pattern in patterns:
 
     Eucli_MAP = Eucli_dists(MAP, pattern)
 
+    # Best matching unit (BMU)
+
     BMU[0] = np.argmin(np.amin(Eucli_MAP, 1), 0)
     BMU[1] = np.argmin(Eucli_MAP, 1)[int(BMU[0])]
 
@@ -167,6 +169,7 @@ for pattern in patterns:
         if result_map[x][y][2] <= 0.5:
             result_map[x][y] += np.asarray([0, 0, 0.5])
     """
+    """
     if classes[i] <= 25:
         if result_map[x][y][0] <= 0.5:
             result_map[x][y] += np.asarray([.5, 0, 0])
@@ -174,6 +177,17 @@ for pattern in patterns:
         if result_map[x][y][1] <= 0.5:
             result_map[x][y] += np.asarray([0, .5, 0])
     elif classes[i] <= 75:
+        if result_map[x][y][2] <= 0.5:
+            result_map[x][y] += np.asarray([0, 0, .5])
+    """
+
+    if patterns[i][0] <= 30:
+        if result_map[x][y][0] <= 0.5:
+            result_map[x][y] += np.asarray([.5, 0, 0])
+    elif patterns[i][0] <= 50:
+        if result_map[x][y][1] <= 0.5:
+            result_map[x][y] += np.asarray([0, .5, 0])
+    elif patterns[i][0] <= 90:
         if result_map[x][y][2] <= 0.5:
             result_map[x][y] += np.asarray([0, 0, .5])
 
