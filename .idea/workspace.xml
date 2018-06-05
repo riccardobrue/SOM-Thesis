@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_fake_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_fake_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,10 +17,22 @@
       <file leaf-file-name="main_fake_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_fake_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="180" column="54" lean-forward="true" selection-start-line="180" selection-start-column="54" selection-end-line="180" selection-end-column="54" />
+            <state relative-caret-position="263">
+              <caret line="63" column="40" lean-forward="true" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SOM.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SOM.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="943">
+              <caret line="188" column="53" selection-start-line="188" selection-start-column="35" selection-end-line="188" selection-end-column="53" />
+              <folding>
+                <element signature="e#99#122#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -253,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528232273646</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Created new clustering system according with the different radius data">
+      <created>1528232278207</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1528232278207</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -317,6 +337,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1462">
           <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="e#99#122#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -324,6 +347,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#26#62#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -362,20 +388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="27" column="53" lean-forward="true" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SOM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3196">
-          <caret line="188" column="53" selection-start-line="188" selection-start-column="35" selection-end-line="188" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Iris_data.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -400,10 +412,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="38" column="10" selection-start-line="38" selection-end-line="38" selection-end-column="10" />
+          <folding>
+            <element signature="e#26#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SOM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="188" column="53" selection-start-line="188" selection-start-column="35" selection-end-line="188" selection-end-column="53" />
+          <folding>
+            <element signature="e#99#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main_fake_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="180" column="54" lean-forward="true" selection-start-line="180" selection-start-column="54" selection-end-line="180" selection-end-column="54" />
+        <state relative-caret-position="263">
+          <caret line="63" column="40" lean-forward="true" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>

@@ -56,8 +56,8 @@ print("Heuristically computed appropriate no. of map units: " + str(int(map_unit
 
 input_dimensions = 5
 
-map_width = 20
-map_height = 20
+map_width = 30
+map_height = 30
 MAP = np.random.uniform(size=(map_height, map_width, input_dimensions))
 prev_MAP = np.zeros((map_height, map_width, input_dimensions))
 
@@ -79,7 +79,7 @@ def Eucli_dists(MAP, x):
     return Eucli_MAP
 
 
-epochs = 10
+epochs = 50
 radius = radius0
 learning_rate = learning_rate0
 max_iterations = epochs * len(patterns)
@@ -182,14 +182,17 @@ for pattern in patterns:
     """
 
     if patterns[i][0] <= 30:
-        if result_map[x][y][0] <= 0.5:
-            result_map[x][y] += np.asarray([.5, 0, 0])
+        if result_map[x][y][0] <= 1.:
+            result_map[x][y] += np.asarray([.2, 0, 0])
     elif patterns[i][0] <= 50:
-        if result_map[x][y][1] <= 0.5:
-            result_map[x][y] += np.asarray([0, .5, 0])
+        if result_map[x][y][1] <= 1.:
+            result_map[x][y] += np.asarray([0, .2, 0])
+    elif patterns[i][0] <= 70:
+        if result_map[x][y][2] <= 1.:
+            result_map[x][y] += np.asarray([0, 0, .2])
     elif patterns[i][0] <= 90:
-        if result_map[x][y][2] <= 0.5:
-            result_map[x][y] += np.asarray([0, 0, .5])
+        if result_map[x][y][0] <= 1. and result_map[x][y][1] <= 1. and result_map[x][y][2] <= 1.:
+            result_map[x][y] = np.asarray([2., 2., 2.])
 
     i += 1
 
@@ -197,7 +200,8 @@ result_map = np.flip(result_map, 0)
 
 print("\nRed = Low efficiency")
 print("Green = Medium efficiency")
-print("Blue = High efficiency\n")
+print("Blue = High efficiency")
+print("White = Optimum efficiency\n")
 
 plt.imshow(toimage(result_map), interpolation='nearest')
 plt.show()
