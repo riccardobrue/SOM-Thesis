@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/main_fake_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SOM.py" beforeDir="false" afterPath="$PROJECT_DIR$/SOM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SOM.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SOM.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SOM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2890">
-              <caret line="170" column="55" selection-start-line="170" selection-start-column="55" selection-end-line="170" selection-end-column="55" />
+            <state relative-caret-position="153">
+              <caret line="177" column="64" selection-start-line="177" selection-start-column="64" selection-end-line="177" selection-end-column="64" />
               <folding>
                 <element signature="e#99#122#0" expanded="true" />
               </folding>
@@ -26,13 +28,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
+      <file leaf-file-name="main_fake_data.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main_fake_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            <state relative-caret-position="425">
+              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
               <folding>
-                <element signature="e#26#62#0" expanded="true" />
+                <element signature="e#0#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,8 +60,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/SOM.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/main_fake_data.py" />
       </list>
     </option>
   </component>
@@ -103,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main_fake_data">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -158,8 +161,31 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="main_fake_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python Workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_fake_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.main_fake_data" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main_fake_data" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main" />
       </list>
@@ -197,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528192514886</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added interim plotting charts">
+      <created>1528192609534</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1528192609534</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -230,7 +263,8 @@
     <MESSAGE value="Fixed a conversion problem in the SOM class" />
     <MESSAGE value="Added comments in the main file.&#10;Set a fixed random seed for tensorflow." />
     <MESSAGE value="Added temporary plotting charts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added temporary plotting charts" />
+    <MESSAGE value="Added interim plotting charts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added interim plotting charts" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SOM.py">
@@ -267,22 +301,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SOM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="177" column="64" selection-start-line="177" selection-start-column="64" selection-end-line="177" selection-end-column="64" />
+          <folding>
+            <element signature="e#99#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="163">
+          <caret line="27" column="53" lean-forward="true" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
           <folding>
             <element signature="e#26#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SOM.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2890">
-          <caret line="170" column="55" selection-start-line="170" selection-start-column="55" selection-end-line="170" selection-end-column="55" />
+        <state relative-caret-position="232">
+          <caret line="336" column="8" selection-start-line="336" selection-start-column="8" selection-end-line="336" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_fake_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
           <folding>
-            <element signature="e#99#122#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>

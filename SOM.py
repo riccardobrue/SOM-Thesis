@@ -153,7 +153,7 @@ class SOM(object):
             centroid_grid[loc[0]].append(self._weightages[i])
         return centroid_grid
 
-    def train(self, input_vects, training_graph=False, color_names=None):
+    def train(self, input_vects, training_graph=False, labels=None):
         """
         Trains the SOM.
         'input_vects' should be an iterable of 1-D NumPy arrays with
@@ -173,14 +173,14 @@ class SOM(object):
                 self._trained = True
 
             ##PRINTING INTERIM CHARTS
-            if iter_no % 20 == 0 and training_graph and color_names is not None:
+            if iter_no % 20 == 0 and training_graph and labels is not None:
                 print("Temp centroids stored (iteration: ", iter_no, ")")
                 self._temp_centroids = self._compute_centroids()
                 # Plot
                 plt.imshow(self._temp_centroids)
                 plt.title('Temp Color SOM')
                 for i, m in enumerate(self.map_vects(input_vects)):
-                    plt.text(m[1], m[0], color_names[i], ha='center', va='center',
+                    plt.text(m[1], m[0], labels[i], ha='center', va='center',
                              bbox=dict(facecolor='white', alpha=0.5, lw=0))
                 plt.show()
 
