@@ -79,7 +79,7 @@ def Eucli_dists(MAP, x):
     return Eucli_MAP
 
 
-epochs = 50
+epochs = 10
 radius = radius0
 learning_rate = learning_rate0
 max_iterations = epochs * len(patterns)
