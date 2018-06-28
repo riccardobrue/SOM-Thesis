@@ -12,8 +12,8 @@ def get_data(restore=False):
         # ----------------------------------------------------------
         # LOAD DATA FROM FILE
         # ----------------------------------------------------------
-        data_path = "C:\\Users\\Riccardo\\Google Drive\\University\\Double Degree - Middlesex\\Middlesex Teaching Material\\CSD4444 - Ralph Moseley\\Data\\Temporary fake data\\"
-        data_file_name = "AREA_50x50.xlsx"
+        data_path = "C:\\Users\\Riccardo\\Google Drive\\University\\Double Degree - Middlesex\\Middlesex Teaching Material\\CSD4444 - Ralph Moseley\\Data\\Manipulated data\\"
+        data_file_name = "AREA_50x50_fake.xlsx"
         complete_file_path = data_path + data_file_name
 
         wb = load_workbook(complete_file_path, data_only=True)  # , read_only=True)
