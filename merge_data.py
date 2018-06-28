@@ -40,8 +40,8 @@ def get_data(restore=False):
         # MERGE EXCEL STRUCTURE WITH SIMULATION DATA
         # ----------------------------------------------------------
 
-        dictionary = {'R0': [], '%AGGR': [], 'HET': [], 'HOM ENERGY': [], 'HOM RATE': [], 'REECHD FND': [],
-                      'REECHD HND': [], 'HEED FND': [], 'HEED HND': [],
+        dictionary = {'HEIGHT': [], 'WIDTH': [], 'NODE': [], 'R0': [], '%AGGR': [], 'HET': [], 'HOM ENERGY': [],
+                      'HOM RATE': [], 'REECHD FND': [], 'REECHD HND': [], 'HEED FND': [], 'HEED HND': [],
                       'ERHEED FND': [], 'ERHEED HND': [], 'FMUC FND': [], 'FMUC HND': []}
 
         for i in range(0, len(list)):
@@ -75,10 +75,12 @@ def get_data(restore=False):
             transm_range, extension = str(transm_range_e[2:]).split(".")
 
             if width == selected_width and height == selected_height:
-
                 print(current_file_name, " - ", hom_energy, ", ", hom_rate, ", ", perc_aggr, ", ", heterogeneity, ", ",
                       transm_range)
 
+                dictionary.get("HEIGHT").append(selected_height)
+                dictionary.get("WIDTH").append(selected_width)
+                dictionary.get("NODE").append(100)
 
                 dictionary.get("R0").append(transm_range)
                 dictionary.get("%AGGR").append(perc_aggr)
@@ -101,23 +103,6 @@ def get_data(restore=False):
                 dictionary.get("ERHEED HND").append(ERHEED_HND)
                 dictionary.get("FMUC FND").append(FMUC_FND)
                 dictionary.get("FMUC HND").append(FMUC_HND)
-
-        """
-        print(len(dictionary.get("R0")),
-              len(dictionary.get("%AGGR")),
-              len(dictionary.get("HET")),
-              len(dictionary.get("HOM ENERGY")),
-              len(dictionary.get("HOM RATE")),
-              len(dictionary.get("REECHD FND")),
-              len(dictionary.get("REECHD HND")),
-              len(dictionary.get("HEED FND")),
-              len(dictionary.get("HEED HND")),
-              len(dictionary.get("ERHEED FND")),
-              len(dictionary.get("ERHEED HND")),
-              len(dictionary.get("FMUC FND")),
-              len(dictionary.get("FMUC HND"))
-              )
-        """
 
         dataframe = pd.DataFrame(data=dictionary, columns=dictionary.keys())
         print(dataframe)
