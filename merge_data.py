@@ -120,17 +120,17 @@ def load_data():
 
     column_names = list(dataframe.columns.values)
 
-    input_cols = [column_names[0], column_names[1], column_names[2], column_names[3], column_names[4], column_names[5],
-                  column_names[6], column_names[7]]
-    output_cols = [column_names[8], column_names[9], column_names[10], column_names[11], column_names[12],
-                   column_names[13], column_names[14], column_names[15]]
+    network_topology_cols = [column_names[0], column_names[1], column_names[2], column_names[3], column_names[4],
+                             column_names[5], column_names[6], column_names[7]]
+    simulation_results_cols = [column_names[8], column_names[9], column_names[10], column_names[11], column_names[12],
+                               column_names[13], column_names[14], column_names[15]]
 
-    inputs = dataframe.as_matrix(input_cols)[1:]
-    outputs = dataframe.as_matrix(output_cols)[1:]
-    in_headers = np.squeeze(dataframe.as_matrix(input_cols)[:1])
-    out_headers = np.squeeze(dataframe.as_matrix(output_cols)[:1])
+    network_topology_att = dataframe.as_matrix(network_topology_cols)[1:]
+    simulation_results = dataframe.as_matrix(simulation_results_cols)[1:]
+    nt_headers = np.squeeze(dataframe.as_matrix(network_topology_cols)[:1])
+    sim_headers = np.squeeze(dataframe.as_matrix(simulation_results_cols)[:1])
 
-    return inputs, outputs, in_headers, out_headers
+    return network_topology_att, simulation_results, nt_headers, sim_headers
 
 
 if __name__ == "__main__":

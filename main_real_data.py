@@ -5,23 +5,21 @@ import numpy as np
 # IMPORTING THE DATA
 # ----------------------------------------------------
 
-inputs, outputs, in_headers, out_headers = md.load_data()
+network_topology_att, simulation_results, nt_headers, sim_headers = md.load_data()
 
 print("===================")
-print(in_headers)
+print(nt_headers)
 print("-------------------")
-print(inputs)
+print(network_topology_att)
 print("===================")
-print(out_headers)
+print(sim_headers)
 print("-------------------")
-print(outputs)
+print(simulation_results)
 print("===================")
-print("Input size: ", inputs.shape)
-print("Output size: ", outputs.shape)
+print("Input size: ", network_topology_att.shape)
+print("Output size: ", simulation_results.shape)
 print("===================")
 
 # ----------------------------------------------------
 # MANAGING THE DATA
 # ----------------------------------------------------
-
-
