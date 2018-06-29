@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import os, os.path
+import glob
 
 # Basic path (where the data is stored)
 basic_path = "C:\\Users\\Riccardo\\Google Drive\\University\\Double Degree - Middlesex\\Middlesex Teaching Material\\CSD4444 - Ralph Moseley\\Data\\"
@@ -8,6 +9,8 @@ basic_path = "C:\\Users\\Riccardo\\Google Drive\\University\\Double Degree - Mid
 simulation_folder_path = basic_path + "Real data\\SimulationEQUAL\\"
 # Output folder
 output_folder_path = basic_path + "Manipulated data\\"
+# Output merged single file
+output_merged_csv_pathname = output_folder_path + "Merged\\all_merged.csv"
 
 heights = ["50", "100", "150"]
 widths = ["50", "100", "150"]
@@ -106,6 +109,7 @@ def create_csv_data(restore=False, selected_height="50", selected_width="50"):
 
 
 """
+def load_data():
     # ----------------------------------------------------------
     # CONVERT DATAFRAME TO NP ARRAY
     # ----------------------------------------------------------
@@ -121,7 +125,16 @@ def create_csv_data(restore=False, selected_height="50", selected_width="50"):
     return inputs, efficiency_values
 """
 
+
+def merge_csv_files():
+    all_files = glob.glob(os.path.join(output_folder_path, "*.csv"))
+    df_from_each_file = (pd.read_csv(f) for f in all_files)
+    concatenated_df = pd.concat(df_from_each_file, ignore_index=True)
+    concatenated_df.to_csv(output_merged_csv_pathname, index=False)
+
+
 if __name__ == "__main__":
     for h in heights:
         for w in widths:
             create_csv_data(selected_height=h, selected_width=w)
+    merge_csv_files()
