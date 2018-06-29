@@ -53,3 +53,13 @@ print("===================")
 print("Network topology attributes (size): ", network_topology_att_norm.shape)
 print("Simulation results (size): ", simulation_results_norm.shape)
 print("===================")
+
+# ----------------------------------------------------
+# MERGING ALL THE DATA TO TREAT THEM ALL AS FEATURES FOR THE CLUSTERING PHASE
+# ----------------------------------------------------
+all_data = np.append(network_topology_att_norm, simulation_results_norm, axis=1)
+print(all_data)
+print("===================")
+print("All concatenated data (size): ", all_data.shape)
+print("===================")
+
