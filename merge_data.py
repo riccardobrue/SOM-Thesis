@@ -130,7 +130,7 @@ def load_data():
     nt_headers = np.squeeze(dataframe.as_matrix(network_topology_cols)[:1])
     sim_headers = np.squeeze(dataframe.as_matrix(simulation_results_cols)[:1])
 
-    return network_topology_att, simulation_results, nt_headers, sim_headers
+    return network_topology_att.astype(float), simulation_results.astype(float), nt_headers, sim_headers
 
 
 if __name__ == "__main__":
