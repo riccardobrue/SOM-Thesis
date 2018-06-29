@@ -15,7 +15,11 @@ print("=========================================")
 print("Equal size: ", all_data_equal.shape)
 print("Unequal size: ", all_data_unequal.shape)
 print("=========================================")
-print( all_data_unequal[0])
+
+
+# ---------------------------------------
+# IMPLEMENT THE SOM WITH TENSORFLOW
+# ---------------------------------------
 
 all_data = all_data_equal[500:900]
 
