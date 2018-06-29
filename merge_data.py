@@ -24,23 +24,16 @@ def create_csv_data(restore=False, selected_height="50", selected_width="50"):
         dataframe = pd.read_csv(output_merged_file_path)
     else:
         # ----------------------------------------------------------
-        # MERGE SIMULATED RESULTS WITH EXCEL STRUCTURE AND CREATE CSV FILE
+        # CREATE THE CSVs
         # ----------------------------------------------------------
-        # ----------------------------------------------------------
-        # SELECT THE RELEVANT SIMULATION RESULT FILES
-        # ----------------------------------------------------------
-        list = os.listdir(simulation_folder_path)  # dir is your directory path
-
-        # ----------------------------------------------------------
-        # MERGE EXCEL STRUCTURE WITH SIMULATION DATA
-        # ----------------------------------------------------------
+        file_list = os.listdir(simulation_folder_path)  # dir is your directory path
 
         dictionary = {'HEIGHT': [], 'WIDTH': [], 'NODE': [], 'R0': [], '%AGGR': [], 'HET': [], 'HOM ENERGY': [],
                       'HOM RATE': [], 'REECHD FND': [], 'REECHD HND': [], 'HEED FND': [], 'HEED HND': [],
                       'ERHEED FND': [], 'ERHEED HND': [], 'FMUC FND': [], 'FMUC HND': []}
 
-        for i in range(0, len(list)):
-            current_file_name = list[i]
+        for i in range(0, len(file_list)):
+            current_file_name = file_list[i]
 
             width, height, hom_energy, hom_rate, perc_aggr, heterogeneity, transm_range_e = current_file_name.split("_")
             """
