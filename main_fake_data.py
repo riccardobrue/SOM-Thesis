@@ -46,7 +46,7 @@ def mapunits(input_len, size='small'):
         heuristic_map_units = 0.25 * (heuristic_map_units)
 
     return heuristic_map_units
-
+print(len(patterns))
 
 map_units = mapunits(len(patterns), size='big')
 print("Heuristically computed appropriate no. of map units: " + str(int(map_units)))

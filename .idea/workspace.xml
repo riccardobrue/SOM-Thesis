@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_normalize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_normalize.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_normalize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_fake_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_fake_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_real_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_real_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/merge_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/merge_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,23 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="34">
-                <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="merge_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/merge_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="132" column="79" selection-start-line="132" selection-start-column="79" selection-end-line="132" selection-end-column="79" />
+            <state relative-caret-position="8">
+              <caret line="216" lean-forward="true" selection-start-line="216" selection-end-line="216" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -40,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data_normalize.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="data_normalize.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_normalize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state relative-caret-position="-451">
+              <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -52,11 +42,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_real_data.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main_real_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_real_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="340">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_fake_data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_fake_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="5" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="load_data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/load_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
         </entry>
@@ -84,12 +98,12 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/SOM.py" />
         <option value="$PROJECT_DIR$/Iris_data.txt" />
-        <option value="$PROJECT_DIR$/main_fake_data.py" />
         <option value="$PROJECT_DIR$/load_data.py" />
-        <option value="$PROJECT_DIR$/merge_data.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/main_real_data.py" />
+        <option value="$PROJECT_DIR$/main_fake_data.py" />
+        <option value="$PROJECT_DIR$/merge_data.py" />
         <option value="$PROJECT_DIR$/data_normalize.py" />
+        <option value="$PROJECT_DIR$/main_real_data.py" />
       </list>
     </option>
   </component>
@@ -142,6 +156,24 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main_real_data">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python Workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -255,13 +287,14 @@
       <item itemvalue="Python.main_fake_data" />
       <item itemvalue="Python.merge_data" />
       <item itemvalue="Python.main_real_data" />
+      <item itemvalue="Python.main (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main_real_data" />
         <item itemvalue="Python.merge_data" />
         <item itemvalue="Python.main_fake_data" />
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -431,19 +464,26 @@
       <option name="project" value="LOCAL" />
       <updated>1530278286223</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Code re-structured and added a README">
+      <created>1530278884216</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1530278884216</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1046875" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1046875" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.34431455" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.34431455" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -497,7 +537,8 @@
     <MESSAGE value="Data loaded into a matrix and in/out split" />
     <MESSAGE value="Data normalized (with scaling)" />
     <MESSAGE value="Data concatenated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data concatenated" />
+    <MESSAGE value="Code re-structured and added a README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code re-structured and added a README" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/merge_data.py">
@@ -595,25 +636,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Iris_data.txt" />
     <entry file="file://C:/Program Files/Python36/Lib/site-packages/openpyxl/reader/excel.py" />
-    <entry file="file://$PROJECT_DIR$/main.py" />
-    <entry file="file://$PROJECT_DIR$/main_fake_data.py" />
-    <entry file="file://$PROJECT_DIR$/SOM.py" />
-    <entry file="file://$PROJECT_DIR$/load_data.py" />
     <entry file="file://$PROJECT_DIR$/merge_data_bad_solution.py" />
     <entry file="file://C:/Program Files/Python36/Lib/site-packages/pandas/core/indexes/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="2526" selection-start-line="2526" selection-end-line="2526" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/merge_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="132" column="79" selection-start-line="132" selection-start-column="79" selection-end-line="132" selection-end-column="79" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -627,19 +654,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_real_data.py">
+    <entry file="file://$PROJECT_DIR$/SOM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="-153">
+          <caret line="155" column="61" selection-start-line="155" selection-start-column="55" selection-end-line="155" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+          <folding>
+            <element signature="e#26#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/matplotlib/image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="652" selection-start-line="652" selection-end-line="652" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manipulated_data.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_fake_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="216" lean-forward="true" selection-start-line="216" selection-end-line="216" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_normalize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state relative-caret-position="-451">
+          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_real_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
