@@ -2,26 +2,21 @@ import pandas as pd
 import numpy as np
 import os, os.path
 
-# parameters
-typology = "EQUAL"  # UNEQUAL
-selected_height = "50"
-selected_width = "50"
-
 # Basic path (where the data is stored)
 basic_path = "C:\\Users\\Riccardo\\Google Drive\\University\\Double Degree - Middlesex\\Middlesex Teaching Material\\CSD4444 - Ralph Moseley\\Data\\"
-# Excel structure folder
-excel_folder_path = basic_path + "Real data\\data_science_simulation\\" + typology + "_BS_75_D4\\" + "AREA_H" + selected_height + "\\"
 # Simulation folders
 simulation_folder_path = basic_path + "Real data\\SimulationEQUAL\\"
 # Output folder
 output_folder_path = basic_path + "Manipulated data\\"
-# input excel file
-input_file = "AREA_" + selected_height + "x" + selected_width + ".xlsx"
-# output csv (merged) file
-output_merged_file_path = output_folder_path + "merged_equal_" + selected_height + "x" + selected_width + ".csv"
+
+heights = ["50", "100", "150"]
+widths = ["50", "100", "150"]
 
 
-def get_data(restore=False):
+def create_csv_data(restore=False, selected_height="50", selected_width="50"):
+    # output csv (merged) file
+    output_merged_file_path = output_folder_path + "merged_equal_" + selected_height + "x" + selected_width + ".csv"
+
     if restore:
         # ----------------------------------------------------------
         # READ ALREADY EXTRACTED DATA FROM CSV
@@ -75,8 +70,10 @@ def get_data(restore=False):
             transm_range, extension = str(transm_range_e[2:]).split(".")
 
             if width == selected_width and height == selected_height:
+                """
                 print(current_file_name, " - ", hom_energy, ", ", hom_rate, ", ", perc_aggr, ", ", heterogeneity, ", ",
                       transm_range)
+                """
 
                 dictionary.get("HEIGHT").append(selected_height)
                 dictionary.get("WIDTH").append(selected_width)
@@ -105,12 +102,14 @@ def get_data(restore=False):
                 dictionary.get("FMUC HND").append(FMUC_HND)
 
         dataframe = pd.DataFrame(data=dictionary, columns=dictionary.keys())
-        print(dataframe)
 
         # ----------------------------------------------------------
         # STORING DATA TO A SIMPLEST CSV
         # ----------------------------------------------------------
+
         dataframe.to_csv(output_merged_file_path, index=False)
+        print(dataframe)
+        print("---------------------------------------------------------")
 
 
 """
@@ -130,4 +129,6 @@ def get_data(restore=False):
 """
 
 if __name__ == "__main__":
-    get_data()
+    for h in heights:
+        for w in widths:
+            create_csv_data(selected_height=h, selected_width=w)
