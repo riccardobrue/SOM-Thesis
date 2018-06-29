@@ -108,29 +108,29 @@ def create_csv_data(restore=False, selected_height="50", selected_width="50"):
         print("---------------------------------------------------------")
 
 
-"""
-def load_data():
-    # ----------------------------------------------------------
-    # CONVERT DATAFRAME TO NP ARRAY
-    # ----------------------------------------------------------
-    column_names = list(dataframe.columns.values)
-    input_cols = [column_names[0], column_names[1], column_names[2], column_names[3], column_names[4]]
-    output_cols = [column_names[5]]
-
-    inputs = dataframe.as_matrix(input_cols)
-    efficiency_values = dataframe.as_matrix(output_cols)
-    efficiency_values = np.squeeze(efficiency_values)
-    efficiency_values = list(efficiency_values)
-
-    return inputs, efficiency_values
-"""
-
-
 def merge_csv_files():
     all_files = glob.glob(os.path.join(output_folder_path, "*.csv"))
     df_from_each_file = (pd.read_csv(f) for f in all_files)
     concatenated_df = pd.concat(df_from_each_file, ignore_index=True)
     concatenated_df.to_csv(output_merged_csv_pathname, index=False)
+
+
+def load_data():
+    dataframe = pd.read_csv(output_merged_csv_pathname, header=None)
+
+    column_names = list(dataframe.columns.values)
+
+    input_cols = [column_names[0], column_names[1], column_names[2], column_names[3], column_names[4], column_names[5],
+                  column_names[6], column_names[7]]
+    output_cols = [column_names[8], column_names[9], column_names[10], column_names[11], column_names[12],
+                   column_names[13], column_names[14], column_names[15]]
+
+    inputs = dataframe.as_matrix(input_cols)[1:]
+    outputs = dataframe.as_matrix(output_cols)[1:]
+    in_headers = np.squeeze(dataframe.as_matrix(input_cols)[:1])
+    out_headers = np.squeeze(dataframe.as_matrix(output_cols)[:1])
+
+    return inputs, outputs, in_headers, out_headers
 
 
 if __name__ == "__main__":
