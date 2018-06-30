@@ -21,28 +21,6 @@ all_data = sim_data_equal
 print(all_data.shape)
 
 # ----------------------------------------------------------------------------------------------------------------------
-# Training inputs for RGBcolors
-colors = np.array(
-    [[0., 0., 0., 0., 1., 0.],
-     [0., 0., 1., 0., 0., 0.5],
-     [0., 0., 0.5, 0., 0., 0.],
-     [0.125, 0.529, 1.0, 0.5, 0., 0.],
-     [0.33, 0.4, 0.67, 0., 0.5, 0.],
-     [0.6, 0.5, 1.0, 0., 0., 1],
-     [0., 1., 0., 1, 0., 0.],
-     [1., 0., 0., 1., 0.6, 0.],
-     [0., 1., 1., 0., 0.6, 0.],
-     [1., 0., 1., 0.8, 0., 0.6],
-     [1., 1., 0., 0., 0.8, 0.],
-     [1., 1., 1., 0.8, 0., 0.],
-     [.33, .33, .33, 0., 0., 0.],
-     [.5, .5, .5, 0., 0.8, 0.2],
-     [.66, .66, .66, 0., 1., 0.2]])
-color_names = \
-    ['black', 'blue', 'darkblue', 'skyblue',
-     'greyblue', 'lilac', 'green', 'red',
-     'cyan', 'violet', 'yellow', 'white',
-     'darkgrey', 'mediumgrey', 'lightgrey']
 
 # Create a permutation of the original columns
 # shuffle_index = np.random.choice(range(len(colors)), size=15, replace=False)
@@ -56,7 +34,7 @@ color_names = \
 # Setup the SOM object
 # som = SOM(m=20, n=30, dim=6, n_iterations=400)
 
-som = SOM(20, 30, all_data.shape[1], 400)
+som = SOM(10, 10, all_data.shape[1], 2)
 som.train(all_data)
 
 # Train on the new colors
@@ -66,8 +44,41 @@ som.train(all_data)
 image_grid = som.get_centroids()
 # Map colours to their closest neurons
 # mapped = som.map_vects(combined_colors)
-mapped = som.map_vects(colors)
+mapped = som.map_vects(net_topology_att_data_equal[:, 1])
 
+# print(image_grid)
+# print("-")
+# print(image_grid[0])
+# print("-")
+# print(image_grid[0][0])
+
+mat = np.zeros(shape=(10, 10, 8))
+
+# print("------------")
+for r in range(0, len(image_grid)):
+    for c in range(0, len(image_grid[r])):
+        # print(image_grid[r][c])
+        mat[r][c] = image_grid[r][c]
+        # print("--")
+    # print("------")
+print("------------")
+
+print(mat)
+print(mat.shape)
+
+"""
+https://stackoverflow.com/questions/25258191/how-plot-u-matrix-sample-hit-and-input-planes-from-a-trained-data-by-som
+"""
+
+"""
+print("---------------------")
+print("---------------------")
+print("----------------")
+print(image_grid)
+print("----------------")
+print(mapped)
+print("---------------------")
+print("---------------------")
 # Now that we have the trained SOM, we are going to extract the
 s_min = 0
 s_max = 5
@@ -86,3 +97,4 @@ for i_plot, i_data in enumerate(list_image_grid_sel):
     plt.figure(i_plot)
     plt.imshow(i_data)
     plt.show()
+"""
