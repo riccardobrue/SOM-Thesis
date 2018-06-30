@@ -30,13 +30,18 @@ print(all_data)
 https://github.com/JustGlowing/minisom
 https://github.com/JustGlowing/minisom/blob/master/examples/examples.ipynb
 """
-som = MiniSom(10, 10, all_data.shape[1], sigma=0.2, learning_rate=0.4)  # initialization of 30x30 SOM
+som = MiniSom(12, 12, all_data.shape[1], sigma=0.2, learning_rate=0.4)  # initialization of 30x30 SOM
 
 # Initialization and training
 som.random_weights_init(all_data)
 print("Training...")
-som.train_random(all_data, 5000)  # trains the SOM with 100 iterations
+som.train_random(all_data, 500)  # trains the SOM with 100 iterations
 print("...ready!")
+
+to_print=som.distance_map().T
+print(to_print.shape)
+print(to_print)
+
 
 # Plotting the response for each pattern in the iris dataset
 plt.bone()
