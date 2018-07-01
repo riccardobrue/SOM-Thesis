@@ -14,11 +14,12 @@ print(target)
 # data normalization
 data = np.apply_along_axis(lambda x: x/np.linalg.norm(x), 1, data)
 
+som_dim=12
 # Initialization and training
-som = MiniSom(8, 8, data.shape[1], sigma=1.0, learning_rate=0.5)
+som = MiniSom(som_dim, som_dim, data.shape[1], sigma=1.0, learning_rate=0.5)
 som.random_weights_init(data)
 print("Training...")
-som.train_random(data, 100)  # random training
+som.train_random(data, 200)  # random training
 print("\n...ready!")
 
 # Plotting the response for each pattern in the iris dataset
@@ -42,5 +43,5 @@ for cnt, xx in enumerate(data):
     # palce a marker on the winning position for the sample xx
     plt.plot(w[0]+.5, w[1]+.5, markers[target[cnt]], markerfacecolor='None',
              markeredgecolor=colors[target[cnt]], markersize=12, markeredgewidth=2)
-plt.axis([0, 7, 0, 7])
+plt.axis([0, som_dim, 0, som_dim])
 plt.show()

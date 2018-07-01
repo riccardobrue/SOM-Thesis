@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Using MiniSOM/data_normalize.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Using MiniSOM/main_handwritten_digits.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Using MiniSOM/main_minisom_iris.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Using MiniSOM/merge_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsingTF/high_dim.py" beforeDir="false" afterPath="$PROJECT_DIR$/UsingTF/high_dim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/minisom_.py" beforeDir="false" afterPath="$PROJECT_DIR$/Using MiniSOM/minisom_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Using MiniSOM/main_minisom_iris.py" beforeDir="false" afterPath="$PROJECT_DIR$/Using MiniSOM/main_minisom_iris.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,20 +18,11 @@
       <file leaf-file-name="main_protocols_test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="140">
+              <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_normalize.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Using MiniSOM/data_normalize.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -82,9 +67,9 @@
         <option value="$PROJECT_DIR$/UsingTF/main_1.py" />
         <option value="$PROJECT_DIR$/UsingTF/high_dim.py" />
         <option value="$PROJECT_DIR$/Using MiniSOM/main_ms.py" />
-        <option value="$PROJECT_DIR$/Using MiniSOM/main_minisom_iris.py" />
         <option value="$PROJECT_DIR$/Using MiniSOM/main_handwritten_digits.py" />
         <option value="$PROJECT_DIR$/Using MiniSOM/data_normalize.py" />
+        <option value="$PROJECT_DIR$/Using MiniSOM/main_minisom_iris.py" />
         <option value="$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py" />
       </list>
     </option>
@@ -102,6 +87,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,7 +104,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -148,7 +133,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.main_protocols_test">
     <configuration name="high_dim" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,24 +147,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UsingTF/high_dim.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python Workspace" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -276,16 +243,17 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.high_dim" />
       <item itemvalue="Python.main_ms" />
       <item itemvalue="Python.main_minisom_iris" />
       <item itemvalue="Python.main_handwritten_digits" />
+      <item itemvalue="Python.main_protocols_test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main_handwritten_digits" />
+        <item itemvalue="Python.main_protocols_test" />
         <item itemvalue="Python.main_minisom_iris" />
+        <item itemvalue="Python.main_handwritten_digits" />
         <item itemvalue="Python.main_ms" />
         <item itemvalue="Python.high_dim" />
       </list>
@@ -505,19 +473,26 @@
       <option name="project" value="LOCAL" />
       <updated>1530359290800</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Using minisom">
+      <created>1530480957715</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1530480957715</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1484375" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22338204" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.35069075" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.25429183" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -555,7 +530,8 @@
     <MESSAGE value="Code re-structured and added a README" />
     <MESSAGE value="Loaded also unequal data" />
     <MESSAGE value="Started to do tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started to do tests" />
+    <MESSAGE value="Using minisom" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using minisom" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -704,13 +680,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/UsingTF/merge_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/UsingTF/main_real_data.py" />
     <entry file="file://$PROJECT_DIR$/main.py">
@@ -731,9 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="128" column="34" lean-forward="true" selection-start-line="128" selection-start-column="34" selection-end-line="130" selection-end-column="55" />
-          <folding>
-            <element signature="e#99#122#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -741,26 +708,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/main_3.py" />
     <entry file="file://$PROJECT_DIR$/main_2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -768,9 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2720">
           <caret line="160" column="34" lean-forward="true" selection-start-line="160" selection-start-column="34" selection-end-line="160" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -778,9 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2873">
           <caret line="169" selection-start-line="169" selection-end-line="169" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -795,8 +744,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="157" selection-start-line="157" selection-end-line="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_normalize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Using MiniSOM/data_normalize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UsingTF/high_dim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="20" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Using MiniSOM/main_minisom_iris.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
           <folding>
-            <element signature="e#99#122#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -811,47 +788,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Using MiniSOM/main_minisom_iris.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_normalize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Using MiniSOM/data_normalize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UsingTF/high_dim.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="20" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        <state relative-caret-position="140">
+          <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
