@@ -15,33 +15,34 @@ print("=========================================")
 print("Equal size: ", all_data_equal.shape)
 print("Unequal size: ", all_data_unequal.shape)
 print("=========================================")
-# print(net_topology_att_data_equal)
 
+# """
+# SOLUTION 1 : clustering the efficiencies
+data = sim_data_equal[:, [0, 2, 4, 6]]
+# target = (sim_data_equal[:, 0] + sim_data_equal[:, 1]) / 2  # efficiency computed as (fnd+hnd)/2
+target = net_topology_att_data_unequal[:, 1]  # 1 --> width attribute
 """
-#SOLUTION 1 : clustering the efficiencies
-data = sim_data_equal[:, [0, 1,2,3,4,5,6,7]]
-#target = (sim_data_equal[:, 0] + sim_data_equal[:, 1]) / 2  # efficiency computed as (fnd+hnd)/2
-target=net_topology_att_data_unequal[:,1]
-"""
-#solution 2: clustering the network topologies
+#SOLUTION 2: clustering the network topologies
 data = net_topology_att_data_unequal #clusterize the network topology
 relevant_targets = sim_data_equal[:, [1, 3, 5,7]]  # select the protocol efficiencies on their hnd value (three protocols)
 target = np.argmax(relevant_targets, axis=1)  # gives the index of the maximum value of the efficiency
-# print(target.shape)
-# print(target[500:800])
+
+"""
+print(target.shape)
+print(target[500:800])
 
 # -----------------
 # data = np.genfromtxt('iris.csv', delimiter=',', usecols=(0, 1, 2, 3))
 # data normalization
 data = np.apply_along_axis(lambda x: x / np.linalg.norm(x), 1, data)
 
-som_dim = 10
+som_dim = 25
 
 # Initialization and training
 som = MiniSom(som_dim, som_dim, data.shape[1], sigma=1.0, learning_rate=0.5)
 som.random_weights_init(data)
 print("Training...")
-som.train_random(data,1500)  # random training
+som.train_random(data, 200)  # random training
 print("\n...ready!")
 
 # Plotting the response for each pattern in the iris dataset
@@ -51,8 +52,8 @@ plt.colorbar()
 
 t = np.zeros(len(target), dtype=int)
 t[target == 0] = 0
-t[target == 1] = 1
-t[target == 2] = 2
+t[target == .5] = 1
+t[target == 1.] = 2
 t[target == 3] = 3
 
 # use different colors and markers for each label
