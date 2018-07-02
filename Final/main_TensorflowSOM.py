@@ -70,7 +70,7 @@ som_dim = int(munits ** .5)  # compute the lattice width - height size heuristic
 
 print("SOM's side dimension: ", som_dim)
 
-som = som_tf.SOM(som_dim, som_dim, all_data.shape[1], n_iterations=10)
+som = som_tf.SOM(som_dim, som_dim, all_data.shape[1], n_iterations=5)
 som.train(all_data)
 
 # Train on the new colors
@@ -113,6 +113,32 @@ plt.pcolor(distances.T)  # plotting the distance map as background
 plt.colorbar()
 plt.show()
 
+
+relevant_targets = sim_data_equal[:, [1, 3, 5, 7]]  # select the protocol efficiencies on their hnd value
+target = np.argmax(relevant_targets, axis=1)  # gives the index of the maximum value of the efficiency
+
+t = np.zeros(len(target), dtype=int)
+t[target == 0.] = 0
+t[target == 1.] = 1
+t[target == 2.] = 2
+t[target == 3.] = 3
+
+markers = ['o', 's', '.', '^']
+colors = ['g', 'r', 'b', 'y']
+
+"""
+for cnt, xx in enumerate(all_data):
+    try:
+        w = som.winner(xx)  # getting the winner
+        print(w)
+        # palce a marker on the winning position for the sample xx
+        plt.plot(w[0] + .5, w[1] + .5, markers[t[cnt]], markerfacecolor='None',  # instead of target use t
+                 markeredgecolor=colors[t[cnt]], markersize=12, markeredgewidth=2)  # instead of target use t
+    except():
+        pass
+"""
+plt.axis([0, som_dim, 0, som_dim])
+plt.show()
 """
 https://stackoverflow.com/questions/25258191/how-plot-u-matrix-sample-hit-and-input-planes-from-a-trained-data-by-som
 https://stackoverflow.com/questions/21203823/formulation-of-the-u-matrix-unified-distance-matrix-as-a-matrix-operation

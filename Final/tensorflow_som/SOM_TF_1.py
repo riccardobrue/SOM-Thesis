@@ -134,6 +134,14 @@ class SOM(object):
 
             self._sess.run(init_op)
 
+    def winner(self, x):
+        """Computes the coordinates of the winning neuron for the sample x"""
+        bmu_index = tf.argmin(tf.sqrt(tf.reduce_sum(tf.pow(tf.subtract(self._weightage_vects,
+                                                                       tf.stack([self._vect_input for i in
+                                                                                 range(self._m * self._n)])), 2), 1)), 0)
+        return bmu_index
+
+
     def _neuron_locations(self, m, n):
         """
         Yields one by one the 2-D locations of the individual neurons

@@ -82,6 +82,7 @@ colors = ['g', 'r', 'b', 'y']
 for cnt, xx in enumerate(data):
     try:
         w = som.winner(xx)  # getting the winner
+        print(w)
         # palce a marker on the winning position for the sample xx
         plt.plot(w[0] + .5, w[1] + .5, markers[t[cnt]], markerfacecolor='None',  # instead of target use t
                  markeredgecolor=colors[t[cnt]], markersize=12, markeredgewidth=2)  # instead of target use t
