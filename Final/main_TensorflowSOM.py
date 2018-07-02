@@ -1,7 +1,8 @@
-import data_normalize as dn
+import manage_data.data_normalize as dn
 from matplotlib import pyplot as plt
 import numpy as np
 import tensorflow_som.SOM_TF_1 as som_tf
+import utilities
 
 
 def fast_norm(x):
@@ -45,7 +46,9 @@ print("=========================================")
 # ---------------------------------------
 # IMPLEMENT THE SOM WITH TENSORFLOW
 # ---------------------------------------
-all_data = sim_data_equal
+#all_data = sim_data_equal
+#all_data = net_topology_att_data_equal
+all_data = all_data_equal
 print(all_data.shape)
 
 # ----------------------------------------------------------------------------------------------------------------------
@@ -62,9 +65,12 @@ print(all_data.shape)
 # Setup the SOM object
 # som = SOM(m=20, n=30, dim=6, n_iterations=400)
 
-som_dim=20
+munits = utilities.mapunits(all_data.shape[0])  # heuristic lattice size
+som_dim = int(munits ** .5)  # compute the lattice width - height size heuristically
 
-som = som_tf.SOM(som_dim, som_dim, all_data.shape[1], 2)
+print("SOM's side dimension: ", som_dim)
+
+som = som_tf.SOM(som_dim, som_dim, all_data.shape[1], n_iterations=10)
 som.train(all_data)
 
 # Train on the new colors
