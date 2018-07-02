@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/PyMVPA/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SOMPy/main_sompy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SOMPy/sompy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SOMoclu/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UsingTF/som_tf_2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Using MiniSOM/main_minisom_iris.py" beforeDir="false" afterPath="$PROJECT_DIR$/Using MiniSOM/main_minisom_iris.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,23 +18,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main_protocols_test.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PyMVPA/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+            <state relative-caret-position="264">
+              <caret line="91" column="59" lean-forward="true" selection-start-line="91" selection-start-column="59" selection-end-line="91" selection-end-column="59" />
               <folding>
-                <element signature="e#0#27#0" expanded="true" />
+                <element signature="e#1247#1272#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="minisom.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/Python36/Lib/site-packages/minisom.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="164" column="20" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -81,6 +75,11 @@
         <option value="$PROJECT_DIR$/Using MiniSOM/data_normalize.py" />
         <option value="$PROJECT_DIR$/Using MiniSOM/main_minisom_iris.py" />
         <option value="$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py" />
+        <option value="$PROJECT_DIR$/SOMPy/main_sompy.py" />
+        <option value="$PROJECT_DIR$/SOMPy/sompy.py" />
+        <option value="$PROJECT_DIR$/SOMoclu/main.py" />
+        <option value="$PROJECT_DIR$/UsingTF/som_tf_2.py" />
+        <option value="$PROJECT_DIR$/PyMVPA/main.py" />
       </list>
     </option>
   </component>
@@ -107,6 +106,16 @@
             <path>
               <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="PyMVPA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="SOMoclu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
               <item name="Using MiniSOM" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -126,14 +135,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Using MiniSOM" />
+      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Using MiniSOM" />
       <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\UsingTF" />
       <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\examples" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Using MiniSOM" />
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -148,8 +157,44 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main_protocols_test">
-    <configuration name="high_dim" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python Workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyMVPA" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyMVPA/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python Workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SOMoclu" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SOMoclu/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="main_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -161,61 +206,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UsingTF/high_dim.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="main_handwritten_digits" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python Workspace" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Using MiniSOM" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Using MiniSOM/main_handwritten_digits.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="main_minisom_iris" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python Workspace" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Using MiniSOM" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Using MiniSOM/main_minisom_iris.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="main_ms" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python Workspace" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Using MiniSOM" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Using MiniSOM\main_minisom_iris.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UsingTF/main_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -239,20 +230,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="main_sompy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python Workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SOMPy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SOMPy/main_sompy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
-      <item itemvalue="Python.high_dim" />
-      <item itemvalue="Python.main_ms" />
-      <item itemvalue="Python.main_minisom_iris" />
-      <item itemvalue="Python.main_handwritten_digits" />
       <item itemvalue="Python.main_protocols_test" />
+      <item itemvalue="Python.main_1" />
+      <item itemvalue="Python.main_sompy" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.main (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.main_sompy" />
+        <item itemvalue="Python.main_1" />
         <item itemvalue="Python.main_protocols_test" />
-        <item itemvalue="Python.main_minisom_iris" />
-        <item itemvalue="Python.main_handwritten_digits" />
-        <item itemvalue="Python.main_ms" />
-        <item itemvalue="Python.high_dim" />
       </list>
     </recent_temporary>
   </component>
@@ -491,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530485572249</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="maybe found a solution">
+      <created>1530524973056</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1530524973056</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -500,10 +516,11 @@
     <layout>
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.094791666" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5005208" side_tool="true" weight="0.25079703" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32943678" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.25079703" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49947917" weight="0.4314559" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -514,7 +531,6 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="5" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -542,7 +558,8 @@
     <MESSAGE value="Loaded also unequal data" />
     <MESSAGE value="Started to do tests" />
     <MESSAGE value="Using minisom" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using minisom" />
+    <MESSAGE value="maybe found a solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="maybe found a solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -551,24 +568,25 @@
           <url>file://$USER_HOME$/AppData/Local/Temp/Temp1_SOM.zip/som.py</url>
           <line>6</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/UsingTF/main_1.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/UsingTF/SOM_TF.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SOMPy/sompy.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/merge_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="41" column="48" lean-forward="true" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_fake_data.py" />
-    <entry file="file://$PROJECT_DIR$/SOM.py" />
-    <entry file="file://$PROJECT_DIR$/load_data.py" />
-    <entry file="file://$PROJECT_DIR$/main_fake_data.py" />
-    <entry file="file://$PROJECT_DIR$/SOM.py" />
-    <entry file="file://$PROJECT_DIR$/load_data.py" />
     <entry file="file://$PROJECT_DIR$/main_fake_data.py" />
     <entry file="file://$PROJECT_DIR$/load_data.py" />
     <entry file="file://$PROJECT_DIR$/SOM.py" />
@@ -678,13 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UsingTF/SOM_TF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="157" selection-start-line="157" selection-end-line="157" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_normalize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -710,13 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-148">
           <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_fake_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-663">
-          <caret selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -751,20 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/som_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="160" column="34" lean-forward="true" selection-start-line="160" selection-start-column="34" selection-end-line="160" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UsingTF/main_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-471">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UsingTF/merge_data.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -772,13 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="5708" column="4" selection-start-line="5708" selection-start-column="4" selection-end-line="5708" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/minisom.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="164" column="20" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -804,10 +787,107 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+        <state relative-caret-position="187">
+          <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/minisom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="164" column="20" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/som_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2720">
+          <caret line="160" column="34" selection-start-line="160" selection-start-column="34" selection-end-line="160" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SOMPy/sompy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UsingTF/main_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SOMPy/main_sompy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UsingTF/som_tf_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UsingTF/SOM_TF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#99#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SOMoclu/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_fake_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" selection-start-line="73" selection-end-line="73" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyMVPA/trainedSom_parameters.pkl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyMVPA/trainedSom_parameters.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyMVPA/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="91" column="59" lean-forward="true" selection-start-line="91" selection-start-column="59" selection-end-line="91" selection-end-column="59" />
+          <folding>
+            <element signature="e#1247#1272#0" expanded="true" />
           </folding>
         </state>
       </provider>
