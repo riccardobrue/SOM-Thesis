@@ -19,7 +19,8 @@ som_dim=25
 som = MiniSom(som_dim, som_dim, data.shape[1], sigma=1.0, learning_rate=0.5)
 som.random_weights_init(data)
 print("Training...")
-som.train_random(data, 1000)  # random training
+#som.train_random(data, 1000)  # random training
+som.train_batch(data, 1000)  # random training
 print("\n...ready!")
 
 # Plotting the response for each pattern in the iris dataset

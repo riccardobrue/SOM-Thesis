@@ -3,6 +3,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 import data_normalize as dn
 
+"""
+fake_data = np.array([[.1, .2, .2, .1], [.2, .3, .1, .1], [.1, .1, .2, .3], [.3, .2, .2, .3], [.3, .1, .1, .1],
+                       [.5, .6, .5, .3], [.4, .4, .6, .4], [.4, .5, .5, .3], [.4, .4, .6, .3], [.4, .5, .5, .6],
+                       [.7, .7, .5, .6], [.7, .8, .8, .2], [.5, .7, .7, .8], [.5, .6, .7, .8], [.8, .8, .6, .7],
+                       [1., .9, .8, .9], [1., .8, .8, .8], [.9, 1., .8, .8], [1., 1., .8, .7], [.7, 1., 1., .9]])
+
+fake_target = np.array([0, 0, 0, 0, 0,
+                         1, 1, 1, 1, 1,
+                         2, 2, 2, 2, 2,
+                         3, 3, 3, 3, 3])
+
+"""
 # Axis=1 --> column
 # Axis=0 --> row
 # ---------------------------------------
@@ -15,34 +27,62 @@ print("=========================================")
 print("Equal size: ", all_data_equal.shape)
 print("Unequal size: ", all_data_unequal.shape)
 print("=========================================")
-
-# """
+"""
+# SOLUTION 0: cluster all together
+data = all_data_equal
+target = net_topology_att_data_unequal[:, 4]  # 4 --> %aggr 
+"""
+"""
 # SOLUTION 1 : clustering the efficiencies
-data = sim_data_equal[:, [0, 2, 4, 6]]
+#data = sim_data_equal[200:600, [0, 1, 2, 3]]
+data = sim_data_equal
 # target = (sim_data_equal[:, 0] + sim_data_equal[:, 1]) / 2  # efficiency computed as (fnd+hnd)/2
-target = net_topology_att_data_unequal[:, 1]  # 1 --> width attribute
-"""
+target = net_topology_att_data_unequal[:, 4]  # 4 --> %aggr attribute
+# """
+#"""
 #SOLUTION 2: clustering the network topologies
-data = net_topology_att_data_unequal #clusterize the network topology
-relevant_targets = sim_data_equal[:, [1, 3, 5,7]]  # select the protocol efficiencies on their hnd value (three protocols)
+data = net_topology_att_data_equal #clusterize the network topology
+relevant_targets = sim_data_equal[:, [1, 3, 5, 7]]  # select the protocol efficiencies on their hnd value (three protocols)
 target = np.argmax(relevant_targets, axis=1)  # gives the index of the maximum value of the efficiency
-
+#"""
 """
+# SOLUTION 3: clustering the network topologies with target as tipologies
+data = net_topology_att_data_equal[:, [4, 5, 6, 7]]  # clusterize the network topology
+target = net_topology_att_data_unequal[:, 5]  # 1 --> width attribute
+"""
+print(data.shape)
 print(target.shape)
 print(target[500:800])
+"""
+data=fake_data
+target=fake_target
+
+print(data.shape)
+print(target.shape)
+"""
 
 # -----------------
 # data = np.genfromtxt('iris.csv', delimiter=',', usecols=(0, 1, 2, 3))
 # data normalization
-data = np.apply_along_axis(lambda x: x / np.linalg.norm(x), 1, data)
+# data = np.apply_along_axis(lambda x: x / np.linalg.norm(x), 1, data)
 
-som_dim = 25
+"""
+https://stackoverflow.com/questions/19163214/kohonen-self-organizing-maps-determining-the-number-of-neurons-and-grid-size
+"""
+munits = 5 * data.shape[0] ** 0.54321  # heuristic find the lattice size
+som_dim = int(munits ** .5)  # compute the lattice size heuristically
+
+big_som_dim = som_dim * 4
+small_som_dim = som_dim * .25
+
+print("SOM dimension: ", som_dim)
 
 # Initialization and training
-som = MiniSom(som_dim, som_dim, data.shape[1], sigma=1.0, learning_rate=0.5)
+som = MiniSom(som_dim, som_dim, data.shape[1], sigma=1.0, learning_rate=0.4)
 som.random_weights_init(data)
 print("Training...")
-som.train_random(data, 200)  # random training
+#som.train_random(data, 10000)  # random training
+som.train_batch(data, 5000)  # random training
 print("\n...ready!")
 
 # Plotting the response for each pattern in the iris dataset
@@ -51,10 +91,10 @@ plt.pcolor(som.distance_map().T)  # plotting the distance map as background
 plt.colorbar()
 
 t = np.zeros(len(target), dtype=int)
-t[target == 0] = 0
-t[target == .5] = 1
-t[target == 1.] = 2
-t[target == 3] = 3
+t[target == 0.] = 0
+t[target == 1.] = 1
+t[target == 2.] = 2
+t[target == 3.] = 3
 
 # use different colors and markers for each label
 markers = ['o', 's', '.', '^']
@@ -68,5 +108,8 @@ for cnt, xx in enumerate(data):
                  markeredgecolor=colors[t[cnt]], markersize=12, markeredgewidth=2)  # instead of target use t
     except:
         pass
+
 plt.axis([0, som_dim, 0, som_dim])
 plt.show()
+
+print(som.get_weights())
