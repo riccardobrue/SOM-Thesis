@@ -21,7 +21,7 @@ class SOM(object):
         Graph.
 
         m X n are the dimensions of the SOM. 'n_iterations' should
-        should be an integer denoting the number of iterations undergone
+        be an integer denoting the number of iterations undergone
         while training.
         'dim' is the dimensionality of the training inputs.
         'alpha' is a number denoting the initial time(iteration no)-based
@@ -54,13 +54,10 @@ class SOM(object):
 
             # Randomly initialized weightage vectors for all neurons,
             # stored together as a matrix Variable of size [m*n, dim]
-            self._weightage_vects = tf.Variable(tf.random_normal(
-                [m * n, dim]))
+            self._weightage_vects = tf.Variable(tf.random_normal([m * n, dim]))
 
-            # Matrix of size [m*n, 2] for SOM grid locations
-            # of neurons
-            self._location_vects = tf.constant(np.array(
-                list(self._neuron_locations(m, n))))
+            # Matrix of size [m*n, 2] for SOM grid locations of neurons (x,y)
+            self._location_vects = tf.constant(np.array(list(self._neuron_locations(m, n))))  # coordinates
 
             ##PLACEHOLDERS FOR TRAINING INPUTS
             # We need to assign them as attributes to self, since they
@@ -80,22 +77,18 @@ class SOM(object):
             # Basically calculates the Euclidean distance between every
             # neuron's weightage vector and the input, and returns the
             # index of the neuron which gives the least value
-            bmu_index = tf.argmin(tf.sqrt(tf.reduce_sum(tf.pow(tf.subtract(self._weightage_vects,
-                                                                           tf.stack([self._vect_input for i in
-                                                                                     range(m * n)])), 2), 1)), 0)
+            bmu_index = tf.argmin(tf.sqrt(tf.reduce_sum(tf.pow(tf.subtract(
+                self._weightage_vects, tf.stack([self._vect_input for i in range(m * n)])), 2), 1)), 0)
 
-            # This will extract the location of the BMU based on the BMU's
-            # index
-            slice_input = tf.pad(tf.reshape(bmu_index, [1]),
-                                 np.array([[0, 1]]))
-            bmu_loc = tf.reshape(tf.slice(self._location_vects, slice_input,
-                                          tf.constant(np.array([1, 2]), dtype=tf.int64)),
-                                 [2])
+            # This will extract the location of the BMU based on the BMU's index
+            slice_input = tf.pad(tf.reshape(bmu_index, [1]), np.array([[0, 1]]))
+            bmu_loc = tf.reshape(
+                tf.slice(self._location_vects, slice_input,
+                         tf.constant(np.array([1, 2]), dtype=tf.int64)), [2])
 
-            # To compute the alpha and sigma values based on iteration
-            # number
-            learning_rate_op = tf.subtract(1.0, tf.div(self._iter_input,
-                                                       self._n_iterations))
+            # To compute the alpha and sigma values based on iteration number (decreasing each iteration)
+            learning_rate_op = tf.subtract(1.0, tf.div(self._iter_input, self._n_iterations))
+
             _alpha_op = tf.multiply(alpha, learning_rate_op)
             _sigma_op = tf.multiply(sigma, learning_rate_op)
 
@@ -114,14 +107,11 @@ class SOM(object):
             learning_rate_multiplier = tf.stack([tf.tile(tf.slice(
                 learning_rate_op, np.array([i]), np.array([1])), [dim])
                 for i in range(m * n)])
-            weightage_delta = tf.multiply(
-                learning_rate_multiplier,
-                tf.subtract(tf.stack([self._vect_input for i in range(m * n)]),
-                            self._weightage_vects))
-            new_weightages_op = tf.add(self._weightage_vects,
-                                       weightage_delta)
-            self._training_op = tf.assign(self._weightage_vects,
-                                          new_weightages_op)
+            weightage_delta = tf.multiply(learning_rate_multiplier,
+                                          tf.subtract(tf.stack([self._vect_input for i in range(m * n)]),
+                                                      self._weightage_vects))
+            new_weightages_op = tf.add(self._weightage_vects, weightage_delta)
+            self._training_op = tf.assign(self._weightage_vects, new_weightages_op)
 
             ##INITIALIZE SESSION
             self._sess = tf.Session()

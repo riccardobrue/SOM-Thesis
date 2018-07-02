@@ -325,8 +325,8 @@ class SelfOrganizingMap:
                 c = tf.constant(self._c, dtype="float32")
                 # Get the euclidean distance between each neuron and the input vectors
                 dist = tf.norm(tf.subtract(
-                        tf.expand_dims(self._weights, axis=0),
-                        tf.expand_dims(input_tensor, axis=1)),
+                    tf.expand_dims(self._weights, axis=0),
+                    tf.expand_dims(input_tensor, axis=1)),
                     name="Distance")  # [batch_size, neurons]
 
                 # Calculate the Gaussian of the activity. Units with distances closer to 0 will have activities

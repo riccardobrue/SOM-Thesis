@@ -1,7 +1,7 @@
 import manage_data.data_normalize as dn
 from matplotlib import pyplot as plt
 import numpy as np
-import tensorflow_som.SOM_TF_1 as som_tf
+import tensorflow_som.SOM_TF_2 as som_tf
 import utilities
 
 
@@ -67,7 +67,7 @@ print(all_data.shape)
 
 munits = utilities.mapunits(all_data.shape[0])  # heuristic lattice size
 som_dim = int(munits ** .5)  # compute the lattice width - height size heuristically
-som_dim=100
+som_dim=10
 print("SOM's side dimension: ", som_dim)
 
 som = som_tf.SOM(som_dim, som_dim, all_data.shape[1], n_iterations=5)
@@ -80,7 +80,7 @@ som.train(all_data)
 image_grid = som.get_centroids()
 # Map colours to their closest neurons
 # mapped = som.map_vects(combined_colors)
-mapped = som.map_vects(net_topology_att_data_equal[:, 1])
+mapped = som.map_vects(net_topology_att_data_equal[:, 4])
 
 # print(image_grid)
 # print("-")
@@ -111,7 +111,6 @@ print(distances.shape)
 plt.bone()
 plt.pcolor(distances.T)  # plotting the distance map as background
 plt.colorbar()
-plt.show()
 
 
 relevant_targets = sim_data_equal[:, [1, 3, 5, 7]]  # select the protocol efficiencies on their hnd value
@@ -125,6 +124,10 @@ t[target == 3.] = 3
 
 markers = ['o', 's', '.', '^']
 colors = ['g', 'r', 'b', 'y']
+
+
+print(mapped)
+
 
 """
 for cnt, xx in enumerate(all_data):
