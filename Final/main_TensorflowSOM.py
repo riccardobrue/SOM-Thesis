@@ -67,7 +67,7 @@ print(all_data.shape)
 
 munits = utilities.mapunits(all_data.shape[0])  # heuristic lattice size
 som_dim = int(munits ** .5)  # compute the lattice width - height size heuristically
-
+som_dim=100
 print("SOM's side dimension: ", som_dim)
 
 som = som_tf.SOM(som_dim, som_dim, all_data.shape[1], n_iterations=5)

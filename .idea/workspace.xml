@@ -4,8 +4,6 @@
     <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final/main_TensorflowSOM.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final/main_TensorflowSOM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final/main_miniSOM.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final/main_miniSOM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +26,8 @@
       <file leaf-file-name="main_miniSOM.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Final/main_miniSOM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="91" selection-end-column="34" />
+            <state relative-caret-position="1462">
+              <caret line="90" selection-start-line="90" selection-end-line="91" selection-end-column="34" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -40,11 +38,8 @@
       <file leaf-file-name="main_TensorflowSOM.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Final/main_TensorflowSOM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="133" column="53" selection-start-line="133" selection-start-column="53" selection-end-line="133" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="264">
+              <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -52,7 +47,7 @@
       <file leaf-file-name="SOM_TF_1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
+            <state relative-caret-position="2295">
               <caret line="137" column="77" selection-start-line="137" selection-start-column="77" selection-end-line="137" selection-end-column="77" />
             </state>
           </provider>
@@ -560,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530543219604</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="added the final folder">
+      <created>1530544219812</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1530544219812</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -876,9 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-714">
           <caret line="9" column="86" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="86" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -941,9 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2964">
           <caret line="134" column="28" selection-start-line="134" selection-start-column="15" selection-end-line="134" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -956,8 +952,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Final/main_miniSOM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="91" selection-end-column="34" />
+        <state relative-caret-position="1462">
+          <caret line="90" selection-start-line="90" selection-end-line="91" selection-end-column="34" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
@@ -973,18 +969,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
+        <state relative-caret-position="2295">
           <caret line="137" column="77" selection-start-line="137" selection-start-column="77" selection-end-line="137" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Final/main_TensorflowSOM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="133" column="53" selection-start-line="133" selection-start-column="53" selection-end-line="133" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="264">
+          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
         </state>
       </provider>
     </entry>
