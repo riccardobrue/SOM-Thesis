@@ -1,5 +1,9 @@
+"""
+https://github.com/spiglerg/Kohonen_SOM_Tensorflow/blob/master/som.py
+"""
 import tensorflow as tf
 import numpy as np
+from functools import reduce
 
 
 class SOM:
@@ -45,7 +49,7 @@ class SOM:
         for i in range(self.n * self.n):
             for j in range(self.n * self.n):
                 self.dist[i, j] = ((self.row_indices[i] - self.row_indices[j]) ** 2 + (
-                            self.col_indices[i] - self.col_indices[j]) ** 2)
+                        self.col_indices[i] - self.col_indices[j]) ** 2)
 
         self.initialize_graph()
 
@@ -61,7 +65,7 @@ class SOM:
 
         ## Compute the current iteration's neighborhood sigma and learning rate alpha:
         self.sigma_tmp = self.sigma * tf.exp(- self.current_iteration / self.timeconst_sigma)
-        self.sigma2 = 2.0 * tf.mul(self.sigma_tmp, self.sigma_tmp)
+        self.sigma2 = 2.0 * tf.multiply(self.sigma_tmp, self.sigma_tmp)
 
         self.alpha_tmp = self.alpha * tf.exp(- self.current_iteration / self.timeconst_alpha)
 
@@ -85,7 +89,7 @@ class SOM:
         self.dist_sliced = tf.placeholder(tf.float32, (self.n * self.n,))
 
         self.distances = tf.exp(-self.dist_sliced / self.sigma2)
-        self.lr_times_neigh = tf.mul(self.alpha_tmp, self.distances)
+        self.lr_times_neigh = tf.multiply(self.alpha_tmp, self.distances)
         for i in range(len(self.input_shape)):
             self.lr_times_neigh = tf.expand_dims(self.lr_times_neigh, -1)
         self.lr_times_neigh = tf.tile(self.lr_times_neigh, (1,) + self.input_shape)

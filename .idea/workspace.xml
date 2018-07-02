@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/PyMVPA/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SOMPy/main_sompy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SOMPy/sompy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SOMoclu/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UsingTF/som_tf_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final/main_TensorflowSOM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final/main_miniSOM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final/manage_data/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final/manage_data/data_normalize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final/manage_data/merge_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final/pythom_simple_som/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final/pythom_simple_som/som.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final/tensorflow_som/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final/todo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final/utilities.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsingTF/som_tf_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/UsingTF/som_tf_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/som_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/som_1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,14 +29,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PyMVPA/main.py">
+      <file leaf-file-name="main_TensorflowSOM.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Final/main_TensorflowSOM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="91" column="59" lean-forward="true" selection-start-line="91" selection-start-column="59" selection-end-line="91" selection-end-column="59" />
+            <state relative-caret-position="221">
+              <caret line="81" column="12" lean-forward="true" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
               <folding>
-                <element signature="e#1247#1272#0" expanded="true" />
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_miniSOM.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Final/main_miniSOM.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11">
+              <caret line="66" selection-start-line="66" selection-end-line="69" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todo.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Final/todo.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -78,8 +110,17 @@
         <option value="$PROJECT_DIR$/SOMPy/main_sompy.py" />
         <option value="$PROJECT_DIR$/SOMPy/sompy.py" />
         <option value="$PROJECT_DIR$/SOMoclu/main.py" />
-        <option value="$PROJECT_DIR$/UsingTF/som_tf_2.py" />
         <option value="$PROJECT_DIR$/PyMVPA/main.py" />
+        <option value="$PROJECT_DIR$/Final/utilities.py" />
+        <option value="$PROJECT_DIR$/Final/main_miniSOM.py" />
+        <option value="$PROJECT_DIR$/UsingTF/som_tf_2.py" />
+        <option value="$PROJECT_DIR$/som_1.py" />
+        <option value="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_2.py" />
+        <option value="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_1.py" />
+        <option value="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_3.py" />
+        <option value="$PROJECT_DIR$/Final/todo.txt" />
+        <option value="$PROJECT_DIR$/Final/pythom_simple_som/som.py" />
+        <option value="$PROJECT_DIR$/Final/main_TensorflowSOM.py" />
       </list>
     </option>
   </component>
@@ -106,17 +147,7 @@
             <path>
               <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
-              <item name="PyMVPA" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
-              <item name="SOMoclu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
-              <item name="Using MiniSOM" type="462c0819:PsiDirectoryNode" />
+              <item name="Final" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
@@ -135,14 +166,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Using MiniSOM" />
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Final\tensorflow_som" />
+      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Final" />
+      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Final\manage_data" />
       <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Using MiniSOM" />
       <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\UsingTF" />
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\examples" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Final\pythom_simple_som" />
+      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Final\tensorflow_som" />
+      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Using MiniSOM" />
+      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -157,7 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.main_TensorflowSOM">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -194,7 +229,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="main_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main_TensorflowSOM" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -202,17 +237,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UsingTF" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UsingTF/main_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final/main_TensorflowSOM.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="main_protocols_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main_miniSOM" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -220,11 +255,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Using MiniSOM" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final/main_miniSOM.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -249,19 +284,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.main_protocols_test" />
-      <item itemvalue="Python.main_1" />
       <item itemvalue="Python.main_sompy" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python.main_miniSOM" />
+      <item itemvalue="Python.main_TensorflowSOM" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main_TensorflowSOM" />
+        <item itemvalue="Python.main_miniSOM" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main_sompy" />
-        <item itemvalue="Python.main_1" />
-        <item itemvalue="Python.main_protocols_test" />
       </list>
     </recent_temporary>
   </component>
@@ -507,20 +542,26 @@
       <option name="project" value="LOCAL" />
       <updated>1530524973056</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="added new libraries">
+      <created>1530529571502</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1530529571502</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.094791666" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15052083" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5005208" side_tool="true" weight="0.25079703" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32943678" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49947917" weight="0.4314559" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49947917" visible="true" weight="0.4314559" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -531,6 +572,7 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32943678" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -559,7 +601,8 @@
     <MESSAGE value="Started to do tests" />
     <MESSAGE value="Using minisom" />
     <MESSAGE value="maybe found a solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="maybe found a solution" />
+    <MESSAGE value="added new libraries" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new libraries" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -582,45 +625,30 @@
           <line>10</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/UsingTF/high_dim.py</url>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_2.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_3.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/AppData/Local/Temp/Temp1_SOM (1).zip/som.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main_fake_data.py" />
-    <entry file="file://$PROJECT_DIR$/load_data.py" />
-    <entry file="file://$PROJECT_DIR$/SOM.py" />
-    <entry file="file://$PROJECT_DIR$/main.py" />
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/tensorflow/python/ops/gen_array_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="6151" selection-start-line="6151" selection-end-line="6151" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/tensorflow/python/framework/op_def_library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="509" selection-start-line="509" selection-end-line="509" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="336" column="8" selection-start-line="336" selection-start-column="8" selection-end-line="336" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/pandas/core/frame.py" />
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="3204" selection-start-line="3204" selection-end-line="3204" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Iris_data.txt" />
     <entry file="file://C:/Program Files/Python36/Lib/site-packages/openpyxl/reader/excel.py" />
     <entry file="file://$PROJECT_DIR$/merge_data_bad_solution.py" />
     <entry file="file://C:/Program Files/Python36/Lib/site-packages/pandas/core/indexes/base.py">
@@ -696,62 +724,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_normalize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Using MiniSOM/data_normalize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UsingTF/high_dim.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="20" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
-          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_real_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/som2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1402">
-          <caret line="169" selection-start-line="169" selection-end-line="169" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SOM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="128" column="34" lean-forward="true" selection-start-line="128" selection-start-column="34" selection-end-line="130" selection-end-column="55" />
-          <folding>
-            <element signature="e#99#122#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -769,46 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Using MiniSOM/main_minisom_iris.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="30" column="74" lean-forward="true" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/minisom.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="164" column="20" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/som_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2720">
-          <caret line="160" column="34" selection-start-line="160" selection-start-column="34" selection-end-line="160" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -836,58 +772,238 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UsingTF/som_tf_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UsingTF/SOM_TF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#99#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SOMoclu/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyMVPA/trainedSom_parameters.pkl" />
+    <entry file="file://$PROJECT_DIR$/PyMVPA/trainedSom_parameters.txt" />
+    <entry file="file://$PROJECT_DIR$/PyMVPA/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#1247#1272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_normalize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/manage_data/data_normalize.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Using MiniSOM/main_minisom_iris.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="74" lean-forward="true" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="115" lean-forward="true" selection-start-line="29" selection-end-line="115" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main_fake_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" selection-start-line="73" selection-end-line="73" selection-end-column="24" />
+        <state relative-caret-position="136">
+          <caret line="44" column="9" lean-forward="true" selection-start-line="39" selection-end-line="47" selection-end-column="30" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PyMVPA/trainedSom_parameters.pkl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PyMVPA/trainedSom_parameters.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PyMVPA/main.py">
+    <entry file="file://$PROJECT_DIR$/Final/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="91" column="59" lean-forward="true" selection-start-line="91" selection-start-column="59" selection-end-line="91" selection-end-column="59" />
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UsingTF/som_tf_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="77" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="78" />
           <folding>
-            <element signature="e#1247#1272#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SOM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2652">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="36" />
+          <folding>
+            <element signature="e#99#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/som_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1972">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_real_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <element signature="e#26#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/som2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714">
+          <caret line="9" column="86" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <folding>
+            <element signature="e#78#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="e#99#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UsingTF/SOM_TF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+          <folding>
+            <element signature="e#99#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UsingTF/high_dim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1683">
+          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_SOM (1).zip/som.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#132#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/pythom_simple_som/som.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/minisom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/main_miniSOM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="66" selection-start-line="66" selection-end-line="69" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/main_TensorflowSOM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="81" column="12" lean-forward="true" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>

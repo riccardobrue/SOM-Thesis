@@ -1,0 +1,20 @@
+try with hexagonal neurons,
+
+find the visualization methods:
+https://stackoverflow.com/questions/39420168/self-organizing-network-plot-subset-of-codes
+https://en.wikipedia.org/wiki/Matplotlib
+https://matplotlib.org/gallery.html
+    - u-matrix (unified distance matrix),
+        - https://www.researchgate.net/publication/261566694_Topology-oriented_self-organizing_maps_A_survey?_sg=7-A-BXWJUBllNnbTnE_6Vsuc2azOgmRURsFPBZ-1t8VdjSdFatEycWDiU8cp_mNSGv3fcgplUQ
+    - code mapping,
+    - sammon's mapping,
+    - pieplane chart,
+    - barplane chart (polar_bar)
+    - plotplane chart,
+
+
+
+treat some inputs as more important than others:
+    - https://www.quora.com/Is-there-any-neural-network-architecture-that-treats-some-inputs-as-more-important-as-other-ones
+    - try to constrain the efficiency weights
+        - https://www.researchgate.net/publication/261566694_Topology-oriented_self-organizing_maps_A_survey?_sg=7-A-BXWJUBllNnbTnE_6Vsuc2azOgmRURsFPBZ-1t8VdjSdFatEycWDiU8cp_mNSGv3fcgplUQ
