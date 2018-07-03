@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_5/checkpoint" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_5/saved_som.ckpt.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_5/saved_som.ckpt.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_5/saved_som.ckpt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/todo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_ultimate/main_som_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/main_som_tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_test_10/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_5/checkpoint" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_test_10/saved_som.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_test_10/saved_som.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_test_10/saved_som.ckpt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_test_100/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_test_100/saved_som.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_test_100/saved_som.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_test_100/saved_som.ckpt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_5/saved_som.ckpt.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,8 +29,8 @@
       <file leaf-file-name="main_som_tf.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="289">
+              <caret line="17" column="97" selection-start-line="17" selection-start-column="97" selection-end-line="17" selection-end-column="97" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -619,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530641809791</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="basic source done">
+      <created>1530642385825</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1530642385825</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -649,7 +643,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Loaded data from the Excel file" />
     <MESSAGE value="Loaded data from the Excel file and tried to create clusters" />
     <MESSAGE value="Created new clustering system according with the different radius data" />
     <MESSAGE value="Re-started to put hands in the thesis project" />
@@ -674,7 +667,8 @@
     <MESSAGE value="code cleaned and re-organized into &quot;_ultimate&quot; folder" />
     <MESSAGE value="my_som ok 100 epochs works" />
     <MESSAGE value="added progress bar on training" />
-    <option name="LAST_COMMIT_MESSAGE" value="added progress bar on training" />
+    <MESSAGE value="basic source done" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic source done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1057,8 +1051,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="289">
+          <caret line="17" column="97" selection-start-line="17" selection-start-column="97" selection-end-line="17" selection-end-column="97" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

@@ -6,7 +6,7 @@ import som_libs.SOM_TF_2_ext as som_tf
 # ---------------------------------------
 # PARAMETERS
 # ---------------------------------------
-epochs = 5
+epochs = 100
 restore_som = True
 ckpt_folder = "ok_"
 
@@ -15,7 +15,7 @@ ckpt_folder = "ok_"
 # ---------------------------------------
 train_som = not restore_som
 store_som = not restore_som
-ckpt_folder = ckpt_folder + str(epochs)
+ckpt_folder = ckpt_folder + str(epochs)  # the folder name is composed by "cpkt_folder" string + epochs number
 
 
 # ---------------------------------------
