@@ -87,7 +87,11 @@ som = som_tf.SOM(som_side_dim, som_side_dim, all_data.shape[1], n_iterations=epo
 if restore_som:
     som.restore()
 if train_som:
-    som.train(all_data)
+    print("Training the SOM:")
+    # fix or find another system to continue the learning from a certain point (with reduced learning_rate)
+    som.train(all_data, restart_from=0)
+    # restart_from indicates the iteration number
+    # (to decrease the learning rate after a restored session)
 
 # ---------------------------------------
 # GET THE OUTPUT GRID AND COMPUTE U-MATRIX

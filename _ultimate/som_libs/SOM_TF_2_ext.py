@@ -5,6 +5,7 @@ https://codesachin.wordpress.com/2015/11/28/self-organizing-maps-with-googles-te
 import tensorflow as tf
 import numpy as np
 import os
+import progressbar
 
 
 class SOM(object):
@@ -12,6 +13,9 @@ class SOM(object):
     2-D Self-Organizing Map with Gaussian Neighbourhood function
     and linearly decreasing learning rate.
     """
+
+    _checkpoint_folder = "test_10"
+    # _checkpoint_folder = "ok_100"
 
     # To check if the SOM has been trained
     _trained = False
@@ -33,7 +37,7 @@ class SOM(object):
         """
 
         dir_path = os.path.dirname(os.path.realpath(__file__))  # get this project's dir path
-        self._storing_path = dir_path + "/my_som/saved_som.ckpt"
+        self._storing_path = dir_path + "/my_som_" + self._checkpoint_folder + "/saved_som.ckpt"
 
         # Assign required variables first
         self._m = m
@@ -149,7 +153,7 @@ class SOM(object):
 
         self._trained = True
 
-    def train(self, input_vects):
+    def train(self, input_vects, restart_from=0):
         """
         Trains the SOM.
         'input_vects' should be an iterable of 1-D NumPy arrays with
@@ -158,13 +162,23 @@ class SOM(object):
         taken as starting conditions for training.
         """
 
+        progress = progressbar.ProgressBar(widgets=[progressbar.Bar('=', '[', ']'), ' ',
+                                                    progressbar.Percentage(), ' ',
+                                                    progressbar.ETA()])
+
         # Training iterations
-        for iter_no in range(self._n_iterations):
+        for i in progress(range(self._n_iterations)):
+
+            iter_no = i + restart_from
+            # print("Iteration number: ", i, "/", self._n_iterations, "(global iteration: ", iter_no, ")")
             # Train with each vector one by one
             for input_vect in input_vects:
                 self._sess.run(self._training_op,
                                feed_dict={self._vect_input: input_vect,
                                           self._iter_input: iter_no})
+            if i % 10 == 0:
+                self.store()
+
         self.store_centroid_grid()
 
     def get_centroids(self):
@@ -202,8 +216,11 @@ class SOM(object):
         """
         Save the som's session to disk
         """
-        save_path = self._saver.save(self._sess, self._storing_path)
-        print("SOM has been saved to: ", save_path)
+        try:
+            save_path = self._saver.save(self._sess, self._storing_path)
+            print("SOM has been saved to: ", save_path)
+        except():
+            print("Failed to save on disk")
 
     def close_sess(self):
         self._sess.close()

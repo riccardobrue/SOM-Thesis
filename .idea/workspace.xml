@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/_ultimate/main_som_tf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/manage_data/data_normalize.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/manage_data/merge_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/my_som/checkpoint" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/my_som/saved_som.ckpt.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/my_som/saved_som.ckpt.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/my_som/saved_som.ckpt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_2_extended.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_2_extended.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/main_som_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/main_som_tf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_100/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som/saved_som.ckpt.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_100/saved_som.ckpt.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som/saved_som.ckpt.index" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_100/saved_som.ckpt.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som/saved_som.ckpt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_100/saved_som.ckpt.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +23,8 @@
       <file leaf-file-name="main_som_tf.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="103" column="37" lean-forward="true" selection-start-line="103" selection-start-column="37" selection-end-line="103" selection-end-column="37" />
+            <state relative-caret-position="204">
+              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -36,8 +35,8 @@
       <file leaf-file-name="SOM_TF_2_ext.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#99#122#0" expanded="true" />
               </folding>
@@ -144,30 +143,14 @@
               <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
               <item name="_ultimate" type="462c0819:PsiDirectoryNode" />
-              <item name="manage_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
-              <item name="_ultimate" type="462c0819:PsiDirectoryNode" />
-              <item name="my_som" type="462c0819:PsiDirectoryNode" />
+              <item name="som_libs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
               <item name="_ultimate" type="462c0819:PsiDirectoryNode" />
               <item name="som_libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
-              <item name="Final" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
-              <item name="Final" type="462c0819:PsiDirectoryNode" />
-              <item name="tensorflow_som" type="462c0819:PsiDirectoryNode" />
+              <item name="my_som_ok_100" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -189,11 +172,11 @@
       <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Using MiniSOM" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\som_libs\my_som" />
       <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Final\_ultimate" />
       <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Final\tensorflow_som" />
       <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Final" />
       <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Final\manage_data" />
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Using MiniSOM" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -614,19 +597,27 @@
       <option name="project" value="LOCAL" />
       <updated>1530636246251</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="code cleaned and re-organized into &quot;_ultimate&quot; folder">
+      <created>1530637158273</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1530637158273</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1375" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.209375" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5005208" side_tool="true" weight="0.25079703" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50104165" side_tool="true" weight="0.22422954" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32943678" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49947917" visible="true" weight="0.22422954" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49895832" visible="true" weight="0.22422954" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -637,14 +628,12 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32943678" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added comments in the main file.&#10;Set a fixed random seed for tensorflow." />
     <MESSAGE value="Added temporary plotting charts" />
     <MESSAGE value="Added interim plotting charts" />
     <MESSAGE value="Loaded data from the Excel file" />
@@ -669,7 +658,8 @@
     <MESSAGE value="added the final folder" />
     <MESSAGE value="added further projects" />
     <MESSAGE value="SOM created and first result found" />
-    <option name="LAST_COMMIT_MESSAGE" value="SOM created and first result found" />
+    <MESSAGE value="code cleaned and re-organized into &quot;_ultimate&quot; folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="code cleaned and re-organized into &quot;_ultimate&quot; folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -711,7 +701,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PyMVPA/trainedSom_parameters.pkl" />
     <entry file="file://$PROJECT_DIR$/PyMVPA/trainedSom_parameters.txt" />
     <entry file="file://$PROJECT_DIR$/PyMVPA/main.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1026,10 +1015,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/progressbar/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="103" column="37" lean-forward="true" selection-start-line="103" selection-start-column="37" selection-end-line="103" selection-end-column="37" />
+        <state relative-caret-position="204">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1038,8 +1036,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#99#122#0" expanded="true" />
           </folding>
