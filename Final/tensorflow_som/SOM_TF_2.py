@@ -185,8 +185,7 @@ class SOM(object):
         to_return = []
         for vect in input_vects:
             min_index = min([i for i in range(len(self._weightages))],
-                            key=lambda x: np.linalg.norm(vect -
-                                                         self._weightages[x]))
+                            key=lambda x: np.linalg.norm(vect - self._weightages[x]))
             to_return.append(self._locations[min_index])
 
         return to_return

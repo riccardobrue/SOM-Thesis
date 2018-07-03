@@ -68,7 +68,7 @@ som_dim = int(munits ** .5)  # compute the lattice width - height size heuristic
 # som_dim = 10
 print("SOM's side dimension: ", som_dim)
 
-som = som_tf.SOM(som_dim, som_dim, all_data.shape[1], n_iterations=50)
+som = som_tf.SOM(som_dim, som_dim, all_data.shape[1], n_iterations=5)
 som.train(all_data)
 
 # Train on the new colors
@@ -79,7 +79,7 @@ image_grid = som.get_centroids()
 # Map colours to their closest neurons
 # mapped = som.map_vects(combined_colors)
 mapped = som.map_vects(sim_data_equal)  # 4--> %aggr
-# the first one now must be assigned to the network topology attribute to be represented
+#the first one now must be assigned to the network topology attribute to be represented
 
 
 # print(image_grid)
@@ -108,71 +108,42 @@ print(distances.shape)
 # compute:
 # u-matrix,
 # Plotting the response for each pattern in the iris dataset
+# plt.bone() #grayscale colors
+plt.pcolor(distances.T)  # plotting the distance map as background
+plt.colorbar()
 
-# Get the optimal protocol for each row
+#plt.plot([1,2,3,4], [1,4,9,16], 'ro')
+
+
+
 relevant_targets = sim_data_equal[:, [1, 3, 5, 7]]  # select the protocol efficiencies on their hnd value
 target = np.argmax(relevant_targets, axis=1)  # gives the index of the maximum value of the efficiency
 
-"""
 t = np.zeros(len(target), dtype=int)
 t[target == 0.] = 0
 t[target == 1.] = 1
 t[target == 2.] = 2
 t[target == 3.] = 3
-"""
+
 markers = ['o', 's', '.', '^']
 colors = ['g', 'r', 'b', 'y']
+
 print("====================================")
-print("Network topologies:")
-print(mapped)
+print("Targets:")
 print("====================================")
-print("Efficiency values:")
 print(target)
 print("====================================")
-print("Mapped results:")
+print("Mapped results")
+print("====================================")
 print(mapped)
 print("====================================")
 
-# VISUALIZING THE CHART
 
-plt.figure(1)
-plt.title('AGGR SOM')
-# plt.bone() #grayscale colors
-plt.pcolor(distances.T)  # plotting the distance map as background
-plt.colorbar()
-
-# mapping based on network topologies
+plt.title('Protocols SOM')
 for i, m in enumerate(mapped):
-    # efficiency values indicates which is the best protocol in the row (0,1,2,3)
-    plt.text(m[1] + .5, m[0] + .5, target[i], ha='center', va='center', bbox=dict(facecolor='white', alpha=0.5, lw=0))
+    plt.text(m[1], m[0], net_topology_att_data_equal[i,4], ha='center', va='center',
+             bbox=dict(facecolor='white', alpha=0.5, lw=0))
 
-plt.axis([0, som_dim, 0, som_dim])
-plt.interactive(True)
-plt.show()
-
-plt.figure(2)
-plt.title('EFFICIENCY SOM')
-# plt.bone() #grayscale colors
-plt.pcolor(distances.T)  # plotting the distance map as background
-plt.colorbar()
-
-# mapping based on network topologies
-for i, m in enumerate(mapped):
-    # network attributes
-    # plt.text(m[1], m[0], net_topology_att_data_equal[i,4], ha='center', va='center',bbox=dict(facecolor='white', alpha=0.5, lw=0))
-    perc_aggr = net_topology_att_data_equal[i, 4]
-    if perc_aggr == 1.:
-        plt.plot(m[1], m[0], color="r", alpha=.4, marker="o")
-    elif perc_aggr == .7:
-        plt.plot(m[1], m[0], color="g", alpha=.4, marker="^")
-    elif perc_aggr == .4:
-        plt.plot(m[1], m[0], color="c", alpha=.4, marker="s")
-    elif perc_aggr == 0.:
-        plt.plot(m[1], m[0], color="y", alpha=.4, marker=".")
-
-plt.axis([0, som_dim, 0, som_dim])
-plt.interactive(False)
-plt.show()
 
 """
 for cnt, xx in enumerate(all_data):
@@ -185,10 +156,13 @@ for cnt, xx in enumerate(all_data):
     except():
         pass
 """
+plt.axis([0, som_dim, 0, som_dim])
+plt.show()
 """
 https://stackoverflow.com/questions/25258191/how-plot-u-matrix-sample-hit-and-input-planes-from-a-trained-data-by-som
 https://stackoverflow.com/questions/21203823/formulation-of-the-u-matrix-unified-distance-matrix-as-a-matrix-operation
 """
+
 """
 print("---------------------")
 print("---------------------")
