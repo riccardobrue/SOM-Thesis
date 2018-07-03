@@ -1,10 +1,18 @@
 import manage_data.data_normalize as dn
 from matplotlib import pyplot as plt
 import numpy as np
-import tensorflow_som.SOM_TF_2 as som_tf
+import tensorflow_som.SOM_TF_2_extended as som_tf
 import utilities
 
+epochs = 100
+restore_som = True
+train_som = False
+store_som = False
 
+
+# ---------------------------------------
+# COMPUTING THE U-MATRIX
+# ---------------------------------------
 def fast_norm(x):
     """Returns norm-2 of a 1-D numpy array.
     * faster than linalg.norm in case of 1-D arrays (numpy 1.9.2rc1).
@@ -30,190 +38,103 @@ def distance_map(weights):
     return um
 
 
+print("=========================================")
 # ---------------------------------------
-# Load the normalized data
+# LOAD THE NORMALIZED DATA
 # ---------------------------------------
 all_data_equal, net_topology_att_data_equal, sim_data_equal = dn.load_normalized_equal_data()
 all_data_unequal, net_topology_att_data_unequal, sim_data_unequal = dn.load_normalized_unequal_data()
+# Get the best protocol for each row
+best_protocols = np.argmax(sim_data_equal[:, [1, 3, 5, 7]], axis=1)  # returns the index of the most efficient protocol
 
-print("=========================================")
+print("Data loaded: ")
 print("Equal size: ", all_data_equal.shape)
 print("Unequal size: ", all_data_unequal.shape)
-print("=========================================")
 
 # ---------------------------------------
-# IMPLEMENT THE SOM WITH TENSORFLOW
+# SELECT THE DATA FOR CLUSTERING
 # ---------------------------------------
 all_data = sim_data_equal
 # all_data = net_topology_att_data_equal
 # all_data = all_data_equal
-print(all_data.shape)
+print("Clustering data size: ", all_data.shape)
 
-# ----------------------------------------------------------------------------------------------------------------------
+# ---------------------------------------
+# COMPUTE THE SOM SIZE HEURISTICALLY
+# ---------------------------------------
+lattice_size = utilities.mapunits(all_data.shape[0])  # heuristic lattice size
+som_side_dim = int(lattice_size ** .5)  # compute the lattice width - height size
+print("SOM dimension: ", som_side_dim, "x", som_side_dim)
 
-# Create a permutation of the original columns
-# shuffle_index = np.random.choice(range(len(colors)), size=15, replace=False)
-# shuffle_colors = np.array(colors)[shuffle_index]
-# shuffle_color_names = np.array(color_names)[shuffle_index]
+# ---------------------------------------
+# TRAIN THE SOM
+# ---------------------------------------
+som = som_tf.SOM(som_side_dim, som_side_dim, all_data.shape[1], n_iterations=epochs)
 
-# combined_colors = [list(x) + colors[i] for i, x in enumerate(shuffle_colors)]
+if restore_som:
+    som.restore()
+if train_som:
+    som.train(all_data)
 
-# print(combined_colors)
-
-# Setup the SOM object
-# som = SOM(m=20, n=30, dim=6, n_iterations=400)
-
-munits = utilities.mapunits(all_data.shape[0])  # heuristic lattice size
-som_dim = int(munits ** .5)  # compute the lattice width - height size heuristically
-# som_dim = 10
-print("SOM's side dimension: ", som_dim)
-
-som = som_tf.SOM(som_dim, som_dim, all_data.shape[1], n_iterations=50)
-som.train(all_data)
-
-# Train on the new colors
-# som.train(combined_colors)
-
-# Get output grid
+# ---------------------------------------
+# GET THE OUTPUT GRID AND COMPUTE U-MATRIX
+# ---------------------------------------
 image_grid = som.get_centroids()
-# Map colours to their closest neurons
-# mapped = som.map_vects(combined_colors)
-mapped = som.map_vects(sim_data_equal)  # 4--> %aggr
-# the first one now must be assigned to the network topology attribute to be represented
-
-
-# print(image_grid)
-# print("-")
-# print(image_grid[0])
-# print("-")
-# print(image_grid[0][0])
-
-mat = np.zeros(shape=(som_dim, som_dim, all_data.shape[1]))
-
-# print("------------")
+mat = np.zeros(shape=(som_side_dim, som_side_dim, all_data.shape[1]))
 for r in range(0, len(image_grid)):
     for c in range(0, len(image_grid[r])):
-        # print(image_grid[r][c])
         mat[r][c] = image_grid[r][c]
-        # print("--")
-    # print("------")
-print("------------")
+u_matrix = distance_map(mat)
 
-print(mat)
-print(mat.shape)
+# ---------------------------------------
+# CREATE A MAPPED DATA TO KNOW THE BMUs OVER THE DATA
+# ---------------------------------------
+mapped_data = som.map_vects(sim_data_equal)
 
-distances = distance_map(mat)
-print(distances)
-print(distances.shape)
-# compute:
-# u-matrix,
-# Plotting the response for each pattern in the iris dataset
+# ---------------------------------------
+# STORE THE LEARNED SOM AND CLOSE THE TENSORFLOW SESSION
+# ---------------------------------------
+if store_som:
+    som.store()
+som.close_sess()
 
-# Get the optimal protocol for each row
-relevant_targets = sim_data_equal[:, [1, 3, 5, 7]]  # select the protocol efficiencies on their hnd value
-target = np.argmax(relevant_targets, axis=1)  # gives the index of the maximum value of the efficiency
-
-"""
-t = np.zeros(len(target), dtype=int)
-t[target == 0.] = 0
-t[target == 1.] = 1
-t[target == 2.] = 2
-t[target == 3.] = 3
-"""
-markers = ['o', 's', '.', '^']
-colors = ['g', 'r', 'b', 'y']
-print("====================================")
-print("Network topologies:")
-print(mapped)
-print("====================================")
-print("Efficiency values:")
-print(target)
-print("====================================")
-print("Mapped results:")
-print(mapped)
-print("====================================")
-
-# VISUALIZING THE CHART
-
+# ---------------------------------------
+# VISUALIZING THE CHARTS
+# ---------------------------------------
 plt.figure(1)
-plt.title('AGGR SOM')
+plt.title('Efficiencies')
 # plt.bone() #grayscale colors
-plt.pcolor(distances.T)  # plotting the distance map as background
+plt.pcolor(u_matrix.T)  # plotting the U-MATRIX as background
 plt.colorbar()
 
-# mapping based on network topologies
-for i, m in enumerate(mapped):
-    # efficiency values indicates which is the best protocol in the row (0,1,2,3)
-    plt.text(m[1] + .5, m[0] + .5, target[i], ha='center', va='center', bbox=dict(facecolor='white', alpha=0.5, lw=0))
+for i, m in enumerate(mapped_data):
+    # efficiency values indicates which is the best protocol in the sample (0,1,2,3)
+    plt.text(m[1] + .5, m[0] + .5, best_protocols[i], ha='center', va='center',
+             bbox=dict(facecolor='white', alpha=.5, lw=0))
 
-plt.axis([0, som_dim, 0, som_dim])
+plt.axis([0, som_side_dim, 0, som_side_dim])
 plt.interactive(True)
 plt.show()
 
 plt.figure(2)
-plt.title('EFFICIENCY SOM')
+plt.title('Visualizing %AGGR')
 # plt.bone() #grayscale colors
-plt.pcolor(distances.T)  # plotting the distance map as background
+plt.pcolor(u_matrix.T)  # plotting the U-MATRIX as background
 plt.colorbar()
 
 # mapping based on network topologies
-for i, m in enumerate(mapped):
-    # network attributes
+for i, m in enumerate(mapped_data):
     # plt.text(m[1], m[0], net_topology_att_data_equal[i,4], ha='center', va='center',bbox=dict(facecolor='white', alpha=0.5, lw=0))
     perc_aggr = net_topology_att_data_equal[i, 4]
     if perc_aggr == 1.:
-        plt.plot(m[1], m[0], color="r", alpha=.4, marker="o")
+        plt.plot(m[1] + .5, m[0] + .5, color="r", alpha=.4, marker="o")
     elif perc_aggr == .7:
-        plt.plot(m[1], m[0], color="g", alpha=.4, marker="^")
+        plt.plot(m[1] + .5, m[0] + .5, color="g", alpha=.4, marker="^")
     elif perc_aggr == .4:
-        plt.plot(m[1], m[0], color="c", alpha=.4, marker="s")
+        plt.plot(m[1] + .5, m[0] + .5, color="c", alpha=.4, marker="s")
     elif perc_aggr == 0.:
-        plt.plot(m[1], m[0], color="y", alpha=.4, marker=".")
+        plt.plot(m[1] + .5, m[0] + .5, color="y", alpha=.4, marker=".")
 
-plt.axis([0, som_dim, 0, som_dim])
+plt.axis([0, som_side_dim, 0, som_side_dim])
 plt.interactive(False)
 plt.show()
-
-"""
-for cnt, xx in enumerate(all_data):
-    try:
-        w = som.winner(xx)  # getting the winner
-        print(w)
-        # palce a marker on the winning position for the sample xx
-        plt.plot(w[0] + .5, w[1] + .5, markers[t[cnt]], markerfacecolor='None',  # instead of target use t
-                 markeredgecolor=colors[t[cnt]], markersize=12, markeredgewidth=2)  # instead of target use t
-    except():
-        pass
-"""
-"""
-https://stackoverflow.com/questions/25258191/how-plot-u-matrix-sample-hit-and-input-planes-from-a-trained-data-by-som
-https://stackoverflow.com/questions/21203823/formulation-of-the-u-matrix-unified-distance-matrix-as-a-matrix-operation
-"""
-"""
-print("---------------------")
-print("---------------------")
-print("----------------")
-print(image_grid)
-print("----------------")
-print(mapped)
-print("---------------------")
-print("---------------------")
-# Now that we have the trained SOM, we are going to extract the
-s_min = 0
-s_max = 5
-s_size = 3
-init_slice = np.array(np.arange(s_min, s_min + s_size))
-max_slice = s_max - s_min - s_size + 2
-slicing_array = [init_slice + x for x in range(max_slice)]
-
-# Because the data is now 6-dimensional, we cannot plot it immediately, hence we need to slice it.
-list_image_grid_sel = []
-for i_slice in slicing_array:
-    dum = [x[i_slice] for b in image_grid for x in b]
-    list_image_grid_sel.append(np.reshape(dum, (20, 30, 3)))
-print("-----")
-for i_plot, i_data in enumerate(list_image_grid_sel):
-    plt.figure(i_plot)
-    plt.imshow(i_data)
-    plt.show()
-"""
