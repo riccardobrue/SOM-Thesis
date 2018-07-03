@@ -3,13 +3,20 @@ from matplotlib import pyplot as plt
 import numpy as np
 import som_libs.SOM_TF_2_ext as som_tf
 
-epochs = 10
-restore_som = False
-train_som = True
-store_som = True
+# ---------------------------------------
+# PARAMETERS
+# ---------------------------------------
+epochs = 5
+restore_som = True
+ckpt_folder = "ok_"
 
-ckpt_folder = "test_"+str(epochs)
-# ckpt_folder = "ok_"+str(epochs)
+# ---------------------------------------
+# DERIVED PARAMETERS
+# ---------------------------------------
+train_som = not restore_som
+store_som = not restore_som
+ckpt_folder = ckpt_folder + str(epochs)
+
 
 # ---------------------------------------
 # CALCULATE LATTICE SIZE
