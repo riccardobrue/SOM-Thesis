@@ -3,11 +3,13 @@ from matplotlib import pyplot as plt
 import numpy as np
 import som_libs.SOM_TF_2_ext as som_tf
 
-epochs = 100
-restore_som = True
-train_som = False
-store_som = False
+epochs = 10
+restore_som = False
+train_som = True
+store_som = True
 
+ckpt_folder = "test_"+str(epochs)
+# ckpt_folder = "ok_"+str(epochs)
 
 # ---------------------------------------
 # CALCULATE LATTICE SIZE
@@ -82,7 +84,7 @@ print("SOM dimension: ", som_side_dim, "x", som_side_dim)
 # ---------------------------------------
 # TRAIN THE SOM
 # ---------------------------------------
-som = som_tf.SOM(som_side_dim, som_side_dim, all_data.shape[1], n_iterations=epochs)
+som = som_tf.SOM(som_side_dim, som_side_dim, all_data.shape[1], n_iterations=epochs, checkpoint_folder_name=ckpt_folder)
 
 if restore_som:
     som.restore()
