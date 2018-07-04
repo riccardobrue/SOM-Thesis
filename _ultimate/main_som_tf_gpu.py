@@ -1,22 +1,15 @@
 import manage_data.data_normalize as dn
 from matplotlib import pyplot as plt
 import numpy as np
-import som_libs.SOM_TF_2_ext as som_tf
+import som_libs.SOM_TF_2_ext_gpu as som_tf
 from matplotlib.pyplot import cm
 
 # ---------------------------------------
 # PARAMETERS
 # ---------------------------------------
-#epochs = 80
 epochs = 100
-restore_som = True
-
-ckpt_folder = "ok_22x22_fnd_"
-# ckpt_folder = "ok_22x22_hnd_"
-#ckpt_folder = "ok_30x30_hnd_"  # this is made with 80 epochs
-
-heuristic_size = True #22x22
-#som_side_dim = 30
+restore_som = False
+ckpt_folder = "ok_22x22_"
 
 # ---------------------------------------
 # DERIVED PARAMETERS
@@ -76,9 +69,7 @@ all_data_equal, net_topology_att_data_equal, sim_data_equal, nt_headers_equal, s
 all_data_unequal, net_topology_att_data_unequal, sim_data_unequal, nt_headers_unequal, sim_headers_unequal = dn.load_normalized_unequal_data()
 # Get the best protocol for each row
 sim_headers_hnd = [1, 3, 5, 7]
-sim_headers_fnd = [0, 2, 4, 6]
-
-best_protocols = np.argmax(sim_data_equal[:, sim_headers_fnd],
+best_protocols = np.argmax(sim_data_equal[:, sim_headers_hnd],
                            axis=1)  # returns the index of the most efficient protocol
 best_protocols_names = sim_headers_equal[sim_headers_hnd]
 
@@ -98,9 +89,9 @@ print("Clustering data size: ", all_data.shape)
 # ---------------------------------------
 # COMPUTE THE SOM SIZE HEURISTICALLY
 # ---------------------------------------
-if heuristic_size:
-    lattice_size = heuristic_som_size(all_data.shape[0])  # heuristic lattice size
-    som_side_dim = int(lattice_size ** .5)  # compute the lattice width - height size
+lattice_size = heuristic_som_size(all_data.shape[0])  # heuristic lattice size
+som_side_dim = int(lattice_size ** .5)  # compute the lattice width - height size
+
 print("SOM dimension: ", som_side_dim, "x", som_side_dim)
 
 # ---------------------------------------

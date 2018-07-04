@@ -2,21 +2,13 @@ import manage_data.data_normalize as dn
 from matplotlib import pyplot as plt
 import numpy as np
 import som_libs.SOM_TF_2_ext as som_tf
-from matplotlib.pyplot import cm
 
 # ---------------------------------------
 # PARAMETERS
 # ---------------------------------------
-#epochs = 80
 epochs = 100
 restore_som = True
-
-ckpt_folder = "ok_22x22_fnd_"
-# ckpt_folder = "ok_22x22_hnd_"
-#ckpt_folder = "ok_30x30_hnd_"  # this is made with 80 epochs
-
-heuristic_size = True #22x22
-#som_side_dim = 30
+ckpt_folder = "ok_"
 
 # ---------------------------------------
 # DERIVED PARAMETERS
@@ -72,15 +64,10 @@ print("=========================================")
 # ---------------------------------------
 # LOAD THE NORMALIZED DATA
 # ---------------------------------------
-all_data_equal, net_topology_att_data_equal, sim_data_equal, nt_headers_equal, sim_headers_equal = dn.load_normalized_equal_data()
-all_data_unequal, net_topology_att_data_unequal, sim_data_unequal, nt_headers_unequal, sim_headers_unequal = dn.load_normalized_unequal_data()
+all_data_equal, net_topology_att_data_equal, sim_data_equal = dn.load_normalized_equal_data()
+all_data_unequal, net_topology_att_data_unequal, sim_data_unequal = dn.load_normalized_unequal_data()
 # Get the best protocol for each row
-sim_headers_hnd = [1, 3, 5, 7]
-sim_headers_fnd = [0, 2, 4, 6]
-
-best_protocols = np.argmax(sim_data_equal[:, sim_headers_fnd],
-                           axis=1)  # returns the index of the most efficient protocol
-best_protocols_names = sim_headers_equal[sim_headers_hnd]
+best_protocols = np.argmax(sim_data_equal[:, [1, 3, 5, 7]], axis=1)  # returns the index of the most efficient protocol
 
 print("Data loaded: ")
 print("Equal size: ", all_data_equal.shape)
@@ -98,9 +85,8 @@ print("Clustering data size: ", all_data.shape)
 # ---------------------------------------
 # COMPUTE THE SOM SIZE HEURISTICALLY
 # ---------------------------------------
-if heuristic_size:
-    lattice_size = heuristic_som_size(all_data.shape[0])  # heuristic lattice size
-    som_side_dim = int(lattice_size ** .5)  # compute the lattice width - height size
+lattice_size = heuristic_som_size(all_data.shape[0])  # heuristic lattice size
+som_side_dim = int(lattice_size ** .5)  # compute the lattice width - height size
 print("SOM dimension: ", som_side_dim, "x", som_side_dim)
 
 # ---------------------------------------
@@ -149,29 +135,36 @@ som.close_sess()
 # FIGURE 1
 # ----------------------------------------------------------------------------------------------------------------------
 plt.figure(1)
-plt.title('Best protocols')
+plt.title('Efficiencies')
 plt.bone()  # grayscale colors
 # @todo: Which should i take? the transposed or the non-transposed one?
 # plt.pcolor(u_matrix)  # plotting the U-MATRIX as background
 plt.pcolor(u_matrix.T)  # plotting the transposed U-MATRIX as background (?)
 plt.colorbar()
-print(best_protocols_names)
-classes = best_protocols
-unique_classes = np.unique(classes)
+"""
+for i in range(0, len(mapped_data)):
+    plt.text(mapped_data_X[i], mapped_data_Y[i], best_protocols[i], ha='center', va='center',
+             bbox=dict(facecolor='white', alpha=.5, lw=0))
 
-# markers = ['*', 'o', 'D', 'x', 's', 'd', '.', '+']
-# create one color and one mark for each class
-x = plt.cm.get_cmap('tab10')
-colors = x.colors
+"""
+unique_plot_att = np.unique(best_protocols)
 
-for i, u in enumerate(unique_classes):
-    xi = [mapped_data_X[j] for j in range(len(mapped_data_X)) if classes[j] == u]
-    yi = [mapped_data_Y[j] for j in range(len(mapped_data_Y)) if classes[j] == u]
-    plt.scatter(xi, yi, color=colors[i], label=str(u) + " Protocol won", alpha=.5)
+colors = [plt.cm.jet(i / float(len(unique_plot_att) - 1)) for i in range(len(unique_plot_att))]
+for i, u in enumerate(unique_plot_att):
+    xi = [mapped_data_X[j] for j in range(len(mapped_data_X)) if best_protocols[j] == u]
+    yi = [mapped_data_Y[j] for j in range(len(mapped_data_Y)) if best_protocols[j] == u]
+    plt.scatter(xi, yi, color=colors[i], label=str(u))
+
+"""
+for i, m in enumerate(mapped_data):
+    # efficiency values indicates which is the best protocol in the sample (0,1,2,3)
+    plt.text(m[1] + .5, m[0] + .5, best_protocols[i], ha='center', va='center',
+             bbox=dict(facecolor='white', alpha=.5, lw=0))
+"""
 
 plt.axis([0, som_side_dim, 0, som_side_dim])
 plt.interactive(True)
-plt.legend(loc='center left', bbox_to_anchor=(1.18, 0.5))
+plt.legend(loc='center left', bbox_to_anchor=(1.2, 0.5))
 plt.show()
 # ----------------------------------------------------------------------------------------------------------------------
 # FIGURE 2
@@ -183,23 +176,64 @@ plt.pcolor(u_matrix.T)  # plotting the U-MATRIX as background
 plt.colorbar()
 
 # mapping based on network topologies
+"""
+---------------------------
+EQUAL - NETWORK ATTRIBUTE INDICES:
+---------------------------
+'HEIGHT' - 0
+'WIDTH' - 1
+'NODE' - 2
+'R0' - 3
+'%AGGR' - 4
+'HET' - 5
+'HOM ENERGY' - 6
+'HOM RATE' - 7
+---------------------------
+EQUAL - PROTOCOLS INDICES:
+---------------------------
+'REECHD FND' - 0 
+'REECHD HND' - 1
+'HEED FND' - 2
+'HEED HND' - 3
+'ERHEED FND' - 4
+'ERHEED HND' - 5
+'FMUC FND' - 6
+'FMUC HND' - 7
+---------------------------
+UNEQUAL - NETWORK ATTRIBUTE INDICES:
+---------------------------
+---------------------------
+UNEQUAL - PROTOCOLS INDICES:
+---------------------------
+"""
 att_index = 4
 
-classes = net_topology_att_data_equal[:, att_index]
-unique_classes = np.unique(classes)
+plot_att = net_topology_att_data_equal[:, att_index]
+unique_plot_att = np.unique(plot_att)
 
-print("Distinct values: ", unique_classes)
+print("Distinct values: ", plot_att)
 
-# create one color and one mark for each class
-x = plt.cm.get_cmap('tab10')
-colors = x.colors
+markers = ['*', 'o', 'D', 'x', 's', 'd', '.', '+']
+# colors = ['c', 'g', 'r', 'y', 'm', 'b', 'k', 'w']
 
-for i, u in enumerate(unique_classes):
-    xi = [mapped_data_X[j] for j in range(len(mapped_data_X)) if classes[j] == u]
-    yi = [mapped_data_Y[j] for j in range(len(mapped_data_Y)) if classes[j] == u]
-    plt.scatter(xi, yi, color=colors[i], label=str(u) + " %AGGR", alpha=.5)
+# plt.scatter(mapped_data_X, mapped_data_Y, color=colors[index], alpha=.4, marker=markers[index], label=plot_att[index])
+
+colors = [plt.cm.jet(i / float(len(unique_plot_att) - 1)) for i in range(len(unique_plot_att))]
+
+for i, u in enumerate(unique_plot_att):
+    xi = [mapped_data_X[j] for j in range(len(mapped_data_X)) if plot_att[j] == u]
+    yi = [mapped_data_Y[j] for j in range(len(mapped_data_Y)) if plot_att[j] == u]
+    plt.scatter(xi, yi, color=colors[i], label=str(u))
+
+"""
+for i, m in enumerate(mapped_data):
+    # plt.text(m[1], m[0], net_topology_att_data_equal[i,4], ha='center', va='center',bbox=dict(facecolor='white', alpha=0.5, lw=0))
+    network_att = net_topology_att_data_equal[i, att_index]
+    index = np.where(plot_att == network_att)[0][0]
+    plt.scatter(m[1] + .5, m[0] + .5, color=colors[index], alpha=.4, marker=markers[index], label=plot_att[index])
+"""
 
 plt.axis([0, som_side_dim, 0, som_side_dim])
 plt.interactive(False)
-plt.legend(loc='center left', bbox_to_anchor=(1.18, 0.5))
+plt.legend(loc='center left', bbox_to_anchor=(1.2, 0.5))
 plt.show()

@@ -70,7 +70,7 @@ def load_normalized_equal_data():
     print("All concatenated data (size): ", all_data.shape)
     print("===================")
     """
-    return all_data, network_topology_att_norm, simulation_results_norm
+    return all_data, network_topology_att_norm, simulation_results_norm, nt_headers, sim_headers
 
 
 def load_normalized_unequal_data():
@@ -101,4 +101,4 @@ def load_normalized_unequal_data():
     # ----------------------------------------------------
     all_data = np.append(network_topology_att_norm, simulation_results_norm, axis=1)
 
-    return all_data, network_topology_att_norm, simulation_results_norm
+    return all_data, network_topology_att_norm, simulation_results_norm, nt_headers, sim_headers
