@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_100/saved_som.ckpt.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_100/saved_som.ckpt.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_ultimate/main_som_tf_reversed.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/main_som_tf_reversed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_--x--_fnd_rev_10/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_10/checkpoint" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_--x--_fnd_rev_10/saved_som.ckpt.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_10/saved_som.ckpt.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_--x--_fnd_rev_10/saved_som.ckpt.index" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_10/saved_som.ckpt.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_--x--_fnd_rev_10/saved_som.ckpt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_10/saved_som.ckpt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_10/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_100/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_10/saved_som.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_10/saved_som.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_10/saved_som.ckpt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_100/saved_som.ckpt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_30x30_hnd_80/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_30x30_hnd_80/saved_som.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_30x30_hnd_80/saved_som.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_30x30_hnd_80/saved_som.ckpt.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main_som_tf.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf.py">
+      <file leaf-file-name="main_som_tf_reversed.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_reversed.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2244">
-              <caret line="136" column="45" selection-start-line="136" selection-start-column="45" selection-end-line="136" selection-end-column="45" />
+            <state relative-caret-position="306">
+              <caret line="30" column="99" selection-start-line="30" selection-start-column="99" selection-end-line="30" selection-end-column="99" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -30,13 +37,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_som_tf_reversed.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_reversed.py">
+      <file leaf-file-name="SOM_TF_2_ext.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="212" column="27" lean-forward="true" selection-start-line="212" selection-start-column="27" selection-end-line="212" selection-end-column="27" />
+            <state relative-caret-position="177">
+              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#99#122#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,6 +65,7 @@
       <find>_weightage_vects</find>
       <find>get_weights</find>
       <find>self._sess</find>
+      <find>n_itera</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,12 +115,12 @@
         <option value="$PROJECT_DIR$/Final/main_TensorflowSOM.py" />
         <option value="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_2_extended.py" />
         <option value="$PROJECT_DIR$/Final/main_TensorflowSOM_2.py" />
-        <option value="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" />
         <option value="$PROJECT_DIR$/_ultimate/manage_data/data_normalize.py" />
         <option value="$PROJECT_DIR$/_ultimate/main_som_tf_gpu.py" />
         <option value="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext_gpu.py" />
         <option value="$PROJECT_DIR$/_ultimate/todo.txt" />
         <option value="$PROJECT_DIR$/_ultimate/main_som_tf.py" />
+        <option value="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" />
         <option value="$PROJECT_DIR$/_ultimate/main_som_tf_reversed.py" />
       </list>
     </option>
@@ -236,7 +244,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ultimate/main_som_tf.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\backups\main_som_tf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,7 +262,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ultimate/main_som_tf_gpu.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\backups\main_som_tf_gpu.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -272,7 +280,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ultimate/main_som_tf_reversed.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\backups\main_som_tf_reversed.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -642,7 +650,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530718986136</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Reversed rationale done">
+      <created>1530737613695</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1530737613695</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -707,30 +722,30 @@
           <line>6</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/UsingTF/main_1.py</url>
+          <url />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/UsingTF/SOM_TF.py</url>
+          <url />
           <line>4</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SOMPy/sompy.py</url>
+          <url />
           <line>10</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/UsingTF/high_dim.py</url>
+          <url />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_3.py</url>
+          <url />
           <line>3</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/AppData/Local/Temp/Temp1_SOM (1).zip/som.py</url>
+          <url />
           <line>6</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
@@ -971,13 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2557">
-          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files/Python36/Lib/site-packages/matplotlib/backends/_backend_tk.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -1010,6 +1018,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
+          <folding>
+            <element signature="e#99#122#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,10 +1062,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding>
+            <element signature="e#99#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_reversed.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="212" column="27" lean-forward="true" selection-start-line="212" selection-start-column="27" selection-end-line="212" selection-end-column="27" />
+        <state relative-caret-position="306">
+          <caret line="30" column="99" selection-start-line="30" selection-start-column="99" selection-end-line="30" selection-end-column="99" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

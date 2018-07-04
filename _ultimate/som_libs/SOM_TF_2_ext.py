@@ -17,7 +17,7 @@ class SOM(object):
     # To check if the SOM has been trained
     _trained = False
 
-    def __init__(self, m, n, dim, n_iterations=100, alpha=None, sigma=None, checkpoint_folder_name="0"):
+    def __init__(self, m, n, dim, epochs=100, alpha=None, sigma=None, ckpt_folder_name="0"):
         """
         Initializes all necessary components of the TensorFlow
         Graph.
@@ -34,7 +34,7 @@ class SOM(object):
         """
 
         dir_path = os.path.dirname(os.path.realpath(__file__))  # get this project's dir path
-        self._storing_path = dir_path + "/my_som_" + checkpoint_folder_name + "/saved_som.ckpt"
+        self._storing_path = dir_path + "/my_som_" + ckpt_folder_name + "/saved_som.ckpt"
 
         # Assign required variables first
         self._m = m
@@ -47,7 +47,7 @@ class SOM(object):
             sigma = max(m, n) / 2.0
         else:
             sigma = float(sigma)
-        self._n_iterations = abs(int(n_iterations))
+        self._n_iterations = abs(int(epochs))
 
         ##INITIALIZE GRAPH
         self._graph = tf.Graph()
