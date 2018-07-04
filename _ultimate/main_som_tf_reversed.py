@@ -7,14 +7,15 @@ from matplotlib.pyplot import cm
 # ---------------------------------------
 # PARAMETERS
 # ---------------------------------------
-epochs = 10
+# epochs = 10
 # epochs = 80
-# epochs = 100
+epochs = 100
 restore_som = True
 
 use_hnd = True  # false-> uses fnd
 
-ckpt_folder = "ok_--x--_fnd_rev_" #reversed
+# ckpt_folder = "ok_22x22_fnd_rev_" #reversed
+ckpt_folder = "ok_22x22_hnd_rev_"  # reversed
 # ckpt_folder = "ok_22x22_hnd_"
 # ckpt_folder = "ok_30x30_hnd_"  # this is made with 80 epochs
 
@@ -95,7 +96,7 @@ print("Best protocols: ", best_protocols)
 # ---------------------------------------
 # SELECT THE DATA FOR CLUSTERING
 # ---------------------------------------
-#all_data = sim_data_equal
+# all_data = sim_data_equal
 all_data = net_topology_att_data_equal
 # all_data = all_data_equal
 print("Clustering data size: ", all_data.shape)
@@ -217,7 +218,7 @@ UNEQUAL - PROTOCOLS INDICES:
 ---------------------------
 """
 # mapping based on network topologies
-att_index = 4
+att_index = 2
 header = nt_headers_equal[att_index]
 
 classes = net_topology_att_data_equal[:, att_index]

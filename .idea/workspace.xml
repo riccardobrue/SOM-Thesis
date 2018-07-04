@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/_ultimate/main_som_tf_reversed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_--x--_fnd_rev_10/checkpoint" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_--x--_fnd_rev_10/saved_som.ckpt.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_--x--_fnd_rev_10/saved_som.ckpt.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_--x--_fnd_rev_10/saved_som.ckpt.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/main_som_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/main_som_tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/main_som_tf_reversed.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/main_som_tf_reversed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_--x--_fnd_rev_10/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_10/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_--x--_fnd_rev_10/saved_som.ckpt.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_10/saved_som.ckpt.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_--x--_fnd_rev_10/saved_som.ckpt.index" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_10/saved_som.ckpt.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_--x--_fnd_rev_10/saved_som.ckpt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_10/saved_som.ckpt.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +21,7 @@
       <file leaf-file-name="main_som_tf.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="2244">
               <caret line="136" column="45" selection-start-line="136" selection-start-column="45" selection-end-line="136" selection-end-column="45" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -35,8 +33,8 @@
       <file leaf-file-name="main_som_tf_reversed.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_reversed.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="201">
+              <caret line="212" column="27" lean-forward="true" selection-start-line="212" selection-start-column="27" selection-end-line="212" selection-end-column="27" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -132,6 +130,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,7 +153,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -637,19 +635,26 @@
       <option name="project" value="LOCAL" />
       <updated>1530717097336</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Reversed rationale done">
+      <created>1530718986136</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1530718986136</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20969442" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20969442" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50104165" side_tool="true" weight="0.22422954" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
       <window_info anchor="bottom" id="Version Control" order="6" />
       <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49895832" visible="true" weight="0.3398693" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49895832" visible="true" weight="0.3398693" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -660,13 +665,13 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created new clustering system according with the different radius data" />
     <MESSAGE value="Re-started to put hands in the thesis project" />
     <MESSAGE value="Started to select relevant files from the simulation folder" />
     <MESSAGE value="Merger script done" />
@@ -691,7 +696,8 @@
     <MESSAGE value="added progress bar on training" />
     <MESSAGE value="basic source done" />
     <MESSAGE value="Further tests done with hnd fnd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Further tests done with hnd fnd" />
+    <MESSAGE value="Reversed rationale done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reversed rationale done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -969,9 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2557">
           <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
-          <folding>
-            <element signature="e#99#122#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,9 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
           <caret line="103" column="96" selection-start-line="103" selection-start-column="96" selection-end-line="103" selection-end-column="96" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,9 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
-          <folding>
-            <element signature="e#99#122#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1020,9 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1030,9 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
-          <folding>
-            <element signature="e#99#122#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1040,9 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="207" column="3" lean-forward="true" selection-start-line="178" selection-end-line="207" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1055,7 +1043,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="2244">
           <caret line="136" column="45" selection-start-line="136" selection-start-column="45" selection-end-line="136" selection-end-column="45" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -1065,8 +1053,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_reversed.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="201">
+          <caret line="212" column="27" lean-forward="true" selection-start-line="212" selection-start-column="27" selection-end-line="212" selection-end-column="27" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
