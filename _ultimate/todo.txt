@@ -23,3 +23,6 @@ treat some inputs as more important than others:
 IMPORTANT:
 - try to show different network topology attributes
 - create a function for shuffling the data
+
+- train the som with only 1 protocol per time
+- reverse the train (train the som over the network topologies--> show the efficiencies)
