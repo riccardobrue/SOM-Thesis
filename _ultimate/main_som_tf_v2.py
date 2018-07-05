@@ -26,21 +26,24 @@ UNEQUAL - PROTOCOLS INDICES:
 # ----------------
 # training-restoring parameters
 # ----------------
-epochs = 100
+epochs = 800
 
 restore_som = True  # true: doesn't train the som and doesn't store any new checkpoint files
 
 heuristic_size = True  # 22x22 (if false it is needed to specify the "som_side_dim" variable and the "ckpt_folder" name)
 manually_picked_som_dim = 30  # if heuristic_size is False, this will be the chosen som's side size
 
-use_hnd = False  # false-> uses fnd
+use_hnd = True  # false-> uses fnd
 
-use_reverse = False  # if true: uses the (trained) som over the network attributes instead of the simulation results
+use_reverse = True  # if true: uses the (trained) som over the network attributes instead of the simulation results
+
+show_net_att_n = 0.  # specify which attribute to see
+show_prot_n = 3  # specify which best protocol to see
 
 # ----------------
 # Visualization parameters
 # ----------------
-att_index = 6  # network attribute to be visualized over the som's chart
+att_index = 4  # network attribute to be visualized over the som's chart
 
 # ---------------------------------------
 # DERIVED PARAMETERS
@@ -91,14 +94,15 @@ def fast_norm(x):
 
 
 def distance_map(weights):
+    # weights is a 22x22x8 --> som_dim x som_dim x input_features
     """Returns the distance map of the weights.
     Each cell is the normalised sum of the distances between
     a neuron and its neighbours."""
-    um = np.zeros((weights.shape[0], weights.shape[1]))
+    um = np.zeros((weights.shape[0], weights.shape[1]))  # 22x22 filled with 0
     it = np.nditer(um, flags=['multi_index'])
     while not it.finished:
-        for ii in range(it.multi_index[0] - 1, it.multi_index[0] + 2):
-            for jj in range(it.multi_index[1] - 1, it.multi_index[1] + 2):
+        for ii in range(it.multi_index[0] - 1, it.multi_index[0] + 2):  # add 1 column before and 1 after
+            for jj in range(it.multi_index[1] - 1, it.multi_index[1] + 2):  # add 1 row up and 1 down
                 if 0 <= ii < weights.shape[0] and 0 <= jj < weights.shape[1]:
                     w_1 = weights[ii, jj, :]
                     w_2 = weights[it.multi_index]
@@ -208,9 +212,10 @@ x = plt.cm.get_cmap('tab10')
 colors = x.colors
 
 for i, u in enumerate(unique_classes):
-    xi = [mapped_data_X[j] for j in range(len(mapped_data_X)) if classes[j] == u]
-    yi = [mapped_data_Y[j] for j in range(len(mapped_data_Y)) if classes[j] == u]
-    plt.scatter(xi, yi, color=colors[i], label=best_protocols_names[u], alpha=.5)
+    if u == show_prot_n:
+        xi = [mapped_data_X[j] for j in range(len(mapped_data_X)) if classes[j] == u]
+        yi = [mapped_data_Y[j] for j in range(len(mapped_data_Y)) if classes[j] == u]
+        plt.scatter(xi, yi, color=colors[i], label=best_protocols_names[u], alpha=.15)
 
 plt.axis([0, som_side_dim, 0, som_side_dim])
 plt.interactive(True)
@@ -246,9 +251,10 @@ x = plt.cm.get_cmap('tab10')
 colors = x.colors
 
 for i, u in enumerate(unique_classes):
-    xi = [mapped_data_X[j] for j in range(len(mapped_data_X)) if classes[j] == u]
-    yi = [mapped_data_Y[j] for j in range(len(mapped_data_Y)) if classes[j] == u]
-    plt.scatter(xi, yi, color=colors[i], label=header + " " + str(round(u, 2)), alpha=.5)
+    if u == show_net_att_n:
+        xi = [mapped_data_X[j] for j in range(len(mapped_data_X)) if classes[j] == u]
+        yi = [mapped_data_Y[j] for j in range(len(mapped_data_Y)) if classes[j] == u]
+        plt.scatter(xi, yi, color=colors[i], label=header + " " + str(round(u, 2)), alpha=.15)
 
 plt.axis([0, som_side_dim, 0, som_side_dim])
 plt.interactive(False)

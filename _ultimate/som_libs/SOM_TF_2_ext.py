@@ -55,6 +55,8 @@ class SOM(object):
         ##POPULATE GRAPH WITH NECESSARY COMPONENTS
         with self._graph.as_default():
 
+            os.environ['CUDA_VISIBLE_DEVICES'] = ''
+
             ##VARIABLES AND CONSTANT OPS FOR DATA STORAGE
 
             # Randomly initialized weightage vectors for all neurons,
@@ -119,7 +121,10 @@ class SOM(object):
             self._training_op = tf.assign(self._weightage_vects, new_weightages_op)
 
             ##INITIALIZE SESSION
-            self._sess = tf.Session()
+            config = tf.ConfigProto(
+                device_count={'GPU': 0}  # not using any GPY
+            )
+            self._sess = tf.Session(config=config)
 
             self._saver = tf.train.Saver()
 
