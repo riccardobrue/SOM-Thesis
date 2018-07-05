@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="Started to select relevant files from the simulation folder">
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_600/checkpoint" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_600/saved_som.ckpt.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_600/saved_som.ckpt.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_600/saved_som.ckpt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_600/checkpoint" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_600/saved_som.ckpt.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_600/saved_som.ckpt.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_600/saved_som.ckpt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/using_gpu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_ultimate/main_som_tf_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/main_som_tf_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/manage_data/data_normalize.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/manage_data/data_normalize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/manage_data/merge_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/manage_data/merge_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_rev_600/saved_som.ckpt.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_rev_600/saved_som.ckpt.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_rev_600/saved_som.ckpt.index" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_rev_600/saved_som.ckpt.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_600/saved_som.ckpt.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_600/saved_som.ckpt.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_600/saved_som.ckpt.index" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_600/saved_som.ckpt.index" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,8 +19,8 @@
       <file leaf-file-name="main_som_tf_v2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            <state relative-caret-position="306">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -43,8 +31,8 @@
       <file leaf-file-name="using_gpu.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/using_gpu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -77,14 +65,14 @@
         <option value="$PROJECT_DIR$/merge_data.py" />
         <option value="$PROJECT_DIR$/_ultimate/manage_data/merge_data.py" />
         <option value="$PROJECT_DIR$/_ultimate/manage_data/data_normalize.py" />
-        <option value="$PROJECT_DIR$/_ultimate/main_som_tf_v2.py" />
         <option value="$PROJECT_DIR$/tests/using_gpu.py" />
         <option value="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" />
+        <option value="$PROJECT_DIR$/_ultimate/main_som_tf_v2.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -128,7 +116,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -378,15 +366,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30555555" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30555555" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50104165" side_tool="true" weight="0.22422954" />
       <window_info anchor="bottom" id="Version Control" order="6" />
       <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49895832" visible="true" weight="0.34323433" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49895832" visible="true" weight="0.34323433" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -492,9 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2040">
           <caret line="123" selection-start-line="123" selection-end-line="123" />
-          <folding>
-            <element signature="e#99#122#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -663,29 +648,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="214" column="11" lean-forward="true" selection-start-line="214" selection-start-column="11" selection-end-line="214" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/using_gpu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        <state relative-caret-position="306">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="214" column="11" lean-forward="true" selection-start-line="214" selection-start-column="11" selection-end-line="214" selection-end-column="11" />
-          <folding>
-            <element signature="e#99#122#0" expanded="true" />
           </folding>
         </state>
       </provider>

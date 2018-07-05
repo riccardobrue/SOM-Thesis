@@ -26,16 +26,16 @@ UNEQUAL - PROTOCOLS INDICES:
 # ----------------
 # training-restoring parameters
 # ----------------
-epochs = 1500
+epochs = 100
 
-restore_som = False  # true: doesn't train the som and doesn't store any new checkpoint files
+restore_som = True  # true: doesn't train the som and doesn't store any new checkpoint files
 
 heuristic_size = True  # 22x22 (if false it is needed to specify the "som_side_dim" variable and the "ckpt_folder" name)
 manually_picked_som_dim = 30  # if heuristic_size is False, this will be the chosen som's side size
 
-use_hnd = True  # false-> uses fnd
+use_hnd = False  # false-> uses fnd
 
-use_reverse = True  # if true: uses the (trained) som over the network attributes instead of the simulation results
+use_reverse = False  # if true: uses the (trained) som over the network attributes instead of the simulation results
 
 # ----------------
 # Visualization parameters
