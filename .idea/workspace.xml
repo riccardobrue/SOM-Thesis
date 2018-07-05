@@ -1,11 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/_ultimate/backups/main_som_tf_v1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ultimate/main_som_minisom_v1.py" afterDir="false" />
+    <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="Started to select relevant files from the simulation folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/main_som_tf_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/main_som_tf_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/main_TensorflowSOM.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/main_TensorflowSOM_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/main_TensorflowSOM_aggr_results.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/main_TensorflowSOM_aggr_results_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/main_miniSOM.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/manage_data/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/manage_data/data_normalize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/manage_data/merge_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/other_projects/som_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/other_projects/som_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/other_projects/som_2_run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/other_projects/som_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/other_projects/som_3_run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/pythom_simple_som/som.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_2_extended.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/tensorflow_som/my_som/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/tensorflow_som/my_som/saved_som.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/tensorflow_som/my_som/saved_som.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/tensorflow_som/my_som/saved_som.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/todo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/utilities.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyMVPA/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SOMPy/main_sompy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SOMPy/sompy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SOMoclu/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Using MiniSOM/data_normalize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Using MiniSOM/main_handwritten_digits.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Using MiniSOM/main_minisom_iris.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Using MiniSOM/merge_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Using MiniSOM/minisom_.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsingTF/SOM_TF.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsingTF/data_normalize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsingTF/high_dim.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsingTF/main_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsingTF/merge_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsingTF/som_tf_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/backups/SOM_Libs_backups/SOM_TF_2_ext_gpu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/backups/main_som_tf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/backups/main_som_tf_backup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/backups/main_som_tf_gpu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/backups/main_som_tf_reversed.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/backups/main_som_tf_v1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/main_som_minisom_v1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/main_som_tf_v2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/manage_data/data_normalize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/manage_data/merge_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_100/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_100/saved_som.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_100/saved_som.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_100/saved_som.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_100/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_100/saved_som.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_100/saved_som.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_fnd_rev_100/saved_som.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_100/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_100/saved_som.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_100/saved_som.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_100/saved_som.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_200/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_200/saved_som.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_200/saved_som.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_200/saved_som.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_rev_100/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_rev_100/saved_som.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_rev_100/saved_som.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/my_som_ok_22x22_hnd_rev_100/saved_som.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/todo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_normalize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iris_example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_fake_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_fake_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_real_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/merge_data_bad_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/merge_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/som2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/som_1.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +98,7 @@
       <file leaf-file-name="SOM_TF_2_ext.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
+            <state relative-caret-position="2040">
               <caret line="123" selection-start-line="123" selection-end-line="123" />
               <folding>
                 <element signature="e#99#122#0" expanded="true" />
@@ -28,25 +107,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_som_tf_v2.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main_som_tf_v2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="104" selection-start-line="104" selection-end-line="105" selection-end-column="142" />
+            <state relative-caret-position="255">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_som_minisom_v1.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_ultimate/main_som_minisom_v1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="84" column="19" lean-forward="true" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,11 +131,6 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>random</find>
-      <find>_map_vectors</find>
-      <find>_weightage_vects</find>
-      <find>get_weights</find>
-      <find>self._sess</find>
-      <find>n_itera</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -77,57 +139,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/SOM.py" />
         <option value="$PROJECT_DIR$/Iris_data.txt" />
-        <option value="$PROJECT_DIR$/load_data.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/main_fake_data.py" />
+        <option value="$PROJECT_DIR$/load_data.py" />
         <option value="$PROJECT_DIR$/merge_data.py" />
-        <option value="$PROJECT_DIR$/data_normalize.py" />
-        <option value="$PROJECT_DIR$/som2.py" />
-        <option value="$PROJECT_DIR$/iris_example.py" />
-        <option value="$PROJECT_DIR$/main_real_data.py" />
-        <option value="$PROJECT_DIR$/main_3.py" />
-        <option value="$PROJECT_DIR$/UsingTF/som_1.py" />
-        <option value="$PROJECT_DIR$/main_2.py" />
-        <option value="$PROJECT_DIR$/UsingTF/SOM_TF.py" />
-        <option value="$PROJECT_DIR$/UsingTF/main_1.py" />
-        <option value="$PROJECT_DIR$/UsingTF/high_dim.py" />
-        <option value="$PROJECT_DIR$/Using MiniSOM/main_ms.py" />
-        <option value="$PROJECT_DIR$/Using MiniSOM/main_handwritten_digits.py" />
-        <option value="$PROJECT_DIR$/Using MiniSOM/data_normalize.py" />
-        <option value="$PROJECT_DIR$/Using MiniSOM/main_minisom_iris.py" />
-        <option value="$PROJECT_DIR$/Using MiniSOM/main_protocols_test.py" />
-        <option value="$PROJECT_DIR$/SOMPy/main_sompy.py" />
-        <option value="$PROJECT_DIR$/SOMPy/sompy.py" />
-        <option value="$PROJECT_DIR$/SOMoclu/main.py" />
-        <option value="$PROJECT_DIR$/PyMVPA/main.py" />
-        <option value="$PROJECT_DIR$/Final/utilities.py" />
-        <option value="$PROJECT_DIR$/UsingTF/som_tf_2.py" />
-        <option value="$PROJECT_DIR$/som_1.py" />
-        <option value="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_3.py" />
-        <option value="$PROJECT_DIR$/Final/todo.txt" />
-        <option value="$PROJECT_DIR$/Final/pythom_simple_som/som.py" />
-        <option value="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_1.py" />
-        <option value="$PROJECT_DIR$/Final/main_miniSOM.py" />
-        <option value="$PROJECT_DIR$/Final/other_projects/som_1.py" />
-        <option value="$PROJECT_DIR$/Final/other_projects/som_2.py" />
-        <option value="$PROJECT_DIR$/Final/other_projects/som_3.py" />
-        <option value="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_2.py" />
-        <option value="$PROJECT_DIR$/Final/main_TensorflowSOM.py" />
-        <option value="$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_2_extended.py" />
-        <option value="$PROJECT_DIR$/Final/main_TensorflowSOM_2.py" />
-        <option value="$PROJECT_DIR$/_ultimate/manage_data/data_normalize.py" />
-        <option value="$PROJECT_DIR$/_ultimate/main_som_tf_gpu.py" />
-        <option value="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext_gpu.py" />
-        <option value="$PROJECT_DIR$/_ultimate/todo.txt" />
-        <option value="$PROJECT_DIR$/_ultimate/main_som_tf.py" />
-        <option value="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" />
-        <option value="$PROJECT_DIR$/_ultimate/main_som_tf_reversed.py" />
-        <option value="$PROJECT_DIR$/_ultimate/main_som_tf_backup.py" />
-        <option value="$PROJECT_DIR$/_ultimate/main_som_tf_v1.py" />
-        <option value="$PROJECT_DIR$/_ultimate/main_som_tf_v2.py" />
-        <option value="$PROJECT_DIR$/_ultimate/main_som_minisom_v1.py" />
       </list>
     </option>
   </component>
@@ -163,13 +180,6 @@
               <item name="_ultimate" type="462c0819:PsiDirectoryNode" />
               <item name="som_libs" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
-              <item name="_ultimate" type="462c0819:PsiDirectoryNode" />
-              <item name="som_libs" type="462c0819:PsiDirectoryNode" />
-              <item name="my_som_ok_22x22_hnd_200" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -179,22 +189,6 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\backups" />
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\backups\SOM_Libs_backups" />
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\som_libs" />
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace" />
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Final\pythom_simple_som" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate" />
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\som_libs" />
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\som_libs\my_som" />
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Final\_ultimate" />
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\Final\tensorflow_som" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -208,8 +202,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main_som_tf_v2">
-    <configuration name="main_som_tf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.merge_data">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -217,17 +211,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_ultimate" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\backups\main_som_tf.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\SOM.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="main_som_tf_backup" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -235,17 +229,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_ultimate" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\backups\main_som_tf_v1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="main_som_tf_reversed" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -253,17 +247,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_ultimate" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\backups\main_som_tf_reversed.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\SOM.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="main_som_tf_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main_fake_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -271,17 +265,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_ultimate" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\backups\main_som_tf_v1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_fake_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="main_som_tf_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="merge_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -289,30 +283,27 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_ultimate" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ultimate/main_som_tf_v2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/merge_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.main_som_tf" />
-      <item itemvalue="Python.main_som_tf_reversed" />
-      <item itemvalue="Python.main_som_tf_v2" />
-      <item itemvalue="Python.main_som_tf_backup" />
-      <item itemvalue="Python.main_som_tf_v1" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.main_fake_data" />
+      <item itemvalue="Python.merge_data" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main_som_tf_v2" />
-        <item itemvalue="Python.main_som_tf_v1" />
-        <item itemvalue="Python.main_som_tf_backup" />
-        <item itemvalue="Python.main_som_tf_reversed" />
-        <item itemvalue="Python.main_som_tf" />
+        <item itemvalue="Python.merge_data" />
+        <item itemvalue="Python.main_fake_data" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -326,6 +317,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528183850714</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Fixed a conversion problem in the SOM class">
+      <created>1528188396388</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1528188396388</updated>
     </task>
     <task id="LOCAL-00002" summary="Added comments in the main file.&#10;Set a fixed random seed for tensorflow.">
       <created>1528190176606</created>
@@ -397,525 +395,77 @@
       <option name="project" value="LOCAL" />
       <updated>1530222873754</updated>
     </task>
-    <task id="LOCAL-00012" summary="Merger script done">
-      <created>1530228103251</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1530228103251</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Merger script done (updated)">
-      <created>1530228659579</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1530228659579</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Updated folder project">
-      <created>1530259578232</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1530259578232</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Code cleaned">
-      <created>1530260810868</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1530260810868</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Code cleaned">
-      <created>1530261097038</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1530261097038</updated>
-    </task>
-    <task id="LOCAL-00017" summary="all files merged together">
-      <created>1530263408285</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1530263408286</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Data loaded into a matrix and in/out split">
-      <created>1530274991498</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1530274991498</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Data loaded into a matrix and in/out split">
-      <created>1530275183946</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1530275183946</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Data loaded into a matrix and in/out split">
-      <created>1530275435887</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1530275435887</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Data normalized (with scaling)">
-      <created>1530277979329</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1530277979329</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Data concatenated">
-      <created>1530278286223</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1530278286223</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Code re-structured and added a README">
-      <created>1530278884216</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1530278884216</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Loaded also unequal data">
-      <created>1530284756579</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1530284756579</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Loaded also unequal data">
-      <created>1530284968856</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1530284968856</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Started to do tests">
-      <created>1530316893695</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1530316893695</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Started to do tests">
-      <created>1530357108665</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1530357108665</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Started to do tests">
-      <created>1530357119339</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1530357119339</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Started to do tests">
-      <created>1530359290800</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1530359290800</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Using minisom">
-      <created>1530480957715</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1530480957715</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Using minisom">
-      <created>1530484706210</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1530484706210</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Using minisom">
-      <created>1530485572249</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1530485572249</updated>
-    </task>
-    <task id="LOCAL-00033" summary="maybe found a solution">
-      <created>1530524973056</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1530524973056</updated>
-    </task>
-    <task id="LOCAL-00034" summary="added new libraries">
-      <created>1530529571502</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1530529571502</updated>
-    </task>
-    <task id="LOCAL-00035" summary="added the final folder">
-      <created>1530541056262</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1530541056262</updated>
-    </task>
-    <task id="LOCAL-00036" summary="added the final folder">
-      <created>1530543219604</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1530543219604</updated>
-    </task>
-    <task id="LOCAL-00037" summary="added the final folder">
-      <created>1530544219812</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1530544219812</updated>
-    </task>
-    <task id="LOCAL-00038" summary="added further projects">
-      <created>1530560530836</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1530560530836</updated>
-    </task>
-    <task id="LOCAL-00039" summary="added further projects">
-      <created>1530575250044</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1530575250044</updated>
-    </task>
-    <task id="LOCAL-00040" summary="added further projects">
-      <created>1530630657156</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1530630657156</updated>
-    </task>
-    <task id="LOCAL-00041" summary="SOM created and first result found">
-      <created>1530636246251</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1530636246251</updated>
-    </task>
-    <task id="LOCAL-00042" summary="code cleaned and re-organized into &quot;_ultimate&quot; folder">
-      <created>1530637158273</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1530637158273</updated>
-    </task>
-    <task id="LOCAL-00043" summary="my_som ok 100 epochs works">
-      <created>1530640121410</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1530640121410</updated>
-    </task>
-    <task id="LOCAL-00044" summary="added progress bar on training">
-      <created>1530641809791</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1530641809791</updated>
-    </task>
-    <task id="LOCAL-00045" summary="basic source done">
-      <created>1530642385825</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1530642385825</updated>
-    </task>
-    <task id="LOCAL-00046" summary="basic source done">
-      <created>1530642452273</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1530642452274</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Further tests done with hnd fnd">
-      <created>1530717097336</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1530717097336</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Reversed rationale done">
-      <created>1530718986136</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1530718986136</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Reversed rationale done">
-      <created>1530737613695</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1530737613695</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Project structure cleaned">
-      <created>1530741868620</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1530741868621</updated>
-    </task>
-    <option name="localTasksCounter" value="51" />
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20969442" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20969442" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50104165" side_tool="true" weight="0.22422954" />
       <window_info anchor="bottom" id="Version Control" order="6" />
       <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49895832" visible="true" weight="0.3398693" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49895832" visible="true" weight="0.3398693" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.104375" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.23485653" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="0" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.105" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.23521683" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Python Console" order="0" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed a conversion problem in the SOM class" />
+    <MESSAGE value="Added comments in the main file.&#10;Set a fixed random seed for tensorflow." />
+    <MESSAGE value="Added temporary plotting charts" />
+    <MESSAGE value="Added interim plotting charts" />
+    <MESSAGE value="Loaded data from the Excel file" />
+    <MESSAGE value="Loaded data from the Excel file and tried to create clusters" />
+    <MESSAGE value="Created new clustering system according with the different radius data" />
+    <MESSAGE value="Re-started to put hands in the thesis project" />
     <MESSAGE value="Started to select relevant files from the simulation folder" />
-    <MESSAGE value="Merger script done" />
-    <MESSAGE value="Merger script done (updated)" />
-    <MESSAGE value="Updated folder project" />
-    <MESSAGE value="Code cleaned" />
-    <MESSAGE value="all files merged together" />
-    <MESSAGE value="Data loaded into a matrix and in/out split" />
-    <MESSAGE value="Data normalized (with scaling)" />
-    <MESSAGE value="Data concatenated" />
-    <MESSAGE value="Code re-structured and added a README" />
-    <MESSAGE value="Loaded also unequal data" />
-    <MESSAGE value="Started to do tests" />
-    <MESSAGE value="Using minisom" />
-    <MESSAGE value="maybe found a solution" />
-    <MESSAGE value="added new libraries" />
-    <MESSAGE value="added the final folder" />
-    <MESSAGE value="added further projects" />
-    <MESSAGE value="SOM created and first result found" />
-    <MESSAGE value="code cleaned and re-organized into &quot;_ultimate&quot; folder" />
-    <MESSAGE value="my_som ok 100 epochs works" />
-    <MESSAGE value="added progress bar on training" />
-    <MESSAGE value="basic source done" />
-    <MESSAGE value="Further tests done with hnd fnd" />
-    <MESSAGE value="Reversed rationale done" />
-    <MESSAGE value="Project structure cleaned" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project structure cleaned" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/AppData/Local/Temp/Temp1_SOM.zip/som.py</url>
-          <line>6</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/UsingTF/main_1.py</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/UsingTF/SOM_TF.py</url>
-          <line>4</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SOMPy/sompy.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/UsingTF/high_dim.py</url>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_3.py</url>
-          <line>3</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/AppData/Local/Temp/Temp1_SOM (1).zip/som.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="13" />
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="Started to select relevant files from the simulation folder" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/som2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="9" column="86" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UsingTF/SOM_TF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
-          <folding>
-            <element signature="e#99#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UsingTF/high_dim.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_SOM (1).zip/som.py" />
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/minisom.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2964">
-          <caret line="134" column="28" selection-start-line="134" selection-start-column="15" selection-end-line="134" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final/other_projects/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/Final/pythom_simple_som/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/Final/main_miniSOM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="90" selection-start-line="90" selection-end-line="91" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final/pythom_simple_som/som.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final/other_projects/som_3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
-          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final/other_projects/som_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final/other_projects/som_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="72" lean-forward="true" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final/tensorflow_som/SOM_TF_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="187" column="64" selection-start-line="187" selection-start-column="64" selection-end-line="187" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UsingTF/main_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="58" selection-start-line="58" selection-end-line="62" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final/main_TensorflowSOM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="68" column="40" lean-forward="true" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final/main_TensorflowSOM_aggr_results.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="121" column="23" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../../Workspace/Machine Learning/Tensorflow Tutorial/ex_10 (1).py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../../Workspace/Machine Learning/Tensorflow Tutorial/ex_10.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../../Workspace/Machine Learning/Tensorflow Tutorial/ex_5.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../../Workspace/Machine Learning/Tensorflow Tutorial/ex_6.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../../../Workspace/Machine Learning/Tensorflow Tutorial/ex_7.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1002,9 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
-          <folding>
-            <element signature="e#99#122#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1012,9 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,9 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2244">
           <caret line="136" column="45" selection-start-line="136" selection-start-column="45" selection-end-line="136" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1046,9 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1056,15 +594,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1428">
           <caret line="222" selection-start-line="222" selection-end-line="226" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
+        <state relative-caret-position="2040">
           <caret line="123" selection-start-line="123" selection-end-line="123" />
           <folding>
             <element signature="e#99#122#0" expanded="true" />
@@ -1083,29 +618,186 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="170" column="3" lean-forward="true" selection-start-line="170" selection-start-column="3" selection-end-line="170" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="104" selection-start-line="104" selection-end-line="105" selection-end-column="142" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_ultimate/main_som_minisom_v1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="84" column="19" lean-forward="true" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
+        <state relative-caret-position="1170">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="97" column="8" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="41" column="48" lean-forward="true" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_fake_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SOM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_fake_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="30" lean-forward="true" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SOM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3162">
+          <caret line="188" column="53" selection-start-line="188" selection-start-column="35" selection-end-line="188" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_fake_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2822">
+          <caret line="166" column="28" selection-start-line="166" selection-start-column="28" selection-end-line="166" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SOM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/tensorflow/python/ops/gen_array_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="6151" selection-start-line="6151" selection-end-line="6151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/tensorflow/python/framework/op_def_library.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="509" selection-start-line="509" selection-end-line="509" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="336" column="8" selection-start-line="336" selection-start-column="8" selection-end-line="336" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/pandas/core/frame.py" />
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="3204" selection-start-line="3204" selection-end-line="3204" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iris_data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="149" column="30" selection-start-line="149" selection-start-column="30" selection-end-line="149" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/openpyxl/reader/excel.py" />
+    <entry file="file://$PROJECT_DIR$/SOM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="97" column="8" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="38" column="10" selection-start-line="38" selection-end-line="38" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_fake_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
         </state>
       </provider>
     </entry>

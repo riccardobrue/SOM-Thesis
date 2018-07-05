@@ -23,33 +23,43 @@ UNEQUAL - PROTOCOLS INDICES:
 # ---------------------------------------
 # PARAMETERS
 # ---------------------------------------
-epochs = 200
+# ----------------
+# training-restoring parameters
+# ----------------
+epochs = 600
 
 restore_som = False  # true: doesn't train the som and doesn't store any new checkpoint files
 
 heuristic_size = True  # 22x22 (if false it is needed to specify the "som_side_dim" variable and the "ckpt_folder" name)
 manually_picked_som_dim = 30  # if heuristic_size is False, this will be the chosen som's side size
 
-att_index = 4  # network attribute to be visualized over the som's chart
-
 use_hnd = True  # false-> uses fnd
 
-use_reverse = False  # if true: uses the (trained) som over the network attributes instead of the simulation results
+use_reverse = True  # if true: uses the (trained) som over the network attributes instead of the simulation results
+
+# ----------------
+# Visualization parameters
+# ----------------
+att_index = 6  # network attribute to be visualized over the som's chart
 
 # ---------------------------------------
 # DERIVED PARAMETERS
 # ---------------------------------------
+if heuristic_size:
+    ckpt_folder_size_name = "22x22"
+else:
+    ckpt_folder_size_name = str(manually_picked_som_dim) + "x" + str(manually_picked_som_dim)
 
 if use_hnd:
     if use_reverse:
-        ckpt_folder = "ok_22x22_hnd_rev_"  # reversed
+        ckpt_folder = "ok_" + ckpt_folder_size_name + "_hnd_rev_"  # reversed
     else:
-        ckpt_folder = "ok_22x22_hnd_"
+        ckpt_folder = "ok_" + ckpt_folder_size_name + "_hnd_"
 else:
     if use_reverse:
-        ckpt_folder = "ok_22x22_fnd_rev_"  # reversed
+        ckpt_folder = "ok_" + ckpt_folder_size_name + "_fnd_rev_"  # reversed
     else:
-        ckpt_folder = "ok_22x22_fnd_"
+        ckpt_folder = "ok_" + ckpt_folder_size_name + "_fnd_"
 
 train_som = not restore_som
 store_som = not restore_som
