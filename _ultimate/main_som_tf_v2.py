@@ -26,7 +26,7 @@ UNEQUAL - PROTOCOLS INDICES:
 # ----------------
 # training-restoring parameters
 # ----------------
-epochs = 600
+epochs = 1500
 
 restore_som = False  # true: doesn't train the som and doesn't store any new checkpoint files
 

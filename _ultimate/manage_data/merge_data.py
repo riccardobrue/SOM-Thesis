@@ -4,7 +4,16 @@ import os, os.path
 import glob
 
 # Basic path (where the data is stored)
-basic_path = "C:\\Users\\Riccardo\\Google Drive\\University\\Double Degree - Middlesex\\Middlesex Teaching Material\\CSD4444 - Ralph Moseley\\Data\\"
+basic_path_desktop = "C:\\Users\\Riccardo\\Google Drive\\University\\Double Degree - Middlesex\\Middlesex Teaching Material\\CSD4444 - Ralph Moseley\\Data\\"
+basic_path_laptop = "C:\\Users\\brux9\\Google Drive\\University\\Double Degree - Middlesex\\Middlesex Teaching Material\\CSD4444 - Ralph Moseley\\Data\\"
+
+if os.path.isdir(basic_path_desktop):
+    print("DESKTOP")
+    basic_path = basic_path_desktop
+else:
+    print("LAPTOP")
+    basic_path = basic_path_laptop
+
 # Simulation folders
 simulation_equal_folder_path = basic_path + "Real data\\SimulationEQUAL\\"
 simulation_unequal_folder_path = basic_path + "Real data\\SimulationUNEQUAL\\"

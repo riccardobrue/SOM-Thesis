@@ -216,7 +216,7 @@ class SOM(object):
         try:
             save_path = self._saver.save(self._sess, self._storing_path)
             print("\nSOM has been saved to: ", save_path)
-        except():
+        except:
             print("\nFailed to save on disk")
 
     def close_sess(self):
