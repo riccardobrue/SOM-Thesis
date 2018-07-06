@@ -38,7 +38,7 @@ use_hnd = False  # false-> uses fnd
 use_reverse = False  # if true: uses the (trained) som over the network attributes instead of the simulation results
 
 show_net_att_n = 0.  # specify which attribute to see
-show_prot_n = 3  # specify which best protocol to see
+show_prot_n = 2  # specify which best protocol to see
 
 # ----------------
 # Visualization parameters
@@ -121,12 +121,12 @@ nt_norm, avg_layers_norm, avg_chxrounds_norm, sim_norm, headers_nt, headers_avg_
 
 # Get the best protocol for each row
 if use_hnd:
-    sim_headers = [1, 3, 5, 7]
+    sim_headers_specific = [1, 3, 5, 7]
 else:
-    sim_headers = [0, 2, 4, 6]
+    sim_headers_specific = [0, 2, 4, 6]
 
-best_protocols = np.argmax(sim_norm[:, sim_headers], axis=1)  # returns the index of the most efficient protocol
-best_protocols_names = sim_norm[sim_headers]
+best_protocols = np.argmax(sim_norm[:, sim_headers_specific], axis=1)  # returns the index of the most efficient protocol
+best_protocols_names = headers_sim[sim_headers_specific]
 
 print("Data loaded")
 print(headers_nt)
