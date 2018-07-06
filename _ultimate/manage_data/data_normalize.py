@@ -1,104 +1,35 @@
 import _ultimate.manage_data.merge_data as md
-import numpy as np
 from sklearn import preprocessing
 
 
-def load_normalized_equal_data():
+def load_normalized_data(type="equal"):
     # ----------------------------------------------------
     # IMPORTING THE DATA
     # ----------------------------------------------------
-    network_topology_att, simulation_results, nt_headers, sim_headers = md.load_equal_data()
+    if type == "equal":
+        nt, avg_layers, avg_chxrounds, sim, headers_nt, headers_avg_layers, headers_avg_chxrounds, headers_sim = md.load_equal_data()
+    else:
+        nt, avg_layers, avg_chxrounds, sim, headers_nt, headers_avg_layers, headers_avg_chxrounds, headers_sim = md.load_unequal_data()
 
-    print("===================")
-    print(nt_headers)
-    print("-------------------")
-    print(network_topology_att)
-    print("===================")
-    print(sim_headers)
-    print("-------------------")
-    print(simulation_results)
-    print("===================")
-
-    sim_results_shape = simulation_results.shape
-    """
-    print("Network topology attributes (size): ", network_topology_att.shape)
-    print("Simulation results (size): ", sim_results_shape)
-    print("===================")
-    """
-    # ----------------------------------------------------
-    # NORMALIZING THE DATA
-    # ----------------------------------------------------
-    """
-    print("Normalization...")
-    print("===================")
-    """
-
-    max_sim_result = np.amax(simulation_results)
-    min_sim_result = np.amin(simulation_results)
-    """
-    print("Sim max: ", max_sim_result)
-    print("Sim min: ", min_sim_result)
-    """
-    network_topology_att_norm = preprocessing.minmax_scale(network_topology_att, feature_range=(0, 1))
-    # METHOD 1: each column is normalized in an independent way
-    # simulation_results_norm = preprocessing.minmax_scale(simulation_results, feature_range=(0, 1))
-    # METHOD 2: all the simulation outputs are linked together while normalizing because they express the same concept
-    single_sim_results = simulation_results.ravel()  # flattening of the simulation results to a 1D array for normalization
-    single_sim_results_norm = preprocessing.minmax_scale(single_sim_results, feature_range=(0, 1))
-    simulation_results_norm = single_sim_results_norm.reshape(sim_results_shape)
-    """
-    print("===================")
-    print(nt_headers)
-    print("-------------------")
-    print(network_topology_att_norm)
-    print("===================")
-    print(sim_headers)
-    print("-------------------")
-    print(simulation_results_norm)
-    print("===================")
-    print("Network topology attributes (size): ", network_topology_att_norm.shape)
-    print("Simulation results (size): ", simulation_results_norm.shape)
-    print("===================")
-    """
-    # ----------------------------------------------------
-    # MERGING ALL THE DATA TO TREAT THEM ALL AS FEATURES FOR THE CLUSTERING PHASE
-    # ----------------------------------------------------
-    all_data = np.append(network_topology_att_norm, simulation_results_norm, axis=1)
-    """
-    print(all_data)
-    print("===================")
-    print("All concatenated data (size): ", all_data.shape)
-    print("===================")
-    """
-    return all_data, network_topology_att_norm, simulation_results_norm, nt_headers, sim_headers
-
-
-def load_normalized_unequal_data():
-    # ----------------------------------------------------
-    # IMPORTING THE DATA
-    # ----------------------------------------------------
-    network_topology_att, simulation_results, nt_headers, sim_headers = md.load_unequal_data()
-
-    sim_results_shape = simulation_results.shape
+    avg_layers_shape = avg_layers.shape
+    avg_chxrounds_shape = avg_chxrounds.shape
+    sim_shape = sim.shape
 
     # ----------------------------------------------------
     # NORMALIZING THE DATA
     # ----------------------------------------------------
+    nt_norm = preprocessing.minmax_scale(nt, feature_range=(0, 1))
 
-    max_sim_result = np.amax(simulation_results)
-    min_sim_result = np.amin(simulation_results)
+    single_avg_layers = avg_layers.ravel()  # flattening of the simulation results to a 1D array for normalization
+    single_avg_layers_norm = preprocessing.minmax_scale(single_avg_layers, feature_range=(0, 1))
+    avg_layers_norm = single_avg_layers_norm.reshape(avg_layers_shape)
 
-    network_topology_att_norm = preprocessing.minmax_scale(network_topology_att, feature_range=(0, 1))
-    # METHOD 1: each column is normalized in an independent way
-    # simulation_results_norm = preprocessing.minmax_scale(simulation_results, feature_range=(0, 1))
-    # METHOD 2: all the simulation outputs are linked together while normalizing because they express the same concept
-    single_sim_results = simulation_results.ravel()  # flattening of the simulation results to a 1D array for normalization
+    single_avg_chxrounds = avg_chxrounds.ravel()  # flattening of the simulation results to a 1D array for normalization
+    single_avg_chxrounds_norm = preprocessing.minmax_scale(single_avg_chxrounds, feature_range=(0, 1))
+    avg_chxrounds_norm = single_avg_chxrounds_norm.reshape(avg_chxrounds_shape)
+
+    single_sim_results = sim.ravel()  # flattening of the simulation results to a 1D array for normalization
     single_sim_results_norm = preprocessing.minmax_scale(single_sim_results, feature_range=(0, 1))
-    simulation_results_norm = single_sim_results_norm.reshape(sim_results_shape)
+    sim_norm = single_sim_results_norm.reshape(sim_shape)
 
-    # ----------------------------------------------------
-    # MERGING ALL THE DATA TO TREAT THEM ALL AS FEATURES FOR THE CLUSTERING PHASE
-    # ----------------------------------------------------
-    all_data = np.append(network_topology_att_norm, simulation_results_norm, axis=1)
-
-    return all_data, network_topology_att_norm, simulation_results_norm, nt_headers, sim_headers
+    return nt_norm, avg_layers_norm, avg_chxrounds_norm, sim_norm, headers_nt, headers_avg_layers, headers_avg_chxrounds, headers_sim

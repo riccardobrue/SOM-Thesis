@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="Started to select relevant files from the simulation folder">
-      <change beforePath="$PROJECT_DIR$/.idea/Python Workspace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python Workspace.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/manage_data/backups/data_normalize_v1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/main_som_minisom_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/main_som_minisom_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/backups/SOM_Libs_backups/SOM_TF_2_ext_gpu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/backups/main_som_tf_gpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/main_som_tf_v2_ext.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_ultimate/main_som_tf_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/main_som_tf_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/manage_data/data_normalize.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/manage_data/data_normalize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/manage_data/merge_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/manage_data/merge_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main_som_tf_v2.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_v2.py">
+      <file leaf-file-name="main_som_tf_v2_ext.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_v2_ext.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="47" column="41" lean-forward="true" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+            <state relative-caret-position="2225">
+              <caret line="243" column="19" selection-start-line="243" selection-start-column="9" selection-end-line="243" selection-end-column="19" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -30,14 +31,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SOM_TF_2_ext.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py">
+      <file leaf-file-name="data_normalize.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_ultimate/manage_data/data_normalize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
+            <state relative-caret-position="68">
+              <caret line="4" column="29" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="29" />
               <folding>
-                <element signature="e#99#122#0" expanded="true" />
+                <element signature="e#0#45#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="merge_data.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_ultimate/manage_data/merge_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="287" column="69" selection-start-line="287" selection-start-column="69" selection-end-line="287" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -68,19 +78,20 @@
         <option value="$PROJECT_DIR$/main_fake_data.py" />
         <option value="$PROJECT_DIR$/load_data.py" />
         <option value="$PROJECT_DIR$/merge_data.py" />
-        <option value="$PROJECT_DIR$/_ultimate/manage_data/merge_data.py" />
-        <option value="$PROJECT_DIR$/_ultimate/manage_data/data_normalize.py" />
         <option value="$PROJECT_DIR$/tests/using_gpu.py" />
-        <option value="$PROJECT_DIR$/_ultimate/main_som_minisom_v1.py" />
         <option value="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" />
+        <option value="$PROJECT_DIR$/_ultimate/main_som_minisom_v1.py" />
         <option value="$PROJECT_DIR$/_ultimate/main_som_tf_v2.py" />
+        <option value="$PROJECT_DIR$/_ultimate/manage_data/data_normalize.py" />
+        <option value="$PROJECT_DIR$/_ultimate/main_som_tf_v2_ext.py" />
+        <option value="$PROJECT_DIR$/_ultimate/manage_data/merge_data.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="814" />
-    <option name="height" value="867" />
+    <option name="width" value="1181" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -90,7 +101,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,17 +117,37 @@
               <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
               <item name="_ultimate" type="462c0819:PsiDirectoryNode" />
+              <item name="manage_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="_ultimate" type="462c0819:PsiDirectoryNode" />
+              <item name="manage_data" type="462c0819:PsiDirectoryNode" />
+              <item name="backups" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="_ultimate" type="462c0819:PsiDirectoryNode" />
               <item name="som_libs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\manage_data\backups" />
+      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -131,25 +161,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main_som_tf_v2">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python Workspace" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.main_som_tf_v2_ext">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,24 +175,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\SOM.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="main_fake_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python Workspace" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_fake_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -217,6 +211,42 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ultimate/main_som_tf_v2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="main_som_tf_v2_ext" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python Workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_ultimate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ultimate/main_som_tf_v2_ext.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="merge_data (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python Workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_ultimate/manage_data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ultimate/manage_data/merge_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -259,18 +289,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.main_fake_data" />
       <item itemvalue="Python.merge_data" />
       <item itemvalue="Python.main_som_tf_v2" />
       <item itemvalue="Python.using_gpu" />
+      <item itemvalue="Python.merge_data (1)" />
+      <item itemvalue="Python.main_som_tf_v2_ext" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main_som_tf_v2_ext" />
+        <item itemvalue="Python.merge_data (1)" />
         <item itemvalue="Python.main_som_tf_v2" />
         <item itemvalue="Python.using_gpu" />
         <item itemvalue="Python.merge_data" />
-        <item itemvalue="Python.main_fake_data" />
       </list>
     </recent_temporary>
   </component>
@@ -369,42 +400,52 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.14739583" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.14583333" />
       <window_info anchor="bottom" id="TODO" order="17" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="12" visible="true" weight="0.35812965" />
+      <window_info anchor="bottom" id="Run" order="12" visible="true" weight="0.35812965" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="5" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="13" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.19" />
+      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="17" />
+      <window_info active="true" anchor="bottom" id="Run" order="12" visible="true" weight="0.35742444" />
+      <window_info anchor="bottom" id="Debug" order="13" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
+      <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="5" />
+      <window_info anchor="bottom" id="Python Console" order="2" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" weight="0.105" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.23521683" />
-      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Python Console" order="0" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Python Console" order="0" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -422,21 +463,7 @@
     <MESSAGE value="Started to select relevant files from the simulation folder" />
     <option name="LAST_COMMIT_MESSAGE" value="Started to select relevant files from the simulation folder" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/tensorflow/python/framework/op_def_library.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="336" column="8" selection-start-line="336" selection-start-column="8" selection-end-line="336" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/pandas/core/frame.py" />
     <entry file="file://C:/Program Files/Python36/Lib/site-packages/matplotlib/pyplot.py" />
     <entry file="file://$PROJECT_DIR$/Iris_data.txt" />
     <entry file="file://C:/Program Files/Python36/Lib/site-packages/openpyxl/reader/excel.py" />
@@ -590,20 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_ultimate/manage_data/data_normalize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_ultimate/manage_data/merge_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/using_gpu.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -622,21 +635,58 @@
     <entry file="file://C:/Program Files/Python36/Lib/site-packages/tensorflow/python/platform/self_check.py" />
     <entry file="file://$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
-          <folding>
-            <element signature="e#99#122#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="47" column="41" lean-forward="true" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+        <state relative-caret-position="731">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ultimate/manage_data/backups/data_normalize_v1.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_v2_ext.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2225">
+          <caret line="243" column="19" selection-start-line="243" selection-start-column="9" selection-end-line="243" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ultimate/manage_data/data_normalize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ultimate/manage_data/backups/merge_data_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="219" column="23" selection-start-line="219" selection-start-column="23" selection-end-line="219" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ultimate/manage_data/merge_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="287" column="69" selection-start-line="287" selection-start-column="69" selection-end-line="287" selection-end-column="69" />
         </state>
       </provider>
     </entry>
