@@ -1,6 +1,4 @@
-try with hexagonal neurons,
-
-find the visualization methods:
+Visualization methods:
 https://stackoverflow.com/questions/39420168/self-organizing-network-plot-subset-of-codes
 https://en.wikipedia.org/wiki/Matplotlib
 https://matplotlib.org/gallery.html
@@ -21,8 +19,9 @@ treat some inputs as more important than others:
 
 
 IMPORTANT:
-- try to show different network topology attributes
-- create a function for shuffling the data
-
-- train the som with only 1 protocol per time
-- reverse the train (train the som over the network topologies--> show the efficiencies)
+(1) try with hexagonal neurons
+(2) (DONE) try to show different network topology attributes
+(3) create a function for shuffling the data
+(4) train the som with only 1 protocol per time (training over simulation results) --> probably it is not relevant, try point (6)
+(5) (DONE) reverse the train (train the som over the network topologies--> show the efficiencies)
+(6) try to visualise only one protocol per time and not only when it wins (ie: visualiza when it is >200 etc etc (split in ranges))

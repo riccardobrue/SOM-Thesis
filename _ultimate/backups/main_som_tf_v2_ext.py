@@ -7,7 +7,8 @@ import som_libs.SOM_TF_2_ext as som_tf
 ---------------------------
 EQUAL - NETWORK ATTRIBUTE INDICES:
 ---------------------------
-'HEIGHT' - 0; 'WIDTH' - 1; 'NODE' - 2; 'R0' - 3; '%AGGR' - 4; 'HET' - 5; 'HOM ENERGY' - 6; 'HOM RATE' - 7; 
+'HEIGHT'; 'WIDTH'; 'NODE' are removed because calculated inside new column "DENSITY"
+'R0' - 0; '%AGGR' - 1; 'HET' - 2; 'HOM ENERGY' - 3; 'HOM RATE' - 4; 'DENSITY' - 5 
 ---------------------------
 EQUAL - PROTOCOLS INDICES:
 ---------------------------
@@ -26,24 +27,27 @@ UNEQUAL - PROTOCOLS INDICES:
 # ----------------
 # training-restoring parameters
 # ----------------
-epochs = 20
+
+folder_prefix = "ok_ext_"
+epochs = 5000
 
 restore_som = True  # true: doesn't train the som and doesn't store any new checkpoint files
 
 heuristic_size = True  # 22x22 (if false it is needed to specify the "som_side_dim" variable and the "ckpt_folder" name)
 manually_picked_som_dim = 30  # if heuristic_size is False, this will be the chosen som's side size
 
+use_reverse = True  # if true: uses the (trained) som over the network attributes instead of the simulation results
+
 use_hnd = False  # false-> uses fnd
-
-use_reverse = False  # if true: uses the (trained) som over the network attributes instead of the simulation results
-
-show_net_att_n = 0.  # specify which attribute to see
-show_prot_n = 2  # specify which best protocol to see
 
 # ----------------
 # Visualization parameters
 # ----------------
-att_index = 4  # network attribute to be visualized over the som's chart
+att_index = 1  # network attribute to be visualized over the som's chart
+
+""" see the values inside @clustering_data """
+show_net_att_n = 0.  # specify which attribute to see
+show_prot_n = 3  # specify which best protocol to see
 
 # ---------------------------------------
 # DERIVED PARAMETERS
@@ -53,20 +57,18 @@ if heuristic_size:
 else:
     ckpt_folder_size_name = str(manually_picked_som_dim) + "x" + str(manually_picked_som_dim)
 
-if use_hnd:
-    if use_reverse:
-        ckpt_folder = "ext_ok_" + ckpt_folder_size_name + "_hnd_rev_"  # reversed
-    else:
-        ckpt_folder = "ext_ok_" + ckpt_folder_size_name + "_hnd_"
+if use_reverse:
+    ckpt_folder = folder_prefix + ckpt_folder_size_name + "_rev_"  # reversed
 else:
-    if use_reverse:
-        ckpt_folder = "ext_ok_" + ckpt_folder_size_name + "_fnd_rev_"  # reversed
+    if use_hnd:
+        ckpt_folder = folder_prefix + ckpt_folder_size_name + "_hnd_"
     else:
-        ckpt_folder = "ext_ok_" + ckpt_folder_size_name + "_fnd_"
+        ckpt_folder = folder_prefix + ckpt_folder_size_name + "_fnd_"
+
+ckpt_folder = ckpt_folder + str(epochs)  # the folder name is composed by "cpkt_folder" string + epochs number
 
 train_som = not restore_som
 store_som = not restore_som
-ckpt_folder = ckpt_folder + str(epochs)  # the folder name is composed by "cpkt_folder" string + epochs number
 
 
 # ---------------------------------------
@@ -119,20 +121,31 @@ print("=========================================")
 nt_norm, avg_layers_norm, avg_chxrounds_norm, sim_norm, headers_nt, headers_avg_layers, headers_avg_chxrounds, headers_sim = dn.load_normalized_data(
     type="equal")
 
-# Get the best protocol for each row
-if use_hnd:
-    sim_headers_specific = [1, 3, 5, 7]
-else:
-    sim_headers_specific = [0, 2, 4, 6]
+headers_nt = headers_nt[3:]
+nt_norm = nt_norm[:, 3:]  # remove the first three columns which are not relevant
 
-best_protocols = np.argmax(sim_norm[:, sim_headers_specific], axis=1)  # returns the index of the most efficient protocol
-best_protocols_names = headers_sim[sim_headers_specific]
+# Get the best protocol for each row
+
+sim_hnd_cols = [1, 3, 5, 7]
+sim_fnd_cols = [0, 2, 4, 6]
+
+sim_hnd_norm = sim_norm[sim_hnd_cols]
+sim_fnd_norm = sim_norm[sim_fnd_cols]
+
+hnd_protocols_names = headers_sim[sim_hnd_cols]
+fnd_protocols_names = headers_sim[sim_fnd_cols]
+
+best_hnd_protocols = np.argmax(sim_norm[:, sim_hnd_cols], axis=1)  # index of the most efficient protocol
+best_fnd_protocols = np.argmax(sim_norm[:, sim_fnd_cols], axis=1)
 
 print("Data loaded")
-print(headers_nt)
-print(headers_avg_layers)
-print(headers_avg_chxrounds)
-print(headers_sim)
+print("network attributes: \n", headers_nt)
+print("avg layers: \n", headers_avg_layers)
+print("avg CHxRounds headers: \n", headers_avg_chxrounds)
+print("hnd protocols names: \n", hnd_protocols_names)
+print("fnd protocols names: \n", fnd_protocols_names)
+print("Simulation data hnd (samples): \n", sim_hnd_norm[:4])
+print("Simulation data fnd (samples): \n", sim_fnd_norm[:4])
 
 # ---------------------------------------
 # SELECT THE DATA FOR CLUSTERING
@@ -140,9 +153,13 @@ print(headers_sim)
 if use_reverse:
     clustering_data = nt_norm
 else:
-    clustering_data = sim_norm
+    if use_hnd:
+        clustering_data = sim_hnd_norm
+    else:
+        clustering_data = sim_fnd_norm
 
 print("Clustering data size: ", clustering_data.shape)
+print("Clustering data (samples): \n", clustering_data[:4])
 
 # ---------------------------------------
 # COMPUTE THE SOM SIZE HEURISTICALLY
@@ -156,7 +173,7 @@ else:
 print("SOM dimension: ", som_side_dim, "x", som_side_dim)
 
 # ---------------------------------------
-# TRAIN THE SOM
+# TRAIN, OR RESTORE, THE SOM
 # ---------------------------------------
 som = som_tf.SOM(som_side_dim, som_side_dim, clustering_data.shape[1], epochs=epochs, ckpt_folder_name=ckpt_folder)
 
@@ -196,15 +213,91 @@ som.close_sess()
 # ---------------------------------------
 # VISUALIZING THE CHARTS
 # ---------------------------------------
+"""
+if use_hnd:
+    protocols_names = hnd_protocols_names
+    best_protocols = best_hnd_protocols
+else:
+    protocols_names = fnd_protocols_names
+    best_protocols = best_fnd_protocols
+"""
+figure_counter = 1
+
+x = plt.cm.get_cmap('tab10')
+colors = x.colors
+
 # ----------------------------------------------------------------------------------------------------------------------
-# FIGURE 1
+# 1st SECTION - Best protocols in HND
 # ----------------------------------------------------------------------------------------------------------------------
+
+classes = best_hnd_protocols
+unique_classes = np.unique(classes)
+
+for prot_index in range(0, len(sim_hnd_cols)):
+    plt.figure(figure_counter)
+    figure_counter = figure_counter + 1
+    plt.bone()
+    plt.pcolor(u_matrix.T)
+
+    for i, u in enumerate(unique_classes):
+        if u == prot_index:
+            xi = [mapped_data_X[j] for j in range(len(mapped_data_X)) if classes[j] == u]
+            yi = [mapped_data_Y[j] for j in range(len(mapped_data_Y)) if classes[j] == u]
+            plt.scatter(xi, yi, color=colors[i], label=hnd_protocols_names[u], alpha=.15)
+
+    plt.axis([0, som_side_dim, 0, som_side_dim])
+    plt.interactive(True)
+    plt.legend(loc='center left', bbox_to_anchor=(0, 1.08))
+
+    if use_reverse:
+        plt.title(
+            'Best protocols on HND (Training over network)' + str(prot_index) + "_" + hnd_protocols_names[prot_index])
+    else:
+        plt.title(
+            'Best protocols on HND (Training over sim_data)' + str(prot_index) + "_" + hnd_protocols_names[prot_index])
+
+    plt.savefig('charts\\HND_' + str(prot_index) + '_' + hnd_protocols_names[prot_index] + '.png')
+    plt.show()
+# ----------------------------------------------------------------------------------------------------------------------
+# 2nd SECTION - Best protocols in FND
+# ----------------------------------------------------------------------------------------------------------------------
+
+classes = best_fnd_protocols
+unique_classes = np.unique(classes)
+
+for prot_index in range(0, len(sim_fnd_cols)):
+    plt.figure(figure_counter)
+    figure_counter = figure_counter + 1
+    plt.bone()
+    plt.pcolor(u_matrix.T)
+
+    for i, u in enumerate(unique_classes):
+        if u == prot_index:
+            xi = [mapped_data_X[j] for j in range(len(mapped_data_X)) if classes[j] == u]
+            yi = [mapped_data_Y[j] for j in range(len(mapped_data_Y)) if classes[j] == u]
+            plt.scatter(xi, yi, color=colors[i], label=fnd_protocols_names[u], alpha=.15)
+
+    plt.axis([0, som_side_dim, 0, som_side_dim])
+    plt.interactive(True)
+    plt.legend(loc='center left', bbox_to_anchor=(0, 1.08))
+
+    if use_reverse:
+        plt.title(
+            'Best protocols on FND (Training over network)' + str(prot_index) + "_" + fnd_protocols_names[prot_index])
+    else:
+        plt.title(
+            'Best protocols on FND (Training over sim_data)' + str(prot_index) + "_" + fnd_protocols_names[prot_index])
+
+    plt.savefig('charts\\FND_' + str(prot_index) + '_' + fnd_protocols_names[prot_index] + '.png')
+    plt.show()
+
+"""
 plt.figure(1)
 plt.bone()  # grayscale colors
 # @todo: Which should i take? the transposed or the non-transposed one?
 # plt.pcolor(u_matrix)  # plotting the U-MATRIX as background
 plt.pcolor(u_matrix.T)  # plotting the transposed U-MATRIX as background (?)
-print("Protocols names: ", best_protocols_names)
+
 classes = best_protocols
 unique_classes = np.unique(classes)
 
@@ -217,11 +310,12 @@ for i, u in enumerate(unique_classes):
     if u == show_prot_n:
         xi = [mapped_data_X[j] for j in range(len(mapped_data_X)) if classes[j] == u]
         yi = [mapped_data_Y[j] for j in range(len(mapped_data_Y)) if classes[j] == u]
-        plt.scatter(xi, yi, color=colors[i], label=best_protocols_names[u], alpha=.15)
+        plt.scatter(xi, yi, color=colors[i], label=protocols_names[u], alpha=.15)
 
 plt.axis([0, som_side_dim, 0, som_side_dim])
 plt.interactive(True)
 plt.legend(loc='center left', bbox_to_anchor=(0, 1.08))
+
 if use_hnd:
     if use_reverse:
         plt.title('Best protocols on HND (Training over network)')
@@ -233,9 +327,12 @@ else:
     else:
         plt.title('Best protocols on FND (Training over sim_data)')
 
+plt.savefig('charts\\1.png')
 plt.show()
+"""
+
 # ----------------------------------------------------------------------------------------------------------------------
-# FIGURE 2
+# FIGURE 2 - Network attributes
 # ----------------------------------------------------------------------------------------------------------------------
 plt.figure(2)
 plt.bone()  # grayscale colors
@@ -253,6 +350,7 @@ x = plt.cm.get_cmap('tab10')
 colors = x.colors
 
 for i, u in enumerate(unique_classes):
+    print("U: ", u)
     if u == show_net_att_n:
         xi = [mapped_data_X[j] for j in range(len(mapped_data_X)) if classes[j] == u]
         yi = [mapped_data_Y[j] for j in range(len(mapped_data_Y)) if classes[j] == u]
@@ -268,4 +366,5 @@ if use_reverse:
 else:
     plt.title('Visualizing (normalized) ' + header + " (Training over sim_data)")
 
+plt.savefig('charts\\2.png')
 plt.show()

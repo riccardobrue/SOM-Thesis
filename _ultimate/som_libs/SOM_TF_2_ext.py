@@ -34,7 +34,7 @@ class SOM(object):
         """
 
         dir_path = os.path.dirname(os.path.realpath(__file__))  # get this project's dir path
-        self._storing_path = dir_path + "/my_som_" + ckpt_folder_name + "/saved_som.ckpt"
+        self._storing_path = dir_path + "/trainings/my_som_" + ckpt_folder_name + "/saved_som.ckpt"
 
         # Assign required variables first
         self._m = m
