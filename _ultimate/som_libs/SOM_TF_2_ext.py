@@ -34,7 +34,8 @@ class SOM(object):
         """
 
         dir_path = os.path.dirname(os.path.realpath(__file__))  # get this project's dir path
-        self._storing_path = dir_path + "/trainings/my_som_" + ckpt_folder_name + "/saved_som.ckpt"
+        self._storing_path = dir_path + "/../_trainings/my_som_"
+        self._ckpt_folder_name = ckpt_folder_name
 
         # Assign required variables first
         self._m = m
@@ -102,10 +103,12 @@ class SOM(object):
             # Construct the op that will generate a vector with learning
             # rates for all neurons, based on iteration number and location
             # wrt BMU.
-            bmu_distance_squares = tf.reduce_sum(
+            self._bmu_distance_squares = tf.reduce_sum(
                 tf.pow(tf.subtract(self._location_vects, tf.stack([bmu_loc for i in range(m * n)])), 2), 1)
+
             neighbourhood_func = tf.exp(
-                tf.negative(tf.div(tf.cast(bmu_distance_squares, "float32"), tf.pow(_sigma_op, 2))))
+                tf.negative(tf.div(tf.cast(self._bmu_distance_squares, "float32"), tf.pow(_sigma_op, 2))))
+
             learning_rate_op = tf.multiply(_alpha_op, neighbourhood_func)
 
             # Finally, the op that will use learning_rate_op to update
@@ -155,7 +158,7 @@ class SOM(object):
 
         self._trained = True
 
-    def train(self, input_vects, restart_from=0):
+    def train(self, input_vects, restart_from=0, checkpoints_iterations=200):
         """
         Trains the SOM.
         'input_vects' should be an iterable of 1-D NumPy arrays with
@@ -178,8 +181,20 @@ class SOM(object):
                 self._sess.run(self._training_op,
                                feed_dict={self._vect_input: input_vect,
                                           self._iter_input: iter_no})
+
+                # @todo print the quantization error from the BMU and store in a vector to be showed after the training
+                """
+                # store quantization error during the training
+                print("Errors: ", self._sess.run(self._bmu_distance_squares,
+                                                feed_dict={self._vect_input: input_vect,
+                                                           self._iter_input: iter_no}))
+                """
+
             if i % 10 == 0:
-                self.store()
+                self.store(added_prefix="temp_")
+
+            if i % checkpoints_iterations == 0:
+                self.store(added_prefix=str(i) + "_")
 
         self.store_centroid_grid()
 
@@ -214,12 +229,14 @@ class SOM(object):
 
         return to_return
 
-    def store(self):
+    def store(self, added_prefix=""):
         """
         Save the som's session to disk
         """
         try:
-            save_path = self._saver.save(self._sess, self._storing_path)
+            path = self._storing_path + added_prefix + self._ckpt_folder_name + "/saved_som.ckpt"
+
+            save_path = self._saver.save(self._sess, path)
             print("\nSOM has been saved to: ", save_path)
         except:
             print("\nFailed to save on disk")
@@ -228,7 +245,8 @@ class SOM(object):
         self._sess.close()
         print("Session closed")
 
-    def restore(self):
-        self._saver.restore(self._sess, self._storing_path)
+    def restore(self, added_prefix=""):
+        path = self._storing_path + added_prefix + self._ckpt_folder_name + "/saved_som.ckpt"
+        self._saver.restore(self._sess, path)
         self.store_centroid_grid()
         print("SOM has been restored")
