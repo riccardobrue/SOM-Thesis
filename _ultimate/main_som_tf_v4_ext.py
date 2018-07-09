@@ -4,6 +4,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 import _ultimate.som_libs.SOM_TF_2_ext as som_tf
 import os
+import shutil
 
 """
 ---------------------------
@@ -197,7 +198,7 @@ mat = np.zeros(shape=(som_side_dim, som_side_dim, clustering_data.shape[1]))
 for r in range(0, len(image_grid)):
     for c in range(0, len(image_grid[r])):
         mat[r][c] = image_grid[r][c]
-u_matrix = distance_map(mat)
+u_matrix = distance_map(mat).T
 
 # ---------------------------------------
 # CREATE A MAPPED DATA TO KNOW THE BMUs OVER THE DATA
@@ -253,7 +254,7 @@ for prot_index in range(0, len(cols)):
     _figure_counter = _figure_counter + 1
 
     plt.bone()
-    plt.pcolor(u_matrix.T)
+    plt.pcolor(u_matrix)
 
     for i, u in enumerate(unique_classes):
         if u == prot_index:
@@ -292,7 +293,7 @@ for prot_index in range(0, len(cols)):
     _figure_counter = _figure_counter + 1
 
     plt.bone()
-    plt.pcolor(u_matrix.T)
+    plt.pcolor(u_matrix)
 
     for i, u in enumerate(unique_classes):
         if u == prot_index:
@@ -336,7 +337,7 @@ for att_index in range(0, len(attributes)):
     # get the real value not the normalized one (this should be mapped with the normalized)
     # ------------------
     unique_real_classes = np.unique(nt[:, att_index + 3])  # +3 because i remove the first three columns
-    print("===\n")
+    print("===")
     print(" - ", unique_classes)
     print(" - ", unique_real_classes)
     # ------------------
@@ -346,7 +347,7 @@ for att_index in range(0, len(attributes)):
         _figure_counter = _figure_counter + 1
 
         plt.bone()
-        plt.pcolor(u_matrix.T)
+        plt.pcolor(u_matrix)
 
         for i, u in enumerate(unique_classes):
             if u == unique_classes[att_specific_value_index]:
@@ -373,3 +374,78 @@ for att_index in range(0, len(attributes)):
         if not os.path.exists(att_directory_path):
             os.makedirs(att_directory_path)
         plt.savefig(att_directory_path + 'NT_' + attribute_name + "_" + str(att_specific_value_index) + '.png')
+
+# ----------------------------------------------------------------------------------------------------------------------
+# 4st SECTION - Ranges in HND
+# ----------------------------------------------------------------------------------------------------------------------
+
+number_of_ranges = 6
+
+cols = sim_hnd_cols  # (4,) -> [1 3 5 7]
+label_names = hnd_protocols_names  # (4,) -> ['REECHD HND' 'HEED HND' 'ERHEED HND' 'FMUC HND']
+# classes = best_hnd_protocols  # (5184,) -> [2 2 2 .... 3 2 1 ... 1 1 2]
+
+
+directory_path = basic_chart_path + "\\ranges_sim_hnd\\"
+if not os.path.exists(directory_path):
+    os.makedirs(directory_path)
+else:
+    shutil.rmtree(directory_path, ignore_errors=True)
+
+for prot_index in range(0, len(cols)):  # iterate each protocol
+
+    print("Protocol: ", label_names[prot_index])
+    prot_column_data = sim[:, cols[prot_index]]  # get the results of a specific protocol
+
+    # create different ranges
+    max_value = np.amax(prot_column_data)
+    min_value = np.amin(prot_column_data)
+
+    ranges = np.linspace(min_value, max_value, num=number_of_ranges + 1).round(0)
+    ranges = ranges[1:number_of_ranges + 1]
+
+    print("max: ", max_value, " - min: ", min_value, " - Ranges: ", ranges)
+    print(prot_column_data[:6])
+
+    # create the classes (splitted by the range)
+    classes = []
+    for prot_data in prot_column_data:
+        for idx, val in enumerate(ranges):
+            if prot_data <= val:
+                classes.append(idx)
+                break
+    unique_classes = np.unique(classes)  # (4,) -> [0 1 2 3]
+
+    print("Classes: ", classes)
+    print("Classes size: ", np.array(classes).shape)
+    print("Unique classes: ", unique_classes)
+    print("\n")
+
+    for i, u in enumerate(unique_classes):
+        plt.figure(_figure_counter)
+        _figure_counter = _figure_counter + 1
+
+        plt.bone()
+        plt.pcolor(u_matrix)
+
+        xi = [mapped_data_X[j] for j in range(len(mapped_data_X)) if classes[j] == u]
+        yi = [mapped_data_Y[j] for j in range(len(mapped_data_Y)) if classes[j] == u]
+        plt.scatter(xi, yi, color=colors[i], label=label_names[prot_index], alpha=.15)
+
+        plt.axis([0, som_side_dim, 0, som_side_dim])
+        plt.interactive(True)
+
+        # TITLE OF THE CHART
+        if use_reverse:
+            plt.title("Ranges HND (Training over network attributes) [" + label_names[prot_index] + "][<=" + str(ranges[
+                                                                                                                     u]) + "]")
+        else:
+            plt.title("Ranges HND (Training over simulation results) [" + label_names[prot_index] + "][<=" + str(ranges[
+                                                                                                                     u]) + "]")
+
+        # SAVE THE CHART
+        att_directory_path = directory_path + label_names[prot_index] + "\\"
+        if not os.path.exists(att_directory_path):
+            os.makedirs(att_directory_path)
+
+        plt.savefig(att_directory_path + 'HND_' + label_names[prot_index] + '_' + str(ranges[u]) + '.png')
