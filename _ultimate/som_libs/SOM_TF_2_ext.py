@@ -17,7 +17,7 @@ class SOM(object):
     # To check if the SOM has been trained
     _trained = False
 
-    def __init__(self, m, n, dim, epochs=100, alpha=None, sigma=None, ckpt_folder_name="0"):
+    def __init__(self, m, n, dim, epochs=100, alpha=None, sigma=None, ckpt_prefix_1="", ckpt_suffix=""):
         """
         Initializes all necessary components of the TensorFlow
         Graph.
@@ -34,8 +34,9 @@ class SOM(object):
         """
 
         dir_path = os.path.dirname(os.path.realpath(__file__))  # get this project's dir path
-        self._storing_path = dir_path + "/../_trainings/my_som_"
-        self._ckpt_folder_name = ckpt_folder_name
+        self._storing_path = dir_path + "/../_trainings/tfckpt_"
+        self._ckpt_prefix_1 = ckpt_prefix_1
+        self._ckpt_suffix = ckpt_suffix
 
         # Assign required variables first
         self._m = m
@@ -190,11 +191,8 @@ class SOM(object):
                                                            self._iter_input: iter_no}))
                 """
 
-            if i % 10 == 0:
-                self.store(added_prefix="temp_")
-
-            if i % checkpoints_iterations == 0:
-                self.store(added_prefix=str(i) + "_")
+            if i % checkpoints_iterations == 0 and 0 < i < self._n_iterations:
+                self.store(prefix_1=self._ckpt_prefix_1, prefix_2="tmp-" + str(i) + "_", suffix=self._ckpt_suffix)
 
         self.store_centroid_grid()
 
@@ -229,12 +227,12 @@ class SOM(object):
 
         return to_return
 
-    def store(self, added_prefix=""):
+    def store(self, prefix_1="", prefix_2="", suffix=""):
         """
         Save the som's session to disk
         """
         try:
-            path = self._storing_path + added_prefix + self._ckpt_folder_name + "/saved_som.ckpt"
+            path = self._storing_path + prefix_1 + prefix_2 + suffix + "/saved_som.ckpt"
 
             save_path = self._saver.save(self._sess, path)
             print("\nSOM has been saved to: ", save_path)
@@ -245,8 +243,8 @@ class SOM(object):
         self._sess.close()
         print("Session closed")
 
-    def restore(self, added_prefix=""):
-        path = self._storing_path + added_prefix + self._ckpt_folder_name + "/saved_som.ckpt"
+    def restore(self, prefix_1="", prefix_2="", suffix=""):
+        path = self._storing_path + prefix_1 + prefix_2 + suffix + "/saved_som.ckpt"
         self._saver.restore(self._sess, path)
         self.store_centroid_grid()
         print("SOM has been restored")

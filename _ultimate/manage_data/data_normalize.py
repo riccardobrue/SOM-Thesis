@@ -2,14 +2,12 @@ import _ultimate.manage_data.merge_data as md
 from sklearn import preprocessing
 
 
-def load_normalized_data(type="equal"):
+def load_normalized_data(type="equal", shuffle=False):
     # ----------------------------------------------------
     # IMPORTING THE DATA
     # ----------------------------------------------------
-    if type == "equal":
-        nt, avg_layers, avg_chxrounds, sim, headers_nt, headers_avg_layers, headers_avg_chxrounds, headers_sim = md.load_equal_data()
-    else:
-        nt, avg_layers, avg_chxrounds, sim, headers_nt, headers_avg_layers, headers_avg_chxrounds, headers_sim = md.load_unequal_data()
+    nt, avg_layers, avg_chxrounds, sim, headers_nt, headers_avg_layers, headers_avg_chxrounds, headers_sim = md.load_data(
+        type=type, shuffle=shuffle)
 
     avg_layers_shape = avg_layers.shape
     avg_chxrounds_shape = avg_chxrounds.shape
@@ -32,4 +30,4 @@ def load_normalized_data(type="equal"):
     single_sim_results_norm = preprocessing.minmax_scale(single_sim_results, feature_range=(0, 1))
     sim_norm = single_sim_results_norm.reshape(sim_shape)
 
-    return nt_norm, avg_layers_norm, avg_chxrounds_norm, sim_norm, headers_nt, headers_avg_layers, headers_avg_chxrounds, headers_sim
+    return  nt, avg_layers, avg_chxrounds, sim, nt_norm, avg_layers_norm, avg_chxrounds_norm, sim_norm, headers_nt, headers_avg_layers, headers_avg_chxrounds, headers_sim

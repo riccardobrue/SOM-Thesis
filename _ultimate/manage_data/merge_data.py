@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import os, os.path
 import glob
+from sklearn.utils import shuffle as sh
 
 nodes_number = 100
 
@@ -258,65 +259,36 @@ def merge_csv_files():
     concatenated_df_unequal.to_csv(output_merged_unequal_csv_pathname, index=False)
 
 
-def load_equal_data():
-    dataframe_equal = pd.read_csv(output_merged_equal_csv_pathname, header=None)
+def load_data(type="equal", shuffle=False):
+    if type == "equal":
+        dataframe = pd.read_csv(output_merged_equal_csv_pathname, header=None)
 
-    column_names_equal = list(dataframe_equal.columns.values)
+        nt_cols = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+        avg_layers_cols = [9, 13, 17, 21]
+        avg_chxrounds_cols = [10, 14, 18, 22]
+        sim_cols = [11, 12, 15, 16, 19, 20, 23, 24]
+    else:
+        dataframe = pd.read_csv(output_merged_unequal_csv_pathname, header=None)
+        nt_cols = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        avg_layers_cols = [10, 14]
+        avg_chxrounds_cols = [11, 15]
+        sim_cols = [12, 13, 16, 17]
 
-    nt_cols = [column_names_equal[0], column_names_equal[1], column_names_equal[2],
-               column_names_equal[3], column_names_equal[4],
-               column_names_equal[5], column_names_equal[6], column_names_equal[7],
-               column_names_equal[8]]
+    headers = dataframe[:1]
+    data = dataframe[1:]
 
-    avg_layers_cols = [column_names_equal[9], column_names_equal[13],
-                       column_names_equal[17], column_names_equal[21]]
+    if shuffle:
+        data = sh(data)
 
-    avg_chxrounds_cols = [column_names_equal[10], column_names_equal[14],
-                          column_names_equal[18], column_names_equal[22]]
+    nt = data.as_matrix(nt_cols)
+    avg_layers = data.as_matrix(avg_layers_cols)
+    avg_chxrounds = data.as_matrix(avg_chxrounds_cols)
+    sim = data.as_matrix(sim_cols)
 
-    sim_cols = [column_names_equal[11], column_names_equal[12], column_names_equal[15], column_names_equal[16],
-                column_names_equal[19], column_names_equal[20], column_names_equal[23], column_names_equal[24]]
-
-    nt = dataframe_equal.as_matrix(nt_cols)[1:]
-    avg_layers = dataframe_equal.as_matrix(avg_layers_cols)[1:]
-    avg_chxrounds = dataframe_equal.as_matrix(avg_chxrounds_cols)[1:]
-    sim = dataframe_equal.as_matrix(sim_cols)[1:]
-
-    headers_nt = np.squeeze(dataframe_equal.as_matrix(nt_cols)[:1])
-    headers_avg_layers = np.squeeze(dataframe_equal.as_matrix(avg_layers_cols)[:1])
-    headers_avg_chxrounds = np.squeeze(dataframe_equal.as_matrix(avg_chxrounds_cols)[:1])
-    headers_sim = np.squeeze(dataframe_equal.as_matrix(sim_cols)[:1])
-
-    return nt.astype(float), avg_layers.astype(float), avg_chxrounds.astype(float), \
-           sim.astype(float), headers_nt, headers_avg_layers, \
-           headers_avg_chxrounds, headers_sim
-
-
-def load_unequal_data():
-    dataframe_unequal = pd.read_csv(output_merged_unequal_csv_pathname, header=None)
-
-    column_names_unequal = list(dataframe_unequal.columns.values)
-
-    nt_cols = [column_names_unequal[0], column_names_unequal[1], column_names_unequal[2],
-               column_names_unequal[3], column_names_unequal[4],
-               column_names_unequal[5], column_names_unequal[6], column_names_unequal[7],
-               column_names_unequal[8], column_names_unequal[9]]
-
-    avg_layers_cols = [column_names_unequal[10], column_names_unequal[14]]
-
-    avg_chxrounds_cols = [column_names_unequal[11], column_names_unequal[15]]
-
-    sim_cols = [column_names_unequal[12], column_names_unequal[13], column_names_unequal[16], column_names_unequal[17]]
-
-    nt = dataframe_unequal.as_matrix(nt_cols)[1:]
-    avg_layers = dataframe_unequal.as_matrix(avg_layers_cols)[1:]
-    avg_chxrounds = dataframe_unequal.as_matrix(avg_chxrounds_cols)[1:]
-    sim = dataframe_unequal.as_matrix(sim_cols)[1:]
-
-    headers_nt = np.squeeze(dataframe_unequal.as_matrix(nt_cols)[:1])
-    headers_avg_layers = np.squeeze(dataframe_unequal.as_matrix(avg_layers_cols)[:1])
-    headers_avg_chxrounds = np.squeeze(dataframe_unequal.as_matrix(avg_chxrounds_cols)[:1])
-    headers_sim = np.squeeze(dataframe_unequal.as_matrix(sim_cols)[:1])
+    headers_nt = np.squeeze(headers.as_matrix(nt_cols))
+    headers_avg_layers = np.squeeze(headers.as_matrix(avg_layers_cols))
+    headers_avg_chxrounds = np.squeeze(headers.as_matrix(avg_chxrounds_cols))
+    headers_sim = np.squeeze(headers.as_matrix(sim_cols))
 
     return nt.astype(float), avg_layers.astype(float), avg_chxrounds.astype(float), \
            sim.astype(float), headers_nt, headers_avg_layers, \
