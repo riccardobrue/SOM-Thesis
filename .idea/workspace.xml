@@ -2,20 +2,302 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30abd105-2ed4-4d45-afdb-c825c8c85152" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/best_sim_fnd/FND_ERHEED FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/best_sim_fnd/FND_FMUC FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/best_sim_fnd/FND_HEED FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/best_sim_fnd/FND_REECHD FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/best_sim_hnd/HND_ERHEED HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/best_sim_hnd/HND_FMUC HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/best_sim_hnd/HND_HEED HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/best_sim_hnd/HND_REECHD HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/%AGGR/NT_%AGGR_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/%AGGR/NT_%AGGR_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/%AGGR/NT_%AGGR_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/%AGGR/NT_%AGGR_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/DENSITY/NT_DENSITY_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/DENSITY/NT_DENSITY_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/DENSITY/NT_DENSITY_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/DENSITY/NT_DENSITY_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/DENSITY/NT_DENSITY_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/DENSITY/NT_DENSITY_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/HET/NT_HET_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/HET/NT_HET_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/HET/NT_HET_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/HET/NT_HET_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/HOM ENERGY/NT_HOM ENERGY_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/HOM ENERGY/NT_HOM ENERGY_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/HOM ENERGY/NT_HOM ENERGY_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/HOM RATE/NT_HOM RATE_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/HOM RATE/NT_HOM RATE_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/HOM RATE/NT_HOM RATE_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/R0/NT_R0_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/R0/NT_R0_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/R0/NT_R0_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/nt_atts_mapping/R0/NT_R0_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_1428.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_2527.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_3627.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_4727.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_5826.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_6926.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_1390.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_2258.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_3126.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_3995.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_4864.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_5732.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/HEED HND/HND_HEED HND_1387.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/HEED HND/HND_HEED HND_1923.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/HEED HND/HND_HEED HND_2459.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/HEED HND/HND_HEED HND_2994.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/HEED HND/HND_HEED HND_3530.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/HEED HND/HND_HEED HND_852.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_1619.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_2855.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_4090.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_5326.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_6562.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_40x40_net_ep-10000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_7798.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/best_sim_fnd/FND_ERHEED FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/best_sim_fnd/FND_FMUC FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/best_sim_fnd/FND_HEED FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/best_sim_fnd/FND_REECHD FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/best_sim_hnd/HND_ERHEED HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/best_sim_hnd/HND_FMUC HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/best_sim_hnd/HND_HEED HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/best_sim_hnd/HND_REECHD HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/%AGGR/NT_%AGGR_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/%AGGR/NT_%AGGR_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/%AGGR/NT_%AGGR_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/%AGGR/NT_%AGGR_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/DENSITY/NT_DENSITY_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/DENSITY/NT_DENSITY_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/DENSITY/NT_DENSITY_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/DENSITY/NT_DENSITY_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/DENSITY/NT_DENSITY_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/DENSITY/NT_DENSITY_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/HET/NT_HET_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/HET/NT_HET_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/HET/NT_HET_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/HET/NT_HET_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/HOM ENERGY/NT_HOM ENERGY_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/HOM ENERGY/NT_HOM ENERGY_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/HOM ENERGY/NT_HOM ENERGY_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/HOM RATE/NT_HOM RATE_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/HOM RATE/NT_HOM RATE_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/HOM RATE/NT_HOM RATE_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/R0/NT_R0_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/R0/NT_R0_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/R0/NT_R0_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/nt_atts_mapping/R0/NT_R0_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_1428.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_2527.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_3627.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_4727.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_5826.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_6926.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_1390.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_2258.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_3126.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_3995.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_4864.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_5732.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/HEED HND/HND_HEED HND_1387.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/HEED HND/HND_HEED HND_1923.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/HEED HND/HND_HEED HND_2459.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/HEED HND/HND_HEED HND_2994.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/HEED HND/HND_HEED HND_3530.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/HEED HND/HND_HEED HND_852.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_1619.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_2855.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_4090.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_5326.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_6562.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-10000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_7798.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/best_sim_fnd/FND_ERHEED FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/best_sim_fnd/FND_FMUC FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/best_sim_fnd/FND_HEED FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/best_sim_fnd/FND_REECHD FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/best_sim_hnd/HND_ERHEED HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/best_sim_hnd/HND_FMUC HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/best_sim_hnd/HND_HEED HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/best_sim_hnd/HND_REECHD HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/%AGGR/NT_%AGGR_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/%AGGR/NT_%AGGR_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/%AGGR/NT_%AGGR_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/%AGGR/NT_%AGGR_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/DENSITY/NT_DENSITY_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/DENSITY/NT_DENSITY_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/DENSITY/NT_DENSITY_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/DENSITY/NT_DENSITY_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/DENSITY/NT_DENSITY_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/DENSITY/NT_DENSITY_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/HET/NT_HET_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/HET/NT_HET_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/HET/NT_HET_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/HET/NT_HET_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/HOM ENERGY/NT_HOM ENERGY_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/HOM ENERGY/NT_HOM ENERGY_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/HOM ENERGY/NT_HOM ENERGY_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/HOM RATE/NT_HOM RATE_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/HOM RATE/NT_HOM RATE_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/HOM RATE/NT_HOM RATE_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/R0/NT_R0_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/R0/NT_R0_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/R0/NT_R0_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/nt_atts_mapping/R0/NT_R0_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_1428.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_2527.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_3627.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_4727.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_5826.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_6926.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_1390.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_2258.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_3126.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_3995.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_4864.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_5732.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/HEED HND/HND_HEED HND_1387.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/HEED HND/HND_HEED HND_1923.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/HEED HND/HND_HEED HND_2459.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/HEED HND/HND_HEED HND_2994.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/HEED HND/HND_HEED HND_3530.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/HEED HND/HND_HEED HND_852.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_1619.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_2855.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_4090.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_5326.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_6562.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-6000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_7798.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/best_sim_fnd/FND_ERHEED FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/best_sim_fnd/FND_FMUC FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/best_sim_fnd/FND_HEED FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/best_sim_fnd/FND_REECHD FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/best_sim_hnd/HND_ERHEED HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/best_sim_hnd/HND_FMUC HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/best_sim_hnd/HND_HEED HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/best_sim_hnd/HND_REECHD HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/%AGGR/NT_%AGGR_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/%AGGR/NT_%AGGR_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/%AGGR/NT_%AGGR_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/%AGGR/NT_%AGGR_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/DENSITY/NT_DENSITY_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/DENSITY/NT_DENSITY_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/DENSITY/NT_DENSITY_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/DENSITY/NT_DENSITY_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/DENSITY/NT_DENSITY_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/DENSITY/NT_DENSITY_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/HET/NT_HET_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/HET/NT_HET_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/HET/NT_HET_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/HET/NT_HET_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/HOM ENERGY/NT_HOM ENERGY_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/HOM ENERGY/NT_HOM ENERGY_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/HOM ENERGY/NT_HOM ENERGY_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/HOM RATE/NT_HOM RATE_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/HOM RATE/NT_HOM RATE_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/HOM RATE/NT_HOM RATE_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/R0/NT_R0_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/R0/NT_R0_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/R0/NT_R0_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/nt_atts_mapping/R0/NT_R0_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_1428.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_2527.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_3627.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_4727.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_5826.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_6926.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_1390.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_2258.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_3126.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_3995.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_4864.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_5732.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/HEED HND/HND_HEED HND_1387.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/HEED HND/HND_HEED HND_1923.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/HEED HND/HND_HEED HND_2459.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/HEED HND/HND_HEED HND_2994.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/HEED HND/HND_HEED HND_3530.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/HEED HND/HND_HEED HND_852.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_1619.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_2855.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_4090.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_5326.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_6562.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_50x50_net_ep-7000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_7798.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/best_sim_fnd/FND_ERHEED FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/best_sim_fnd/FND_FMUC FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/best_sim_fnd/FND_HEED FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/best_sim_fnd/FND_REECHD FND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/best_sim_hnd/HND_ERHEED HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/best_sim_hnd/HND_FMUC HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/best_sim_hnd/HND_HEED HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/best_sim_hnd/HND_REECHD HND.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/%AGGR/NT_%AGGR_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/%AGGR/NT_%AGGR_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/%AGGR/NT_%AGGR_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/%AGGR/NT_%AGGR_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/DENSITY/NT_DENSITY_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/DENSITY/NT_DENSITY_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/DENSITY/NT_DENSITY_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/DENSITY/NT_DENSITY_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/DENSITY/NT_DENSITY_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/DENSITY/NT_DENSITY_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/HET/NT_HET_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/HET/NT_HET_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/HET/NT_HET_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/HET/NT_HET_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/HOM ENERGY/NT_HOM ENERGY_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/HOM ENERGY/NT_HOM ENERGY_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/HOM ENERGY/NT_HOM ENERGY_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/HOM RATE/NT_HOM RATE_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/HOM RATE/NT_HOM RATE_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/HOM RATE/NT_HOM RATE_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/R0/NT_R0_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/R0/NT_R0_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/R0/NT_R0_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/nt_atts_mapping/R0/NT_R0_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_1428.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_2527.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_3627.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_4727.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_5826.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/ERHEED HND/HND_ERHEED HND_6926.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_1390.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_2258.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_3126.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_3995.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_4864.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/FMUC HND/HND_FMUC HND_5732.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/HEED HND/HND_HEED HND_1387.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/HEED HND/HND_HEED HND_1923.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/HEED HND/HND_HEED HND_2459.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/HEED HND/HND_HEED HND_2994.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/HEED HND/HND_HEED HND_3530.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/HEED HND/HND_HEED HND_852.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_1619.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_2855.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_4090.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_5326.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_6562.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_charts/crt_pc_minisom_fin-1000_64x64_net_ep-1000/ranges_sim_hnd/REECHD HND/HND_REECHD HND_7798.0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_trainings/tfckpt_pc_tmp-100_52x52_net_ep-1500/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_trainings/tfckpt_pc_tmp-100_52x52_net_ep-1500/saved_som.ckpt.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_trainings/tfckpt_pc_tmp-100_52x52_net_ep-1500/saved_som.ckpt.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_trainings/tfckpt_pc_tmp-100_52x52_net_ep-1500/saved_som.ckpt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_trainings/tfckpt_pc_tmp-100_64x64_net_ep-1000/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_trainings/tfckpt_pc_tmp-100_64x64_net_ep-1000/saved_som.ckpt.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_trainings/tfckpt_pc_tmp-100_64x64_net_ep-1000/saved_som.ckpt.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/_trainings/tfckpt_pc_tmp-100_64x64_net_ep-1000/saved_som.ckpt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/backups/SOM_TF_2_ext_v1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/main_som_minisom_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ultimate/som_libs/custom_minisom.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/_trainings/my_som_final_ulti_22x22_rev_1500/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/_trainings/my_som_final_ulti_22x22_rev_1500/saved_som.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/_trainings/my_som_final_ulti_22x22_rev_1500/saved_som.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/_trainings/my_som_final_ulti_22x22_rev_1500/saved_som.ckpt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/_trainings/my_som_final_ulti_22x22_rev_2500/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/_trainings/my_som_final_ulti_22x22_rev_2500/saved_som.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/_trainings/my_som_final_ulti_22x22_rev_2500/saved_som.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/_trainings/my_som_final_ulti_22x22_rev_2500/saved_som.ckpt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/_trainings/tfckpt_pc_tmp-10_22x22_net_ep-20/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/_trainings/tfckpt_pc_tmp-10_22x22_net_ep-20/saved_som.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/_trainings/tfckpt_pc_tmp-10_22x22_net_ep-20/saved_som.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ultimate/_trainings/tfckpt_pc_tmp-10_22x22_net_ep-20/saved_som.ckpt.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_ultimate/main_som_tf_v6_ext.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/main_som_tf_v6_ext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/OLD/my_som_ok_22x22_fnd_rev_100/saved_som.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/som_libs/OLD/my_som_ok_22x22_hnd_rev_1500/saved_som.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ultimate/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_ultimate/todo.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,13 +308,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main_som_tf_v6_ext.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main_som_tf_v6_ext.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_v6_ext.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="34">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_som_minisom_v2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_ultimate/main_som_minisom_v2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="153" column="12" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="12" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#0#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,16 +361,18 @@
         <option value="$PROJECT_DIR$/_ultimate/main_som_tf_v2.py" />
         <option value="$PROJECT_DIR$/_ultimate/main_som_tf_v2_ext.py" />
         <option value="$PROJECT_DIR$/_ultimate/main_som_tf_v4_ext.py" />
-        <option value="$PROJECT_DIR$/_ultimate/todo.txt" />
         <option value="$PROJECT_DIR$/_ultimate/main_som_tf_v5_ext.py" />
         <option value="$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py" />
         <option value="$PROJECT_DIR$/_ultimate/manage_data/merge_data.py" />
         <option value="$PROJECT_DIR$/_ultimate/manage_data/data_normalize.py" />
+        <option value="$PROJECT_DIR$/_ultimate/todo.txt" />
         <option value="$PROJECT_DIR$/_ultimate/main_som_tf_v6_ext.py" />
+        <option value="$PROJECT_DIR$/_ultimate/som_libs/custom_minisom.py" />
+        <option value="$PROJECT_DIR$/_ultimate/main_som_minisom_v2.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="633" />
     <option name="width" value="1294" />
     <option name="height" value="1047" />
@@ -116,6 +409,12 @@
               <item name="_ultimate" type="462c0819:PsiDirectoryNode" />
               <item name="_trainings" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Python Workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python Workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="_ultimate" type="462c0819:PsiDirectoryNode" />
+              <item name="som_libs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -128,16 +427,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\backups" />
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate" />
-      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\manage_data\backups" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate" />
       <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\backups" />
       <recent name="C:\Users\brux9\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\som_libs\trainings" />
       <recent name="C:\Users\brux9\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\som_libs\OLD_trainings" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\backups" />
+      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate" />
+      <recent name="C:\Users\Riccardo\Google Drive\University\Double Degree - Middlesex\Middlesex Teaching Material\CSD4444 - Ralph Moseley\Project\Python Workspace\_ultimate\manage_data\backups" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -152,7 +451,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main_som_tf_v6_ext">
+  <component name="RunManager" selected="Python.main_som_minisom_v2">
     <configuration name="main_som_minisom_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -166,6 +465,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ultimate/main_som_minisom_v1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="main_som_minisom_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python Workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_ultimate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ultimate/main_som_minisom_v2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -243,38 +560,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="using_gpu" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python Workspace" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/using_gpu.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list>
       <item itemvalue="Python.main_som_tf_v2" />
-      <item itemvalue="Python.using_gpu" />
       <item itemvalue="Python.main_som_tf_v2_ext" />
       <item itemvalue="Python.main_som_tf_v5_ext" />
       <item itemvalue="Python.main_som_tf_v6_ext" />
+      <item itemvalue="Python.main_som_minisom_v2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main_som_minisom_v2" />
         <item itemvalue="Python.main_som_tf_v6_ext" />
         <item itemvalue="Python.main_som_tf_v5_ext" />
         <item itemvalue="Python.main_som_tf_v2_ext" />
         <item itemvalue="Python.main_som_tf_v2" />
-        <item itemvalue="Python.using_gpu" />
       </list>
     </recent_temporary>
   </component>
@@ -394,18 +693,25 @@
       <option name="project" value="LOCAL" />
       <updated>1531239144217</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Project cleaned">
+      <created>1531239771311</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1531239771311</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.20416667" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.20416667" />
       <window_info anchor="bottom" id="TODO" order="17" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5005208" side_tool="true" weight="0.24654622" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32943678" />
       <window_info anchor="bottom" id="Python Console" order="2" />
-      <window_info anchor="bottom" id="Run" order="13" sideWeight="0.49947917" visible="true" weight="0.24654622" />
+      <window_info active="true" anchor="bottom" id="Run" order="13" sideWeight="0.49947917" visible="true" weight="0.24654622" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="5" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -445,7 +751,8 @@
     <MESSAGE value="Extended the attributes and the sim outs" />
     <MESSAGE value="Increased the som size and created further checkpoints folders" />
     <MESSAGE value="Project cleaned" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project cleaned" />
+    <MESSAGE value="Minisom updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minisom updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -460,15 +767,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/load_data.py" />
-    <entry file="file://$PROJECT_DIR$/main.py" />
-    <entry file="file://$PROJECT_DIR$/main_fake_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2040">
@@ -599,26 +897,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/minisom.py" />
-    <entry file="file://$PROJECT_DIR$/_ultimate/backups/main_som_minisom_v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" column="17" lean-forward="true" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files/Python36/Lib/site-packages/tensorflow/python/platform/self_check.py" />
     <entry file="file://$PROJECT_DIR$/_ultimate/manage_data/backups/data_normalize_v1.py" />
     <entry file="file://$PROJECT_DIR$/_ultimate/manage_data/backups/merge_data_v1.py" />
     <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_v2.py" />
     <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_v2_ext.py" />
-    <entry file="file://$PROJECT_DIR$/_ultimate/todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_ultimate/backups/main_som_tf_v5_ext.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -649,19 +932,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_ultimate/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ultimate/backups/SOM_TF_2_ext_v1.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/_ultimate/som_libs/SOM_TF_2_ext.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="848">
-          <caret line="246" column="74" selection-start-line="246" selection-start-column="74" selection-end-line="246" selection-end-column="74" />
+        <state relative-caret-position="491">
+          <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ultimate/backups/main_som_minisom_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="108" column="53" lean-forward="true" selection-start-line="97" selection-end-line="108" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_ultimate/main_som_tf_v6_ext.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="34">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/minisom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-end-line="331" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ultimate/som_libs/custom_minisom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3213">
+          <caret line="27" column="59" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="59" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ultimate/main_som_minisom_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="153" column="12" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>

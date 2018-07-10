@@ -26,9 +26,6 @@ UNEQUAL - PROTOCOLS INDICES:
 # ---------------------------------------
 # PARAMETERS
 # ---------------------------------------
-# ----------------
-# training-restoring parameters
-# ----------------
 
 # checkpoint folder name's format: << "tfckpt_" prefix_1 "_" prefix_2 "_" m "x" n "_" training_over "_ep-" epochs >>
 # prefix_1 could be whatever you want
@@ -38,9 +35,9 @@ UNEQUAL - PROTOCOLS INDICES:
 # training_over could be: "net" if the SOM has been trained over network attributes, "hnd" or "fnd" otherwise
 
 folder_prefix_1 = "pc_"
-chart_prefix = "fin-1500_"
+chart_prefix = "fin-1000_"
 
-epochs = 1500
+epochs = 1000
 
 restore_som = False  # true: doesn't train the som and doesn't store any new checkpoint files
 folder_prefix_2 = "tmp-100_"  # to select the restored checkpoint
@@ -49,7 +46,7 @@ folder_prefix_2 = "tmp-100_"  # to select the restored checkpoint
 checkpoint_iters = 100  # store training som every n iterations
 
 heuristic_size = False  # 22x22 (if false it is needed to specify the "som_side_dim" variable and the "ckpt_folder" name)
-manually_picked_som_dim = 52  # if heuristic_size is False, this will be the chosen som's side size
+manually_picked_som_dim = 64  # if heuristic_size is False, this will be the chosen som's side size
 
 use_reverse = True  # if true: uses the (trained) som over the network attributes instead of the simulation results
 

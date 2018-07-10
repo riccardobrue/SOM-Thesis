@@ -21,9 +21,9 @@ treat some inputs as more important than others:
 IMPORTANT:
 (1) try with hexagonal neurons
 (2) (DONE) try to show different network topology attributes
-(3) create a function for shuffling the data
+(3) (DONE) create a function for shuffling the data
 (4) train the som with only 1 protocol per time (training over simulation results) --> probably it is not relevant, try point (6)
 (5) (DONE) reverse the train (train the som over the network topologies--> show the efficiencies)
-(6) try to visualise only one protocol per time and not only when it wins (ie: visualiza when it is >200 etc etc (split in ranges))
+(6) (DONE) try to visualise only one protocol per time and not only when it wins (ie: visualiza when it is >200 etc etc (split in ranges))
 (7) Create function which shows the quantization error during the training
 (8) (DONE) Create different training folder during a training (one folder every ~500 epochs)
