@@ -38,15 +38,15 @@ UNEQUAL - PROTOCOLS INDICES:
 # training_over could be: "net" if the SOM has been trained over network attributes, "hnd" or "fnd" otherwise
 
 folder_prefix_1 = "pc_"
-chart_prefix = "fin-200_"
+chart_prefix = "fin-1500_"
 
-epochs = 200
+epochs = 1500
 
 restore_som = False  # true: doesn't train the som and doesn't store any new checkpoint files
-folder_prefix_2 = "tmp-20_"  # to select the restored checkpoint
+folder_prefix_2 = "tmp-100_"  # to select the restored checkpoint
 
 
-checkpoint_iters = 10  # store training som every n iterations
+checkpoint_iters = 100  # store training som every n iterations
 
 heuristic_size = False  # 22x22 (if false it is needed to specify the "som_side_dim" variable and the "ckpt_folder" name)
 manually_picked_som_dim = 52  # if heuristic_size is False, this will be the chosen som's side size
