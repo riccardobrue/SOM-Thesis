@@ -27,3 +27,9 @@ IMPORTANT:
 (6) (DONE) try to visualise only one protocol per time and not only when it wins (ie: visualiza when it is >200 etc etc (split in ranges))
 (7) Create function which shows the quantization error during the training
 (8) (DONE) Create different training folder during a training (one folder every ~500 epochs)
+
+
+
+TO SEE:
+https://www.shanelynn.ie/self-organising-maps-for-customer-segmentation-using-r/
+https://media.readthedocs.org/pdf/somoclu/stable/somoclu.pdf

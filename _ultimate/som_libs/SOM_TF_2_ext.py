@@ -115,14 +115,16 @@ class SOM(object):
             # Finally, the op that will use learning_rate_op to update
             # the weightage vectors of all neurons based on a particular
             # input
-            learning_rate_multiplier = tf.stack([tf.tile(tf.slice(
-                learning_rate_op, np.array([i]), np.array([1])), [dim])
+            learning_rate_multiplier = tf.stack([tf.tile(tf.slice(learning_rate_op, np.array([i]), np.array([1])), [dim])
                 for i in range(m * n)])
+
+            # calculate the delta (delta is the distance between input and bmu multiplied by learning rate)
             weightage_delta = tf.multiply(learning_rate_multiplier,
                                           tf.subtract(tf.stack([self._vect_input for i in range(m * n)]),
                                                       self._weightage_vects))
-            new_weightages_op = tf.add(self._weightage_vects, weightage_delta)
-            self._training_op = tf.assign(self._weightage_vects, new_weightages_op)
+
+            new_weightages_op = tf.add(self._weightage_vects, weightage_delta)  # add the delta to the previous weights
+            self._training_op = tf.assign(self._weightage_vects, new_weightages_op)  # assign new weights
 
             ##INITIALIZE SESSION
             config = tf.ConfigProto(
@@ -179,9 +181,7 @@ class SOM(object):
             # print("Iteration number: ", i, "/", self._n_iterations, "(global iteration: ", iter_no, ")")
             # Train with each vector one by one
             for input_vect in input_vects:
-                self._sess.run(self._training_op,
-                               feed_dict={self._vect_input: input_vect,
-                                          self._iter_input: iter_no})
+                self._sess.run(self._training_op, feed_dict={self._vect_input: input_vect, self._iter_input: iter_no})
 
                 # @todo print the quantization error from the BMU and store in a vector to be showed after the training
                 """

@@ -36,21 +36,19 @@ UNEQUAL - PROTOCOLS INDICES:
 # training_over could be: "net" if the SOM has been trained over network attributes, "hnd" or "fnd" otherwise
 
 folder_prefix_1 = "pc_"
-chart_prefix = "fin-100_"
+chart_prefix = "fin-200_"
 
-epochs = 100
+epochs = 200
 
 restore_som = True  # true: doesn't train the som and doesn't store any new checkpoint files
-folder_prefix_2 = "fin-100_"  # to select the restored checkpoint
+folder_prefix_2 = "fin-200_"  # to select the restored checkpoint
 
-checkpoint_iters = 100  # store training som every n iterations
+checkpoint_iters = 50  # store training som every n iterations
 
-heuristic_size = False  # 22x22 (if false it is needed to specify the "som_side_dim" variable and the "ckpt_folder" name)
-manually_picked_som_dim = 56  # if heuristic_size is False, this will be the chosen som's side size
+heuristic_size = True  # 22x22 (if false it is needed to specify the "som_side_dim" variable and the "ckpt_folder" name)
+manually_picked_som_dim = 32  # if heuristic_size is False, this will be the chosen som's side size
 
-use_reverse = True  # if true: uses the (trained) som over the network attributes instead of the simulation results
-
-use_hnd = True  # false-> uses fnd
+clustering_data_type = "all"  # [hnd, fnd, all, net]
 
 # charts parameters
 number_of_ranges = 6  # number of ranges which the protocols are splitted in the chart
@@ -118,22 +116,19 @@ print("=========================================")
 nt, avg_layers, avg_chxrounds, sim, nt_norm, avg_layers_norm, avg_chxrounds_norm, sim_norm, headers_nt, headers_avg_layers, headers_avg_chxrounds, headers_sim = dn.load_normalized_data(
     type="equal", shuffle=True)
 
-print("Samples: ")
-print("-------------")
-print(nt[:4])
-print("-------------")
-print(sim[:4])
-print("-------------")
-
 headers_nt = headers_nt[3:]
+nt = nt[:, 3:]  # remove the first three columns which are not relevant
 nt_norm = nt_norm[:, 3:]  # remove the first three columns which are not relevant
+
+all_data = np.append(nt, sim, axis=1)
+all_data_norm = np.append(nt_norm, sim_norm, axis=1)
 
 # Get the best protocol for each row
 sim_hnd_cols = [1, 3, 5, 7]
 sim_fnd_cols = [0, 2, 4, 6]
 
-sim_hnd_norm = sim_norm[sim_hnd_cols]
-sim_fnd_norm = sim_norm[sim_fnd_cols]
+sim_hnd_norm = sim_norm[:, sim_hnd_cols]
+sim_fnd_norm = sim_norm[:, sim_fnd_cols]
 
 hnd_protocols_names = headers_sim[sim_hnd_cols]
 fnd_protocols_names = headers_sim[sim_fnd_cols]
@@ -161,16 +156,20 @@ print("_______________________________________________________")
 # ---------------------------------------
 # SELECT THE DATA FOR CLUSTERING
 # ---------------------------------------
-if use_reverse:
+if clustering_data_type == "net":
     print("Clustering on network attributes")
     clustering_data = nt_norm
-else:
-    if use_hnd:
-        print("Clustering on simulation results (HND)")
-        clustering_data = sim_hnd_norm
-    else:
-        print("Clustering on simulation results (FND)")
-        clustering_data = sim_fnd_norm
+    # clustering_data = nt_norm[np.where(nt_norm[:, 1] == 0.4)]  # take only the rows where %AGGR is 0.4
+    # clustering_data = clustering_data[:, [0, 2, 3, 4, 5]]
+elif clustering_data_type == "all":
+    print("Clustering on all the data")
+    clustering_data = all_data_norm
+elif clustering_data_type == "hnd":
+    print("Clustering on simulation results (HND)")
+    clustering_data = sim_hnd_norm
+elif clustering_data_type == "fnd":
+    print("Clustering on simulation results (FND)")
+    clustering_data = sim_fnd_norm
 
 print("Clustering data size: ", clustering_data.shape)
 print("Clustering data (samples): \n", clustering_data[:4])
@@ -191,13 +190,14 @@ print("SOM dimension: ", som_side_dim, "x", som_side_dim)
 # CREATE THE CHECKPOINT FOLDER SUFFIX
 # ---------------------------------------
 folder_suffix = str(som_side_dim) + "x" + str(som_side_dim) + "_"
-if use_reverse:
+if clustering_data_type == "net":
     folder_suffix = folder_suffix + "net_"  # reversed
-else:
-    if use_hnd:
-        folder_suffix = folder_suffix + "hnd_"
-    else:
-        folder_suffix = folder_suffix + "fnd_"
+elif clustering_data_type == "all":
+    folder_suffix = folder_suffix + "all_"
+elif clustering_data_type == "hnd":
+    folder_suffix = folder_suffix + "hnd_"
+elif clustering_data_type == "fnd":
+    folder_suffix = folder_suffix + "fnd_"
 
 folder_suffix = folder_suffix + "ep-" + str(epochs)
 print("_______________________________________________________")
@@ -231,15 +231,6 @@ for r in range(0, len(image_grid)):
 # np.save('mat',mat)
 
 u_matrix = distance_map(mat).T
-"""
-print("======================")
-print("======================")
-print(mat.shape)
-print(mat)
-print("======================")
-print("======================")
-"""
-# u_matrix = u_matrix ** 2
 
 # ---------------------------------------
 # CREATE A MAPPED DATA TO KNOW THE BMUs OVER THE DATA
@@ -256,6 +247,7 @@ if store_som:
 som.close_sess()
 
 # ======================================================================================================================
+# VISUALIZATION
 # ======================================================================================================================
 # ---------------------------------------
 # VISUALIZING/SAVING THE CHARTS
@@ -269,10 +261,8 @@ colors = x.colors
 # generate the chart folder
 basic_chart_path = os.path.dirname(os.path.realpath(__file__))
 
-if use_reverse:
-    basic_chart_path = basic_chart_path + "\\_charts\\crt_" + folder_prefix_1 + chart_prefix + folder_suffix + "\\"
-else:
-    basic_chart_path = basic_chart_path + "\\_charts\\crt_" + folder_prefix_1 + chart_prefix + folder_suffix + "\\"
+basic_chart_path = basic_chart_path + "\\_charts\\crt_" + folder_prefix_1 + chart_prefix + folder_suffix + "\\"
+
 if not os.path.exists(basic_chart_path):
     os.makedirs(basic_chart_path)
 
@@ -310,10 +300,12 @@ for prot_index in range(0, len(cols)):
     # plt.legend(loc='center left', bbox_to_anchor=(0, 1.08))
 
     # TITLE OF THE CHART
-    if use_reverse:
+    if clustering_data_type == "net":
         plt.title("Best protocols on HND (Training over network attributes) [" + label_names[prot_index] + "]")
-    else:
+    elif clustering_data_type == "hnd" or clustering_data_type == "fnd":
         plt.title("Best protocols on HND (Training over simulation results) [" + label_names[prot_index] + "]")
+    elif clustering_data_type == "all":
+        plt.title("Best protocols on HND (Training over all data) [" + label_names[prot_index] + "]")
 
     # SAVE THE CHART
     plt.savefig(directory_path + 'HND_' + label_names[prot_index] + '.png', dpi=my_dpi)
@@ -349,10 +341,12 @@ for prot_index in range(0, len(cols)):
     # plt.legend(loc='center left', bbox_to_anchor=(0, 1.08))
 
     # TITLE OF THE CHART
-    if use_reverse:
+    if clustering_data_type == "net":
         plt.title("Best protocols on FND (Training over network attributes) [" + label_names[prot_index] + "]")
-    else:
+    elif clustering_data_type == "hnd" or clustering_data_type == "fnd":
         plt.title("Best protocols on FND (Training over simulation results) [" + label_names[prot_index] + "]")
+    elif clustering_data_type == "all":
+        plt.title("Best protocols on FND (Training over all data) [" + label_names[prot_index] + "]")
 
     # SAVE THE CHART
     plt.savefig(directory_path + 'FND_' + label_names[prot_index] + '.png', dpi=my_dpi)
@@ -400,13 +394,17 @@ for att_index in range(0, len(attributes)):
         # plt.legend(loc='center left', bbox_to_anchor=(0, 1.08))
 
         # TITLE OF THE CHART
-        if use_reverse:
+        if clustering_data_type == "net":
             plt.title(
                 'NT att (Training over network attributes) [' + attribute_name + "] " + str(round(
                     unique_real_classes[att_specific_value_index], 4)))
-        else:
+        elif clustering_data_type == "hnd" or clustering_data_type == "fnd":
             plt.title(
                 'NT att (Training over simulation results) [' + attribute_name + "] " + str(round(
+                    unique_real_classes[att_specific_value_index], 4)))
+        elif clustering_data_type == "all":
+            plt.title(
+                'NT att (Training over all data) [' + attribute_name + "] " + str(round(
                     unique_real_classes[att_specific_value_index], 4)))
 
         # SAVE THE CHART
@@ -475,12 +473,14 @@ for prot_index in range(0, len(cols)):  # iterate each protocol
         plt.interactive(True)
 
         # TITLE OF THE CHART
-        if use_reverse:
-            plt.title("Ranges HND (Training over network attributes) [" + label_names[prot_index] + "][<=" + str(ranges[
-                                                                                                                     u]) + "]")
-        else:
-            plt.title("Ranges HND (Training over simulation results) [" + label_names[prot_index] + "][<=" + str(ranges[
-                                                                                                                     u]) + "]")
+        if clustering_data_type == "net":
+            plt.title("Ranges HND (Training over network attributes) [" + label_names[prot_index] + "][<=" + str(
+                ranges[u]) + "]")
+        elif clustering_data_type == "hnd" or clustering_data_type == "fnd":
+            plt.title("Ranges HND (Training over simulation results) [" + label_names[prot_index] + "][<=" + str(
+                ranges[u]) + "]")
+        elif clustering_data_type == "all":
+            plt.title("Ranges HND (Training over all data) [" + label_names[prot_index] + "][<=" + str(ranges[u]) + "]")
 
         # SAVE THE CHART
         att_directory_path = directory_path + label_names[prot_index] + "\\"
@@ -523,16 +523,17 @@ for att_index in range(0, len(attributes)):
     plt.interactive(True)
 
     # TITLE OF THE CHART
-    if use_reverse:
-        plt.title(
-            'NT att (Training over network attributes) [' + attribute_name + "] ")
-    else:
-        plt.title(
-            'NT att (Training over simulation results) [' + attribute_name + "] ")
+    if clustering_data_type == "net":
+        plt.title('NT att (Training over network attributes) [' + attribute_name + "] ")
+    elif clustering_data_type == "hnd" or clustering_data_type == "fnd":
+        plt.title('NT att (Training over simulation results) [' + attribute_name + "] ")
+    elif clustering_data_type == "all":
+        plt.title('NT att (Training over all data) [' + attribute_name + "] ")
 
     # SAVE THE CHART
     plt.savefig(directory_path + 'NT_' + attribute_name + '.png', dpi=my_dpi)
 
+"""
 # ----------------------------------------------------------------------------------------------------------------------
 # 6rd SECTION - Network attributes, visualization through code/weights vectors (polar plot)
 # ----------------------------------------------------------------------------------------------------------------------
@@ -575,5 +576,6 @@ for r in range(0, mat.shape[0]):
         plt.imshow(sub_fig)
 
 plt.show()
+"""
 
 print("Finished!")
