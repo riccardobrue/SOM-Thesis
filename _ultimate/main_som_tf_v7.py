@@ -43,7 +43,7 @@ epochs = 200
 restore_som = True  # true: doesn't train the som and doesn't store any new checkpoint files
 folder_prefix_2 = "fin-200_"  # to select the restored checkpoint
 
-checkpoint_iters = 50  # store training som every n iterations
+checkpoint_iters = 100  # store training som every n iterations
 
 heuristic_size = True  # 22x22 (if false it is needed to specify the "som_side_dim" variable and the "ckpt_folder" name)
 manually_picked_som_dim = 32  # if heuristic_size is False, this will be the chosen som's side size
