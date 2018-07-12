@@ -25,7 +25,7 @@ UNEQUAL - PROTOCOLS INDICES:
 """
 
 # ---------------------------------------
-# PARAMETERS ##
+# PARAMETERS ###
 # ---------------------------------------
 
 # checkpoint folder name's format: << "tfckpt_" prefix_1 "_" prefix_2 "_" m "x" n "_" training_over "_ep-" epochs >>
