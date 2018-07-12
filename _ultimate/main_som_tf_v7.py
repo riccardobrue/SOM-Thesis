@@ -380,16 +380,18 @@ def execute(attributes):
         attribute_name = attributes[att_index]
         classes = nt_norm[:, att_index]
         unique_classes = np.unique(classes)
-        """
+
         # ------------------
         # get the real value not the normalized one (this should be mapped with the normalized)
         # ------------------
         unique_real_classes = np.unique(nt[:, att_index])
+        """
         print("===")
         print(" - ", unique_classes)
         print(" - ", unique_real_classes)
         # ------------------
         """
+
 
         for att_specific_value_index in range(0, len(unique_classes)):
             plt.figure(_figure_counter, figsize=(pixels / my_dpi, pixels / my_dpi), dpi=my_dpi)
