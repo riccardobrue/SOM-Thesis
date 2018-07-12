@@ -28,9 +28,9 @@ UNEQUAL - PROTOCOLS INDICES:
 
 def execute(attributes):
     print("---> ", attributes)
-    att_string="-".join(str(x) for x in attributes)
-
-    ext_attributes=np.concatenate((attributes, [6, 7, 8, 9]))
+    att_string = "-".join(str(x) for x in attributes)
+    len_atts = len(attributes)
+    ext_attributes = np.concatenate((attributes, [6, 7, 8, 9]))
 
     # ---------------------------------------
     # PARAMETERS ###
@@ -43,7 +43,7 @@ def execute(attributes):
     # suffix indicates the dimension of the SOM and the maximum number of epochs for the relative training
     # training_over could be: "net" if the SOM has been trained over network attributes, "hnd" or "fnd" otherwise
 
-    folder_prefix_1 = "pc_"+att_string+"_"
+    folder_prefix_1 = "pc_" + att_string + "_"
     chart_prefix = "fin-80_"
 
     epochs = 80
@@ -54,7 +54,7 @@ def execute(attributes):
     checkpoint_iters = 200  # store training som every n iterations
 
     heuristic_size = False  # 22x22 (if false it is needed to specify the "som_side_dim" variable and the "ckpt_folder" name)
-    manually_picked_som_dim = 26  # if heuristic_size is False, this will be the chosen som's side size
+    manually_picked_som_dim = 22 + (len_atts * 3)  # if heuristic_size is False, this will be the chosen som's side size
 
     clustering_data_type = "all"  # [hnd, fnd, all, net]
 
@@ -380,7 +380,7 @@ def execute(attributes):
         attribute_name = attributes[att_index]
         classes = nt_norm[:, att_index]
         unique_classes = np.unique(classes)
-
+        """
         # ------------------
         # get the real value not the normalized one (this should be mapped with the normalized)
         # ------------------
@@ -389,6 +389,7 @@ def execute(attributes):
         print(" - ", unique_classes)
         print(" - ", unique_real_classes)
         # ------------------
+        """
 
         for att_specific_value_index in range(0, len(unique_classes)):
             plt.figure(_figure_counter, figsize=(pixels / my_dpi, pixels / my_dpi), dpi=my_dpi)
@@ -444,7 +445,7 @@ def execute(attributes):
 
     for prot_index in range(0, len(cols)):  # iterate each protocol
 
-        print("Protocol: ", label_names[prot_index])
+        #print("Protocol: ", label_names[prot_index])
         prot_column_data = sim[:, cols[prot_index]]  # get the results of a specific protocol
 
         # create different ranges
@@ -454,8 +455,8 @@ def execute(attributes):
         ranges = np.linspace(min_value, max_value, num=number_of_ranges + 1).round(0)
         ranges = ranges[1:number_of_ranges + 1]
 
-        print("max: ", max_value, " - min: ", min_value, " - Ranges: ", ranges)
-        print(prot_column_data[:6])
+        #print("max: ", max_value, " - min: ", min_value, " - Ranges: ", ranges)
+        #print(prot_column_data[:6])
 
         # create the classes (splitted by the range)
         classes = []
@@ -465,12 +466,12 @@ def execute(attributes):
                     classes.append(idx)
                     break
         unique_classes = np.unique(classes)  # (4,) -> [0 1 2 3]
-
+        """
         print("Classes: ", classes)
         print("Classes size: ", np.array(classes).shape)
         print("Unique classes: ", unique_classes)
         print("\n")
-
+        """
         for i, u in enumerate(unique_classes):
             plt.figure(_figure_counter, figsize=(pixels / my_dpi, pixels / my_dpi), dpi=my_dpi)
             _figure_counter = _figure_counter + 1
