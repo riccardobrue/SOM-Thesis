@@ -173,7 +173,7 @@ def execute(attributes):
         print("Clustering on all the data")
         clustering_data = all_data_norm
         # clustering_data = all_data_hnd_norm[:, [1,6]] #a
-        clustering_data = all_data_hnd_norm[:, ext_attributes]  # b
+        clustering_data = all_data_hnd_norm[:, ext_attributes]  # b---hnd
 
         # clustering_data = clustering_data[np.where(clustering_data[:, 1] == 0.4)]  # take only the rows where %AGGR is 0.4
         # clustering_data = clustering_data[:, [0, 2, 3, 4, 5, 6]]
