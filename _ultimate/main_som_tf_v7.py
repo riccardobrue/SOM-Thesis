@@ -26,11 +26,16 @@ UNEQUAL - PROTOCOLS INDICES:
 """
 
 
-def execute(attributes):
-    print("---> ", attributes)
-    att_string = "-".join(str(x) for x in attributes)
-    len_atts = len(attributes)
-    ext_attributes = np.concatenate((attributes, [6, 7, 8, 9]))
+# continue from:
+# net only --> continue from 0-5
+# all hnd --> continue from 2-5
+
+
+def execute(clustering_cols, clustering_data_type="all"):
+    if len(clustering_cols) == 0:
+        att_string = "all_cols"
+    else:
+        att_string = "-".join(str(x) for x in clustering_cols)
 
     # ---------------------------------------
     # PARAMETERS ###
@@ -54,9 +59,7 @@ def execute(attributes):
     checkpoint_iters = 200  # store training som every n iterations
 
     heuristic_size = False  # 22x22 (if false it is needed to specify the "som_side_dim" variable and the "ckpt_folder" name)
-    manually_picked_som_dim = 22 + (len_atts * 3)  # if heuristic_size is False, this will be the chosen som's side size
-
-    clustering_data_type = "all"  # [hnd, fnd, all, net]
+    manually_picked_som_dim = 26  # if heuristic_size is False, this will be the chosen som's side size
 
     # charts parameters
     number_of_ranges = 6  # number of ranges which the protocols are splitted in the chart
@@ -142,6 +145,7 @@ def execute(attributes):
 
     best_hnd_protocols = np.argmax(sim_norm[:, sim_hnd_cols], axis=1)  # index of the most efficient protocol
     best_fnd_protocols = np.argmax(sim_norm[:, sim_fnd_cols], axis=1)
+
     """
     print("Data loaded")
     print("_______________________________________________________")
@@ -151,42 +155,66 @@ def execute(attributes):
     print("_______________________________________________________")
     print("-- AVG CHxRounds headers: \n", headers_avg_chxrounds, "\n")
     print("_______________________________________________________")
+    print("-- SIM protocols names: \n", headers_sim, "\n")
+    print("_______________________________________________________")
     print("-- HND protocols names: \n", hnd_protocols_names, "\n")
     print("_______________________________________________________")
     print("-- FND protocols names: \n", fnd_protocols_names, "\n")
     print("_______________________________________________________")
     print("-- Simulation data hnd (samples): \n", sim_hnd_norm[:4], "\n")
     print("_______________________________________________________")
-    print("-- Simulation data fnd (samples): \n", sim_fnd_norm[:4], "\n")
+    print("-- Simulation data fnd (samples): \n", sim_fnd_norm[:4], "")
     print("_______________________________________________________")
     """
-
     # ---------------------------------------
     # SELECT THE DATA FOR CLUSTERING
     # ---------------------------------------
-    if clustering_data_type == "net":
-        print("Clustering on network attributes")
-        clustering_data = nt_norm
-        # clustering_data = nt_norm[np.where(nt_norm[:, 1] == 0.4)]  # take only the rows where %AGGR is 0.4
-        # clustering_data = clustering_data[:, [0, 2, 3, 4, 5]]
-    elif clustering_data_type == "all":
+    print("=========================================================================================== CLUSTERING DATA")
+    if clustering_data_type == "all":
         print("Clustering on all the data")
-        clustering_data = all_data_norm
-        # clustering_data = all_data_hnd_norm[:, [1,6]] #a
-        clustering_data = all_data_hnd_norm[:, ext_attributes]  # b---hnd
-
         # clustering_data = clustering_data[np.where(clustering_data[:, 1] == 0.4)]  # take only the rows where %AGGR is 0.4
-        # clustering_data = clustering_data[:, [0, 2, 3, 4, 5, 6]]
-
+        clustering_data = all_data_norm
+    # -------------------------------------------------------------------------------------------------------------------
+    elif clustering_data_type == "net":
+        print("Clustering on network attributes (cut)")
+        # clustering_data = nt_norm
+        # clustering_data = nt_norm[np.where(nt_norm[:, 1] == 0.4)]  # take only the rows where %AGGR is 0.4
+        clustering_data = nt_norm[:, clustering_cols]
+    # -------------------------------------------------------------------------------------------------------------------
+    elif clustering_data_type == "net+hnd":
+        print("Clustering on network attributes plus hnd (cut)")
+        clustering_data = all_data_hnd_norm[:, clustering_cols]
+    elif clustering_data_type == "net+fnd":
+        print("Clustering on network attributes plus fnd (cut)")
+        clustering_data = all_data_fnd_norm[:, clustering_cols]
+    # ------------------------------------------------------------------------------------------------------------------
+    elif clustering_data_type == "sim":
+        print("Clustering on simulation results (cut)")
+        clustering_data = sim_norm[:, clustering_cols]
     elif clustering_data_type == "hnd":
+        print("Clustering on simulation results (HND) (cut)")
+        clustering_data = sim_hnd_norm[:, clustering_cols]
+    elif clustering_data_type == "fnd":
+        print("Clustering on simulation results (FND) (cut)")
+        clustering_data = sim_fnd_norm[:, clustering_cols]
+    # ------------------------------------------------------------------------------------------------------------------
+    elif clustering_data_type == "all-sim":
+        print("Clustering on all simulation results")
+        clustering_data = sim_norm
+    elif clustering_data_type == "all-hnd":
         print("Clustering on simulation results (HND)")
         clustering_data = sim_hnd_norm
-    elif clustering_data_type == "fnd":
+    elif clustering_data_type == "all-fnd":
         print("Clustering on simulation results (FND)")
         clustering_data = sim_fnd_norm
+    # ------------------------------------------------------------------------------------------------------------------
+    elif clustering_data_type == "all-net":
+        print("Clustering on network attributes ")
+        clustering_data = nt_norm
 
     print("Clustering data size: ", clustering_data.shape)
     print("Clustering data (samples): \n", clustering_data[:4])
+    print("===========================================================================================================")
 
     # ---------------------------------------
     # COMPUTE THE SOM SIZE HEURISTICALLY
@@ -204,14 +232,7 @@ def execute(attributes):
     # CREATE THE CHECKPOINT FOLDER SUFFIX
     # ---------------------------------------
     folder_suffix = str(som_side_dim) + "x" + str(som_side_dim) + "_"
-    if clustering_data_type == "net":
-        folder_suffix = folder_suffix + "net_"  # reversed
-    elif clustering_data_type == "all":
-        folder_suffix = folder_suffix + "all_"
-    elif clustering_data_type == "hnd":
-        folder_suffix = folder_suffix + "hnd_"
-    elif clustering_data_type == "fnd":
-        folder_suffix = folder_suffix + "fnd_"
+    folder_suffix = folder_suffix + clustering_data_type + "_"
 
     folder_suffix = folder_suffix + "ep-" + str(epochs)
     print("_______________________________________________________")
@@ -314,12 +335,8 @@ def execute(attributes):
         # plt.legend(loc='center left', bbox_to_anchor=(0, 1.08))
 
         # TITLE OF THE CHART
-        if clustering_data_type == "net":
-            plt.title("Best protocols on HND (Training over network attributes) [" + label_names[prot_index] + "]")
-        elif clustering_data_type == "hnd" or clustering_data_type == "fnd":
-            plt.title("Best protocols on HND (Training over simulation results) [" + label_names[prot_index] + "]")
-        elif clustering_data_type == "all":
-            plt.title("Best protocols on HND (Training over all data) [" + label_names[prot_index] + "]")
+        plt.title(
+            "Best protocols on HND (Training over [" + clustering_data_type + "]) [" + label_names[prot_index] + "]")
 
         # SAVE THE CHART
         plt.savefig(directory_path + 'HND_' + label_names[prot_index] + '.png', dpi=my_dpi)
@@ -355,12 +372,8 @@ def execute(attributes):
         # plt.legend(loc='center left', bbox_to_anchor=(0, 1.08))
 
         # TITLE OF THE CHART
-        if clustering_data_type == "net":
-            plt.title("Best protocols on FND (Training over network attributes) [" + label_names[prot_index] + "]")
-        elif clustering_data_type == "hnd" or clustering_data_type == "fnd":
-            plt.title("Best protocols on FND (Training over simulation results) [" + label_names[prot_index] + "]")
-        elif clustering_data_type == "all":
-            plt.title("Best protocols on FND (Training over all data) [" + label_names[prot_index] + "]")
+        plt.title(
+            "Best protocols on FND (Training over [" + clustering_data_type + "]) [" + label_names[prot_index] + "]")
 
         # SAVE THE CHART
         plt.savefig(directory_path + 'FND_' + label_names[prot_index] + '.png', dpi=my_dpi)
@@ -392,7 +405,6 @@ def execute(attributes):
         # ------------------
         """
 
-
         for att_specific_value_index in range(0, len(unique_classes)):
             plt.figure(_figure_counter, figsize=(pixels / my_dpi, pixels / my_dpi), dpi=my_dpi)
             _figure_counter = _figure_counter + 1
@@ -411,18 +423,8 @@ def execute(attributes):
             # plt.legend(loc='center left', bbox_to_anchor=(0, 1.08))
 
             # TITLE OF THE CHART
-            if clustering_data_type == "net":
-                plt.title(
-                    'NT att (Training over network attributes) [' + attribute_name + "] " + str(round(
-                        unique_real_classes[att_specific_value_index], 4)))
-            elif clustering_data_type == "hnd" or clustering_data_type == "fnd":
-                plt.title(
-                    'NT att (Training over simulation results) [' + attribute_name + "] " + str(round(
-                        unique_real_classes[att_specific_value_index], 4)))
-            elif clustering_data_type == "all":
-                plt.title(
-                    'NT att (Training over all data) [' + attribute_name + "] " + str(round(
-                        unique_real_classes[att_specific_value_index], 4)))
+            plt.title("NT att (Training over [" + clustering_data_type + "]) [" + attribute_name + "] " + str(round(
+                unique_real_classes[att_specific_value_index], 4)))
 
             # SAVE THE CHART
             att_directory_path = directory_path + attribute_name + "\\"
@@ -447,7 +449,7 @@ def execute(attributes):
 
     for prot_index in range(0, len(cols)):  # iterate each protocol
 
-        #print("Protocol: ", label_names[prot_index])
+        # print("Protocol: ", label_names[prot_index])
         prot_column_data = sim[:, cols[prot_index]]  # get the results of a specific protocol
 
         # create different ranges
@@ -457,8 +459,8 @@ def execute(attributes):
         ranges = np.linspace(min_value, max_value, num=number_of_ranges + 1).round(0)
         ranges = ranges[1:number_of_ranges + 1]
 
-        #print("max: ", max_value, " - min: ", min_value, " - Ranges: ", ranges)
-        #print(prot_column_data[:6])
+        # print("max: ", max_value, " - min: ", min_value, " - Ranges: ", ranges)
+        # print(prot_column_data[:6])
 
         # create the classes (splitted by the range)
         classes = []
@@ -489,15 +491,9 @@ def execute(attributes):
             plt.interactive(True)
 
             # TITLE OF THE CHART
-            if clustering_data_type == "net":
-                plt.title("Ranges HND (Training over network attributes) [" + label_names[prot_index] + "][<=" + str(
+            plt.title(
+                "Ranges HND (Training over [" + clustering_data_type + "]) [" + label_names[prot_index] + "][<=" + str(
                     ranges[u]) + "]")
-            elif clustering_data_type == "hnd" or clustering_data_type == "fnd":
-                plt.title("Ranges HND (Training over simulation results) [" + label_names[prot_index] + "][<=" + str(
-                    ranges[u]) + "]")
-            elif clustering_data_type == "all":
-                plt.title(
-                    "Ranges HND (Training over all data) [" + label_names[prot_index] + "][<=" + str(ranges[u]) + "]")
 
             # SAVE THE CHART
             att_directory_path = directory_path + label_names[prot_index] + "\\"
@@ -541,12 +537,7 @@ def execute(attributes):
         plt.interactive(True)
 
         # TITLE OF THE CHART
-        if clustering_data_type == "net":
-            plt.title('NT att (Training over network attributes) [' + attribute_name + "] ")
-        elif clustering_data_type == "hnd" or clustering_data_type == "fnd":
-            plt.title('NT att (Training over simulation results) [' + attribute_name + "] ")
-        elif clustering_data_type == "all":
-            plt.title('NT att (Training over all data) [' + attribute_name + "] ")
+        plt.title("NT att (Training over [" + clustering_data_type + "]) [" + attribute_name + "] ")
 
         # SAVE THE CHART
         plt.savefig(directory_path + 'NT_' + attribute_name + '.png', dpi=my_dpi)
@@ -600,11 +591,40 @@ def execute(attributes):
 
 
 if __name__ == "__main__":
-    counter = 0
-    attributes = [0, 1, 2, 3, 4, 5]  # ['R0' '%AGGR' 'HET' 'HOM ENERGY' 'HOM RATE' 'DENSITY']
-    for i in range(0, len(attributes)):
-        combs = list(itertools.combinations(attributes, i + 1))
-        for c in combs:
-            execute(attributes=np.array(c))
-            counter = counter + 1
-    print("Total iterations: ", counter)
+
+    net_attributes = [0, 1, 2, 3, 4, 5]  # ['R0' '%AGGR' 'HET' 'HOM ENERGY' 'HOM RATE' 'DENSITY']
+    sim_results = [0, 1, 2, 3, 4, 5, 6,
+                   7]  # ['REECHD FND' 'REECHD HND' 'HEED FND' 'HEED HND' 'ERHEED FND' 'ERHEED HND' 'FMUC FND' 'FMUC HND']
+    sim_h_f_nd_results = [0, 1, 2, 3]  # ['REECHD H/FND' 'HEED H/FND' 'ERHEED H/FND' 'FMUC H/FND']
+
+    # change this!
+    clust_type = "all-sim"  # clustering type: [all, net, net+hnd, net+fnd, sim, hnd, fnd, all-net, all-sim, all-hnd, all-fnd]
+
+    # ------------------------------------------------------------------
+    if clust_type == "net":
+        arr = net_attributes
+    elif clust_type == "net+hnd" or clust_type == "net+fnd":
+        arr = net_attributes  # will be added the hnd/fnd part later
+    elif clust_type == "sim":
+        arr = sim_results
+    elif clust_type == "hnd" or clust_type == "fnd":
+        arr = sim_h_f_nd_results
+    else:  # all, all-net, all-sim, all-hnd, all-fnd
+        arr = []
+
+    # ------------------------------------------------------------------
+    if len(arr) == 0:
+        execute(clustering_cols=[], clustering_data_type=clust_type)
+    else:
+        counter = 0
+        for i in range(0, len(arr)):
+            combs = list(itertools.combinations(arr, i + 1))
+            for c in combs:
+                columns = np.array(c)
+                if clust_type == "net+hnd" or clust_type == "net+fnd":
+                    columns = np.concatenate((columns, [6, 7, 8, 9]))  # indeces of hnd/fnd cols in all_data_h/fnd_norm
+
+                print("---> Selected columns: ", columns)
+                execute(clustering_cols=columns, clustering_data_type=clust_type)
+                counter = counter + 1
+        print("Total iterations: ", counter)
