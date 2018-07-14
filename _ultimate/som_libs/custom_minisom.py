@@ -176,7 +176,7 @@ class MiniSom(object):
         it = nditer(self._activation_map, flags=['multi_index'])
         while not it.finished:
             rand_i = self._random_generator.randint(len(data))
-            self._weights[it.multi_index] = data[rand_i]
+            self._weights[it.multi_index] = data[rand_i]+.0001
             norm = fast_norm(self._weights[it.multi_index])
             self._weights[it.multi_index] = self._weights[it.multi_index]/norm
             it.iternext()

@@ -49,17 +49,17 @@ def execute(clustering_cols, clustering_data_type="all"):
     # training_over could be: "net" if the SOM has been trained over network attributes, "hnd" or "fnd" otherwise
 
     folder_prefix_1 = "pc_" + att_string + "_"
-    chart_prefix = "fin-80_"
+    chart_prefix = "fin-800_"
 
-    epochs = 80
+    epochs = 800
 
-    restore_som = False  # true: doesn't train the som and doesn't store any new checkpoint files
-    folder_prefix_2 = "fin-80_"  # to select the restored checkpoint
+    restore_som = True  # true: doesn't train the som and doesn't store any new checkpoint files
+    folder_prefix_2 = "tmp-200_"  # to select the restored checkpoint
 
     checkpoint_iters = 200  # store training som every n iterations
 
     heuristic_size = False  # 22x22 (if false it is needed to specify the "som_side_dim" variable and the "ckpt_folder" name)
-    manually_picked_som_dim = 26  # if heuristic_size is False, this will be the chosen som's side size
+    manually_picked_som_dim = 36  # if heuristic_size is False, this will be the chosen som's side size
 
     # charts parameters
     number_of_ranges = 6  # number of ranges which the protocols are splitted in the chart
@@ -598,7 +598,7 @@ if __name__ == "__main__":
     sim_h_f_nd_results = [0, 1, 2, 3]  # ['REECHD H/FND' 'HEED H/FND' 'ERHEED H/FND' 'FMUC H/FND']
 
     # change this!
-    clust_type = "all-sim"  # clustering type: [all, net, net+hnd, net+fnd, sim, hnd, fnd, all-net, all-sim, all-hnd, all-fnd]
+    clust_type = "all-fnd"  # clustering type: [all, net, net+hnd, net+fnd, sim, hnd, fnd, all-net, all-sim, all-hnd, all-fnd]
 
     # ------------------------------------------------------------------
     if clust_type == "net":
